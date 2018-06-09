@@ -1,481 +1,799 @@
 [
 {
-  "name": "Gnasher",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Ragetail",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
   "name": "Recruit",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Recruit's Hammer",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 },
 {
-  "name": "Rezakiri",
+  "name": "Gnasher",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Gnashmasher",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "Gnashsaber",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Quillshot",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Shrowd",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Shockjaw",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Nayzaga",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Drask",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Hellion",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Embermane",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Frostback",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Pangar",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 },
 {
   "name": "Shrike",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Shrikesmasher",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "Shrikesaber",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Quillshot",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Quillhammer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Quillripper",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 },
 {
   "name": "Skarn",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Skarnmaul",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "Skarnsaber",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 },
 {
   "name": "Charrogg",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Charrhammer",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "Charrsword",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 },
 {
-  "name": "Razorwing",
+  "name": "Embermane",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Embermaul",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "Ember Cutlass",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Kharabak",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
-  }]
-},
-{
-  "name": "Stormclaw",
-  "items": [
-  {
-    "type": "Axe",
-    "cellslot": ""
-  },
-  {
-    "type": "Chain Blades",
-    "cellslot": ""
-  },
-  {
-    "type": "Hammer",
-    "cellslot": ""
-  },
-  {
-    "type": "Sword",
-    "cellslot": ""
-  },
-  {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 },
 {
   "name": "Skraev",
   "items": [
   {
-    "type": "Axe",
-    "cellslot": ""
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
     "type": "Chain Blades",
-    "cellslot": ""
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Hammer",
-    "cellslot": ""
+    "type": "Hammers",
+    "name": "Skraevmaul",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "Sword",
-    "cellslot": ""
+    "type": "Swords",
+    "name": "Skraevsaber",
+    "cellslot01": "",
+    "cellslot02": ""
   },
   {
-    "type": "War Pike",
-    "cellslot": ""
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Drask",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Drasksmasher",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Draskrazor",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Nayzaga",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Zaga Maul",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Zaga Sword",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Pangar",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Pangar's Roar",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Pangsaber",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Hellion",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Hellcrusher",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Hellsaber",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Stormclaw",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Stormhammer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Storm Katana",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Kharabak",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Kharabasher",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Kharabak Cleaver",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Ragetail",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Ragehammer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Ragesaber",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Firebrand Charrog",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Firemace",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Firesaber",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Shockjaw Nayzaga",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Shockjaw Smasher",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Shockjaw Sword",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Razorwing Kharabak",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Razorwing Hammer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Razorwing Sword",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Frostback Pangar",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Frostmaul",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Frostsaber",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Deadeye Quillshot",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Deadeye Hammer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Deadeye Ripper",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Bloodfire Embermane",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Bloodfire Hammer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Bloodfire Saber",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Rezakiri",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Rezacrusher",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Rezakatana",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Shrowd",
+  "items": [
+  {
+    "type": "Axes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Chain Blades",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Hammers",
+    "name": "Shrowdmaul",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "Swords",
+    "name": "Shrowd Slicer",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "",
+    "cellslot01": "",
+    "cellslot02": ""
+  }]
+},
+{
+  "name": "Exotic",
+  "items": [
+  {
+    "type": "Swords",
+    "name": "The Hunger",
+    "cellslot01": "",
+    "cellslot02": ""
+  },
+  {
+    "type": "War Pikes",
+    "name": "The Godhand",
+    "cellslot01": "",
+    "cellslot02": ""
   }]
 }]

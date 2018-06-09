@@ -1,29 +1,30 @@
 {% extends 'layout.html' %}
 {% block body %}
 <div class="container">
+  <div class="alert alert-primary" role="alert">
+    This tool is still in development!
+  </div>
   <div class="jumbotron">
     <h1 class="display-4">Welcome, Slayer!</h1>
     <p class="lead">Create and share your custom Dauntless builds!</p>
     <hr class="my-4">
     <div class = "row">
-      <div class = "col-sm">
+      <div class = "col-3">
         <div>Weapon</div>
-        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Axe</button>
-          <button type="button" class="btn btn-secondary">Sword</button>
-          <button type="button" class="btn btn-secondary">Hammer</button>
-          <button type="button" class="btn btn-secondary">Chain Blades</button>
-          <button type="button" class="btn btn-secondary">War Pike</button>
-        </div>
-        <select class="form-control form-control-sm" title="Choose a weapon...">
+        <select class="form-control form-control-sm">
+          <option>Hammers</option>
+          <option>Axes</option>
+          <option>Swords</option>
+          <option>Chain Blades</option>
+          <option>War Pikes</option>
+        </select>
+        <select class="form-control form-control-sm">
           {% for weapon in weaponData %}
-          <optgroup label="{{ weapon.name }}">
-            <option>Axe</option>
-            <option>Sword</option>
-            <option>Chain Blades</option>
-            <option>Hammer</option>
-            <option>War Pike</option>
-          </optgroup>
+          {% for item in weapon['items'] %}
+          {% if item.type == weaponType %}
+          <option>{{ item.name }} ({{ weapon.name }})</option>
+          {% endif %}
+          {% endfor %}
           {% endfor %}
         </select>
         <div>Lantern</div>
@@ -32,48 +33,45 @@
           <option>{{ lantern.name }}</option>
           {% endfor %}
         </select>
-        <div>Head</div>
+        <div>Helmet</div>
         <select class="form-control form-control-sm">
-          {% for armor in armorData %}
-          <optgroup label="{{ armor.name }}">
-            <option>Small select</option>
-          </optgroup>
+          {% for boss in armorData %}
+          {% if ('helmet' in boss) %}
+          <option>{{ boss.helmet.name }} ({{ boss.boss }})</option>
+          {% endif %}
           {% endfor %}
         </select>
-        <div>Armor</div>
+        <div>Chestplate</div>
         <select class="form-control form-control-sm">
-          {% for armor in armorData %}
-          <optgroup label="{{ armor.name }}">
-            <option>Small select</option>
-          </optgroup>
+          {% for boss in armorData %}
+          {% if ('chestplate' in boss) %}
+          <option>{{ boss.chestplate.name }} ({{ boss.boss }})</option>
+          {% endif %}
           {% endfor %}
         </select>
         <div>Gauntlets</div>
         <select class="form-control form-control-sm">
-          {% for armor in armorData %}
-          <optgroup label="{{ armor.name }}">
-            <option>Small select</option>
-          </optgroup>
+          {% for boss in armorData %}
+          {% if ('gloves' in boss) %}
+          <option>{{ boss.gloves.name }} ({{ boss.boss }})</option>
+          {% endif %}
           {% endfor %}
         </select>
-        <div>Feet</div>
+        <div>Greaves</div>
         <select class="form-control form-control-sm">
-          {% for armor in armorData %}
-          <optgroup label="{{ armor.name }}">
-            <option>Small select</option>
-          </optgroup>
+          {% for boss in armorData %}
+          {% if ('greaves' in boss) %}
+          <option>{{ boss.greaves.name }} ({{ boss.boss }})</option>
+          {% endif %}
           {% endfor %}
         </select>
       </div>
-      <div class = "col-sm">
+      <div class = "col-6">
       </div>
-      <div class = "col-sm">
+      <div class = "col-3">
       </div>
     </div>
   </div>
-</div>
-
-<div class="container">
   <div class="input-group input-group-lg">
     <div class="input-group-prepend">
       <span class="input-group-text" id="inputGroup-sizing-lg">Link to your build:</span>
