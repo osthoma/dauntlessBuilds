@@ -1,55 +1,86 @@
 {% extends 'layout.html' %}
 {% block body %}
-<div class="jumbotron text-center">
-  <h1>Welcome To DauntlessBuilds</h1>
-  <p class="lead">This is a updated test block!</p>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome, Slayer!</h1>
+    <p class="lead">Create and share your custom Dauntless builds!</p>
+    <hr class="my-4">
+    <div class = "row">
+      <div class = "col-sm">
+        <div>Weapon</div>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-secondary">Axe</button>
+          <button type="button" class="btn btn-secondary">Sword</button>
+          <button type="button" class="btn btn-secondary">Hammer</button>
+          <button type="button" class="btn btn-secondary">Chain Blades</button>
+          <button type="button" class="btn btn-secondary">War Pike</button>
+        </div>
+        <select class="form-control form-control-sm" title="Choose a weapon...">
+          {% for weapon in weaponData %}
+          <optgroup label="{{ weapon.name }}">
+            <option>Axe</option>
+            <option>Sword</option>
+            <option>Chain Blades</option>
+            <option>Hammer</option>
+            <option>War Pike</option>
+          </optgroup>
+          {% endfor %}
+        </select>
+        <div>Lantern</div>
+        <select class="form-control form-control-sm">
+          {% for lantern in lanternData %}
+          <option>{{ lantern.name }}</option>
+          {% endfor %}
+        </select>
+        <div>Head</div>
+        <select class="form-control form-control-sm">
+          {% for armor in armorData %}
+          <optgroup label="{{ armor.name }}">
+            <option>Small select</option>
+          </optgroup>
+          {% endfor %}
+        </select>
+        <div>Armor</div>
+        <select class="form-control form-control-sm">
+          {% for armor in armorData %}
+          <optgroup label="{{ armor.name }}">
+            <option>Small select</option>
+          </optgroup>
+          {% endfor %}
+        </select>
+        <div>Gauntlets</div>
+        <select class="form-control form-control-sm">
+          {% for armor in armorData %}
+          <optgroup label="{{ armor.name }}">
+            <option>Small select</option>
+          </optgroup>
+          {% endfor %}
+        </select>
+        <div>Feet</div>
+        <select class="form-control form-control-sm">
+          {% for armor in armorData %}
+          <optgroup label="{{ armor.name }}">
+            <option>Small select</option>
+          </optgroup>
+          {% endfor %}
+        </select>
+      </div>
+      <div class = "col-sm">
+      </div>
+      <div class = "col-sm">
+      </div>
+    </div>
+  </div>
 </div>
-<div>Weapon</div>
-<select class="form-control form-control-sm">
-  {% for weapon in weaponData %}
-  <optgroup label="{{ weapon.name }}">
-    <option>axe</option>
-    <option>sword</option>
-    <option>chainblades</option>
-    <option>hammer</option>
-    <option>war pike</option>
-  </optgroup>
-  {% endfor %}
-</select>
-<div>Lantern</div>
-<select class="form-control form-control-sm">
-  <option>Small select</option>
-</select>
-<div>Head</div>
-<select class="form-control form-control-sm">
-  {% for armor in armorData %}
-  <optgroup label="{{ armor.name }}">
-    <option>Small select</option>
-  </optgroup>
-  {% endfor %}
-</select>
-<div>Armor</div>
-<select class="form-control form-control-sm">
-  {% for armor in armorData %}
-  <optgroup label="{{ armor.name }}">
-    <option>Small select</option>
-  </optgroup>
-  {% endfor %}
-</select>
-<div>Gauntlets</div>
-<select class="form-control form-control-sm">
-  {% for armor in armorData %}
-  <optgroup label="{{ armor.name }}">
-    <option>Small select</option>
-  </optgroup>
-  {% endfor %}
-</select>
-<div>Feet</div>
-<select class="form-control form-control-sm">
-  {% for armor in armorData %}
-  <optgroup label="{{ armor.name }}">
-    <option>Small select</option>
-  </optgroup>
-  {% endfor %}
-</select>
+
+<div class="container">
+  <div class="input-group input-group-lg">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">Link to your build:</span>
+    </div>
+    <input type="text" class="form-control" value="http://dauntlessbuilds.com/b=12345678" aria-describedby="inputGroup-sizing-sm">
+  </div>
+</div>
+
+
 {% endblock %}

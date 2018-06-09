@@ -3,379 +3,479 @@
   "name": "Gnasher",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Ragetail",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Recruit",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Rezakiri",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Quillshot",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Shrowd",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Shockjaw",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Nayzaga",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Drask",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Hellion",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Embermane",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Frostback",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Pangar",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Shrike",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Skarn",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Charrogg",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Razorwing",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Kharabak",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Stormclaw",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 },
 {
   "name": "Skraev",
   "items": [
   {
-    "type": "axe",
+    "type": "Axe",
+    "cellslot": ""
   },
   {
-    "type": "chain blades",
+    "type": "Chain Blades",
+    "cellslot": ""
   },
   {
-    "type": "hammer",
+    "type": "Hammer",
+    "cellslot": ""
   },
   {
-    "type": "sword",
+    "type": "Sword",
+    "cellslot": ""
   },
   {
-    "type": "war pike",
+    "type": "War Pike",
+    "cellslot": ""
   }]
 }]

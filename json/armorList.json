@@ -1,321 +1,508 @@
 [
 {
   "name": "Gnasher",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Utility"
+  }
 },
 {
   "name": "Ragetail",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Power"
+  }
 },
 {
   "name": "Recruit",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": ""
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": ""
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": ""
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": ""
+  }
+},
+{
+  "name": "Firebrand Charrogg",
+  "helmet":
+  {
+    "name": "",
+    "cellslot": "Defence"
+  },
+  "chestplate":
+  {
+    "name": "",
+    "cellslot": "Utility"
+  },
+  "gloves":
+  {
+    "name": "",
+    "cellslot": "Utility"
+  },
+  "greaves":
+  {
+    "name": "",
+    "cellslot": "Power"
+  }
 },
 {
   "name": "Rezakiri",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "z"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Mobility"
+  }
 },
 {
   "name": "Quillshot",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Utility"
+  }
 },
 {
   "name": "Shrowd",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": ""
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": ""
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Utility"
+  }
 },
 {
   "name": "Shockjaw",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Defence"
+  }
 },
 {
   "name": "Nayzaga",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Mobility"
+  }
 },
 {
   "name": "Drask",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Utility"
+  }
 },
 {
   "name": "Hellion",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Utility"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Power"
+  }
 },
 {
   "name": "Embermane",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Mobility"
+  }
 },
 {
-  "name": "Frostback",
-  "items": [
+  "name": "Frostback Pangar",
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Defence"
+  }
 },
 {
   "name": "Pangar",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Defence"
+  }
 },
 {
   "name": "Shrike",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Mobility"
+  }
 },
 {
   "name": "Skarn",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Defence"
+  }
 },
 {
   "name": "Charrogg",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Power"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Defence"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Power"
+  }
 },
 {
-  "name": "Razorwing",
-  "items": [
+  "name": "Razorwing Kharabak",
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Power"
+  }
 },
 {
   "name": "Kharabak",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": ""
+  }
 },
 {
   "name": "Stormclaw",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Technique"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Mobility"
+  }
 },
 {
   "name": "Skraev",
-  "items": [
+  "helmet":
   {
-    "head": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "chestplate":
   {
-    "chest": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "gloves":
   {
-    "gloves": ""
+    "name": "",
+    "cellslot": "Mobility"
   },
+  "greaves":
   {
-    "feet": ""
-  }]
+    "name": "",
+    "cellslot": "Utility"
+  }
+},
+{
+  "name": "Exotic",
+  "helmet":
+  {
+    "name": "Prismatic Grace",
+    "cellslot": "Technique"
+  },
+  "chestplate":
+  {
+    "name": "",
+    "cellslot": ""
+  },
+  "gloves":
+  {
+    "name": "",
+    "cellslot": ""
+  },
+  "greaves":
+  {
+    "name": "",
+    "cellslot": ""
+  }
+
 }]
