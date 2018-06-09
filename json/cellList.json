@@ -13,70 +13,166 @@
     },
     {
       "id": "",
-      "name": "Bloodless"
+      "name": "Bloodless",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Fireproof"
+      "name": "Fireproof",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Fortress"
+      "name": "Fortress",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Insulated"
+      "name": "Insulated",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Nine Lives"
+      "name": "Nine Lives",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Shellshock Resist"
+      "name": "Shellshock Resist",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Sturdy"
+      "name": "Sturdy",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Tough"
+      "name": "Tough",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Warmth"
+      "name": "Warmth",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     }]
   },
   {
     "Mobility": [
     {
       "id": "",
-      "name": "Agility"
+      "name": "Agility",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Conditioning"
+      "name": "Conditioning",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Endurance"
+      "name": "Endurance",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Evasion"
+      "name": "Evasion",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Fleet Footed"
+      "name": "Fleet Footed",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Nimble"
+      "name": "Nimble",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Swift"
+      "name": "Swift",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     }]
   },
 
@@ -84,35 +180,83 @@
     "Power": [
     {
       "id": "",
-      "name": "Aetherhunter"
+      "name": "Aetherhunter",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Deconstruction"
+      "name": "Deconstruction",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Knockout King"
+      "name": "Knockout King",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Overpower"
+      "name": "Overpower",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Pacifier"
+      "name": "Pacifier",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Rage"
+      "name": "Rage",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Ragehunter"
+      "name": "Ragehunter",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Sharpened"
+      "name": "Sharpened",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     }]
   },
 
@@ -120,39 +264,93 @@
     "Technique": [
     {
       "id": "",
-      "name": "Acidic"
+      "name": "Acidic",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Barbed"
+      "name": "Barbed",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Bladestorm"
+      "name": "Bladestorm",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Cunning"
+      "name": "Cunning",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Evasive Fury"
+      "name": "Evasive Fury",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Merciless"
+      "name": "Merciless",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Savagery"
+      "name": "Savagery",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Wild Frenzy"
+      "name": "Wild Frenzy",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Weighted Strikes"
+      "name": "Weighted Strikes",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     }]
   }
 
@@ -164,27 +362,63 @@
     },
     {
       "id": "",
-      "name": "Aetheric Attunement"
+      "name": "Aetheric Attunement",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Aetheric Frenzy"
+      "name": "Aetheric Frenzy",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Energized"
+      "name": "Energized",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Medic"
+      "name": "Medic",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Stunning Vigour"
+      "name": "Stunning Vigour",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     },
     {
       "id": "",
-      "name": "Vampiric"
+      "name": "Vampiric",
+      "level01": "",
+      "level02": "",
+      "level03": "",
+      "level04": "",
+      "level05": "",
+      "level06": ""
     }]
   }
 ]
