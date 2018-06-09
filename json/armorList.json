@@ -5,7 +5,7 @@
   {
     "id": "001001",
     "name": "Recruit's Mask",
-    "cellslot": "$1",
+    "cellslot": "",
     "bonus": [
     {}]
   },
@@ -13,7 +13,7 @@
   {
     "id": "001002",
     "name": "Recruit's Breastplate",
-    "cellslot": "$1",
+    "cellslot": "",
     "bonus": [
     {}]
   },
@@ -21,7 +21,7 @@
   {
     "id": "001003",
     "name": "Recruit's Gloves",
-    "cellslot": "$1",
+    "cellslot": "",
     "bonus": [
     {}]
   },
@@ -29,7 +29,7 @@
   {
     "id": "001004",
     "name": "Recruit's Greaves",
-    "cellslot": "$1",
+    "cellslot": "",
     "bonus": [
     {}]
   }

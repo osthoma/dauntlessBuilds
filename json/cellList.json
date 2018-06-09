@@ -1,119 +1,121 @@
 [
   {
-    "Defence": [
+    "type": "Defence",
+    "cells": [
     {
       "id": "",
       "name": "Assassin 's Vigor",
       "description": "Grants Health after breaking a Behemoth part.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Heal 50 when you break a part",
+      "level02": "Heal 100 when you break a part",
+      "level03": "Heal 150 when you break a part",
+      "level04": "Heal 200 when you break a part",
+      "level05": "Heal 250 when you break a part",
+      "level06": "Heal 300 when you break a part"
     },
     {
       "id": "",
       "name": "Bloodless",
       "description": "Protects against Wounded and Crippling Wounds statuses.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Reduces duration of Wounded status by 50%",
+      "level02": "Reduces duration of Wounded status by 80%",
+      "level03": "Immune to Wounded status",
+      "level04": "Reduces effectiveness of Crippling Wounded status by 50% Immune to Wounded status",
+      "level05": "Reduces effectiveness of Crippling Wounded status by 80% Immune to Wounded status",
+      "level06": "Immune to Wounded status Immune to Crippling Wound status"
     },
     {
       "id": "",
       "name": "Fireproof",
       "description": "Protects against being set on fire.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Reduces duration of On Fire status by 10%",
+      "level02": "Reduces duration of On Fire status by 20%",
+      "level03": "Reduces duration of On Fire status by 40%",
+      "level04": "Reduces duration of On Fire status by 60%",
+      "level05": "Reduces duration of On Fire status by 80%",
+      "level06": "Immune to being set on fire."
     },
     {
       "id": "",
       "name": "Fortress",
       "description": "Grants a small shield after avoiding damage for a short time.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Grants a 10 health shield after not getting hit for 10s",
+      "level02": "Grants a 20 health shield after not getting hit for 10s",
+      "level03": "Grants a 40 health shield after not getting hit for 10s",
+      "level04": "Grants a 60 health shield after not getting hit for 10s",
+      "level05": "Grants a 80 health shield after not getting hit for 10s",
+      "level06": "Grants a 100 health shield after not getting hit for 10s"
     },
     {
       "id": "",
       "name": "Insulated",
       "description": "Protects against Shocked status effect and allows you to attack electric shields.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Reduces duration of Shocked status by 25%",
+      "level02": "Reduces duration of Shocked status by 50%",
+      "level03": "Reduces duration of Shocked status by 75%",
+      "level04": "Reduces duration of Shocked status by 75% Reduces knockback and damage of hitting electrified shields.",
+      "level05": "Reduces duration of Shocked status by 75% Prevents knockback and damage of hitting electrified shields.",
+      "level06": "Immune to Shocked status Prevents knockback and damage of hitting electrified shields."
     },
     {
       "id": "",
       "name": "Nine Lives",
       "description": "Grants a chance to reduce damage, and later the ability to cheat death.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "+5% chance to halve incoming damage",
+      "level02": "+8% chance to halve incoming damage",
+      "level03": "+12% chance to halve incoming damage",
+      "level04": "+12% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400",
+      "level05": "+16% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400",
+      "level06": "+20% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400, and become empowered for 10 seconds"
     },
     {
       "id": "",
       "name": "Shellshock Resist",
       "description": "Protects against the explosion damage and status effect Shellshock.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Reduces Shell Shocked explosion damage and status effect duration by 10%",
+      "level02": "Reduces Shell Shocked explosion damage and status effect duration by 20%",
+      "level03": "Reduces Shell Shocked explosion damage and status effect duration by 40%",
+      "level04": "Reduces Shell Shocked explosion damage and status effect duration by 60%",
+      "level05": "Reduces Shell Shocked explosion damage and status effect duration by 80%",
+      "level06": "Immune to Shell Shocked explosion damage and status effect"
     },
     {
       "id": "",
       "name": "Sturdy",
       "description": "Prevents being staggered on a cooldown.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Prevents you from being staggered (120 second cooldown)",
+      "level02": "Prevents you from being staggered (100 second cooldown)",
+      "level03": "Prevents you from being staggered (80 second cooldown)",
+      "level04": "Prevents you from being staggered (60 second cooldown)",
+      "level05": "Prevents you from being staggered (40 second cooldown)",
+      "level06": "Prevents you from being staggered (15 second cooldown)"
     },
     {
       "id": "",
       "name": "Tough",
       "description": "Increases Max Health.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Increases Max Health by 50",
+      "level02": "Increases Max Health by 100",
+      "level03": "Increases Max Health by 150",
+      "level04": "Increases Max Health by 250",
+      "level05": "Increases Max Health by 350",
+      "level06": "Increases Max Health by 500"
     },
     {
       "id": "",
       "name": "Warmth",
       "description": "Protects against Chilled and Frozen status effects.",
-      "level01": "",
-      "level02": "",
-      "level03": "",
-      "level04": "",
-      "level05": "",
-      "level06": ""
+      "level01": "Reduces duration of Frozen status by 30%",
+      "level02": "Reduces duration of Frozen status by 60%",
+      "level03": "Immune to being Frozen",
+      "level04": "Reduces duration of Chilled status by 30% Immune to being Frozen",
+      "level05": "Reduces duration of Chilled status by 60% Immune to being Frozen",
+      "level06": "Immune to being Frozen Immune to being Chilled"
     }]
   },
   {
-    "Mobility": [
+    "type": "Mobility",
+    "cells": [
     {
       "id": "",
       "name": "Agility",
@@ -194,7 +196,8 @@
   },
 
   {
-    "Power": [
+    "type": "Power",
+    "cells": [
     {
       "id": "",
       "name": "Aetherhunter",
@@ -286,7 +289,8 @@
   },
 
   {
-    "Technique": [
+    "type": "Technique",
+    "cells": [
     {
       "id": "",
       "name": "Acidic",
@@ -389,7 +393,8 @@
   },
 
   {
-    "Utility": [
+    "type": "Utility",
+    "cells": [
     {
       "id": "",
       "name": "Aetherborne",

@@ -1,15 +1,13 @@
 {% extends 'layout.html' %}
 {% block body %}
 <div class="container">
-  <div class="alert alert-primary" role="alert">
-    This tool is still in development!
-  </div>
   <div class="jumbotron">
     <h1 class="display-4">Welcome, Slayer!</h1>
     <p class="lead">Create and share your custom Dauntless builds!</p>
     <hr class="my-4">
     <div class = "row">
       <div class = "col-3">
+        <div>Equipment</div>
         <div>Weapon</div>
         <select class="form-control form-control-sm" id="typeSelection">
           <option value="1" selected>Hammers</option>
@@ -102,9 +100,80 @@
           {% endfor %}
         </select>
       </div>
-      <div class = "col-6">
-      </div>
       <div class = "col-3">
+        <div>Cells</div>
+        <div>Weapon</div>
+        <select class="form-control form-control-sm" id="weaponCellSelection01">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <select class="form-control form-control-sm" id="weaponCellSelection02">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <div>Lantern</div>
+        <select class="form-control form-control-sm" id="lanternCellSelection">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <div>Helmet</div>
+        <select class="form-control form-control-sm" id="helmetCellSelection">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <div>Chestplate</div>
+        <select class="form-control form-control-sm" id="chestplateCellSelection">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <div>Gauntlets</div>
+        <select class="form-control form-control-sm" id="gauntletsCellSelection">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <div>Greaves</div>
+        <select class="form-control form-control-sm" id="greavesCellSelection">
+          {% for category in cellData %}
+          {% for cell in category.cells %}
+          <option value="">{{ cell.name }} +3</option>
+          <option value="">{{ cell.name }} +2</option>
+          <option value="">{{ cell.name }} +1</option>
+          {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+      <div class = "col-6">
+        <p>Total Bonuses</p>
       </div>
     </div>
   </div>
@@ -112,7 +181,7 @@
     <div class="input-group-prepend">
       <span class="input-group-text" id="inputGroup-sizing-lg">Link to your build:</span>
     </div>
-    <input type="text" class="form-control" value="http://dauntlessbuilds.com/b/12345678" aria-describedby="inputGroup-sizing-sm">
+    <input type="text" class="form-control" value="http://dauntlessbuilds.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
   </div>
 </div>
 
