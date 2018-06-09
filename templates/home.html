@@ -11,30 +11,66 @@
     <div class = "row">
       <div class = "col-3">
         <div>Weapon</div>
-        <select class="form-control form-control-sm">
-          <option>Hammers</option>
-          <option>Axes</option>
-          <option>Swords</option>
-          <option>Chain Blades</option>
-          <option>War Pikes</option>
+        <select class="form-control form-control-sm" id="typeSelection">
+          <option value="1" selected>Hammers</option>
+          <option value="2">Axes</option>
+          <option value="3">Swords</option>
+          <option value="4">Chain Blades</option>
+          <option value="5">War Pikes</option>
         </select>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" id="Hammers">
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
-          {% if item.type == weaponType %}
+          {% if item.type == "Hammers" %}
+          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <select class="form-control form-control-sm" id="Axes">
+          {% for weapon in weaponData %}
+          {% for item in weapon['items'] %}
+          {% if item.type == "Axes" %}
+          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <select class="form-control form-control-sm" id="Swords">
+          {% for weapon in weaponData %}
+          {% for item in weapon['items'] %}
+          {% if item.type == "Swords" %}
+          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <select class="form-control form-control-sm" id="ChainBlades">
+          {% for weapon in weaponData %}
+          {% for item in weapon['items'] %}
+          {% if item.type == "Chain Blades" %}
+          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </select>
+        <select class="form-control form-control-sm" id="WarPikes">
+          {% for weapon in weaponData %}
+          {% for item in weapon['items'] %}
+          {% if item.type == "War Pikes" %}
           <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
         </select>
         <div>Lantern</div>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" id="lanternSelection">
           {% for lantern in lanternData %}
           <option value="{{ lantern.id }}">{{ lantern.name }}</option>
           {% endfor %}
         </select>
         <div>Helmet</div>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" id="helmetSelection">
           {% for boss in armorData %}
           {% if ('helmet' in boss) %}
           <option value="{{ boss.helmet.id }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
@@ -42,7 +78,7 @@
           {% endfor %}
         </select>
         <div>Chestplate</div>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" id="chestplateSelection">
           {% for boss in armorData %}
           {% if ('chestplate' in boss) %}
           <option value="{{ boss.chestplate.id }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
@@ -50,7 +86,7 @@
           {% endfor %}
         </select>
         <div>Gauntlets</div>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" id="gauntletsSelection">
           {% for boss in armorData %}
           {% if ('gloves' in boss) %}
           <option value="{{ boss.gloves.id }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
@@ -58,7 +94,7 @@
           {% endfor %}
         </select>
         <div>Greaves</div>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" id="greavesSelection">
           {% for boss in armorData %}
           {% if ('greaves' in boss) %}
           <option value="{{ boss.greaves.id }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
@@ -76,7 +112,7 @@
     <div class="input-group-prepend">
       <span class="input-group-text" id="inputGroup-sizing-lg">Link to your build:</span>
     </div>
-    <input type="text" class="form-control" value="http://dauntlessbuilds.com/b=12345678" aria-describedby="inputGroup-sizing-sm">
+    <input type="text" class="form-control" value="http://dauntlessbuilds.com/b/12345678" aria-describedby="inputGroup-sizing-sm">
   </div>
 </div>
 

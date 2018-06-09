@@ -17,6 +17,45 @@
   {% include 'includes/_navbar.html' %} {% block body %}{% endblock %}  {% include 'includes/_footer.html' %}
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    showSelectedWeapons('#Hammers');
+  });
+  function hideAllWeapons(){
+    $('#Hammers').css('display', 'none');
+    $('#Axes').css('display', 'none');
+    $('#Swords').css('display', 'none');
+    $('#ChainBlades').css('display', 'none');
+    $('#WarPikes').css('display', 'none');
+  }
+
+  function showSelectedWeapons(type){
+    hideAllWeapons();
+    $(type).css('display', 'block')
+  }
+
+  $( "#typeSelection" ).change(function() {
+    if($( "#typeSelection option:selected" ).val() == '1'){
+      showSelectedWeapons('#Hammers');
+    }
+    else if($( "#typeSelection option:selected" ).val() == '2'){
+      showSelectedWeapons('#Axes');
+    }
+    else if($( "#typeSelection option:selected" ).val() == '3'){
+      showSelectedWeapons('#Swords');
+    }
+    else if($( "#typeSelection option:selected" ).val() == '4'){
+      showSelectedWeapons('#ChainBlades');
+    }
+    else {
+      showSelectedWeapons('#WarPikes');
+    }
+  }
+);
+
+
+</script>
 
 </body>
 

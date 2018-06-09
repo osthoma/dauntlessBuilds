@@ -2,8 +2,6 @@ import json
 from flask import Flask, render_template
 app = Flask(__name__)
 
-weaponType = "Hammers"
-
 
 with open("json/armorList.json") as f:
     armorData = json.load(f)
@@ -20,7 +18,7 @@ with open("json/lanternList.json") as f:
 
 @app.route('/')
 def index():
-    return render_template('home.html', weaponData=weaponData, armorData=armorData, cellData=cellData, lanternData=lanternData, weaponType=weaponType)
+    return render_template('home.html', weaponData=weaponData, armorData=armorData, cellData=cellData, lanternData=lanternData)
 
 
 if __name__ == '__main__':
