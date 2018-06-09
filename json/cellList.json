@@ -1,50 +1,184 @@
-Defence
-Assassin 's Vigor
-Bloodless
-Fireproof
-Fortress
-Insulated
-Nine Lives
-Shellshock Resist
-Sturdy
-Tough
-Warmht
+[
+  {
+    "Defence": [
+    {
+      "id": "",
+      "name": "Assassin 's Vigor"
+    },
+    {
+      "id": "",
+      "name": "Bloodless"
+    },
+    {
+      "id": "",
+      "name": "Fireproof"
+    },
+    {
+      "id": "",
+      "name": "Fortress"
+    },
+    {
+      "id": "",
+      "name": "Insulated"
+    },
+    {
+      "id": "",
+      "name": "Nine Lives"
+    },
+    {
+      "id": "",
+      "name": "Shellshock Resist"
+    },
+    {
+      "id": "",
+      "name": "Sturdy"
+    },
+    {
+      "id": "",
+      "name": "Tough"
+    },
+    {
+      "id": "",
+      "name": "Warmth"
+    }]
+  },
+  {
+    "Mobility": [
+    {
+      "id": "",
+      "name": "Agility"
+    },
+    {
+      "id": "",
+      "name": "Conditioning"
+    },
+    {
+      "id": "",
+      "name": "Endurance"
+    },
+    {
+      "id": "",
+      "name": "Evasion"
+    },
+    {
+      "id": "",
+      "name": "Fleet Footed"
+    },
+    {
+      "id": "",
+      "name": "Nimble"
+    },
+    {
+      "id": "",
+      "name": "Swift"
+    }]
+  },
 
-Mobility
-Agility
-Conditioning
-Endurance
-Evasion
-Fleet Footed
-Nimble
-Swift
+  {
+    "Power": [
+    {
+      "id": "",
+      "name": "Aetherhunter"
+    },
+    {
+      "id": "",
+      "name": "Deconstruction"
+    },
+    {
+      "id": "",
+      "name": "Knockout King"
+    },
+    {
+      "id": "",
+      "name": "Overpower"
+    },
+    {
+      "id": "",
+      "name": "Pacifier"
+    },
+    {
+      "id": "",
+      "name": "Rage"
+    },
+    {
+      "id": "",
+      "name": "Ragehunter"
+    },
+    {
+      "id": "",
+      "name": "Sharpened"
+    }]
+  },
 
-Power
-Aetherhunter
-Deconstruction
-Knockout King
-Overpower
-Pacifier
-Rage
-Ragehunter
-Sharpened
+  {
+    "Technique": [
+    {
+      "id": "",
+      "name": "Acidic"
+    },
+    {
+      "id": "",
+      "name": "Barbed"
+    },
+    {
+      "id": "",
+      "name": "Bladestorm"
+    },
+    {
+      "id": "",
+      "name": "Cunning"
+    },
+    {
+      "id": "",
+      "name": "Evasive Fury"
+    },
+    {
+      "id": "",
+      "name": "Merciless"
+    },
+    {
+      "id": "",
+      "name": "Savagery"
+    },
+    {
+      "id": "",
+      "name": "Wild Frenzy"
+    },
+    {
+      "id": "",
+      "name": "Weighted Strikes"
+    }]
+  }
 
-Technique
-Acidic
-Barbed
-Bladestorm
-Cunning
-Evasive Fury
-Merciless
-Savagery
-Wild Frenzy
-Weighted Strikes
-
-Utility
-Aetherborne
-Aetheric Attunement
-Aetheric Frenzy
-Energized
-Medic
-Stunning Vigour
-Vampiric
+  {
+    "Utility": [
+    {
+      "id": "",
+      "name": "Aetherborne"
+    },
+    {
+      "id": "",
+      "name": "Aetheric Attunement"
+    },
+    {
+      "id": "",
+      "name": "Aetheric Frenzy"
+    },
+    {
+      "id": "",
+      "name": "Energized"
+    },
+    {
+      "id": "",
+      "name": "Medic"
+    },
+    {
+      "id": "",
+      "name": "Stunning Vigour"
+    },
+    {
+      "id": "",
+      "name": "Vampiric"
+    }]
+  }
+]
