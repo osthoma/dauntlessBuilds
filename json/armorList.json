@@ -1,20 +1,321 @@
-Gnasher
-Ragetail
-Recruit
-Rezakiri
-Quillshot
-Shrowd
-Shockjaw
-Nayzaga
-Drask
-Hellion
-Embermane
-Frostback
-Pangar
-Shrike
-Skarn
-Charrogg
-Razorwing
-Kharabak
-Stormclaw
-Skraev
+[
+{
+  "name": "Gnasher",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Ragetail",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Recruit",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Rezakiri",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Quillshot",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Shrowd",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Shockjaw",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Nayzaga",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Drask",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Hellion",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Embermane",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Frostback",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Pangar",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Shrike",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Skarn",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Charrogg",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Razorwing",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Kharabak",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Stormclaw",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+},
+{
+  "name": "Skraev",
+  "items": [
+  {
+    "head": ""
+  },
+  {
+    "chest": ""
+  },
+  {
+    "gloves": ""
+  },
+  {
+    "feet": ""
+  }]
+}]
