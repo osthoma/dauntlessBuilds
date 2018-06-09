@@ -59,7 +59,7 @@
     {
       "id": "",
       "name": "Nine Lives",
-      "description": "	Grants a chance to reduce damage, and later the ability to cheat death.",
+      "description": "Grants a chance to reduce damage, and later the ability to cheat death.",
       "level01": "",
       "level02": "",
       "level03": "",
@@ -294,12 +294,9 @@
       "level01": "Converts 30% of Part Damage to Wound Damage",
       "level02": "Converts 40% of Part Damage to Wound Damage",
       "level03": "Converts 50% of Part Damage to Wound Damage",
-      "level04": "Converts 50% of Part Damage to Wound Damage +
-        10 % Part damage ",
-      "level05": "Converts 50% of Part Damage to Wound Damage +
-        15 % Part damage ",
-      "level06": "Converts 50% of Part Damage to Wound Damage +
-        20 % Part damage "
+      "level04": "Converts 50% of Part Damage to Wound Damage +10 % Part damage ",
+      "level05": "Converts 50% of Part Damage to Wound Damage +15 % Part damage ",
+      "level06": "Converts 50% of Part Damage to Wound Damage +20 % Part damage "
     },
     {
       "id": "",
@@ -389,7 +386,7 @@
       "level05": "",
       "level06": ""
     }]
-  }
+  },
 
   {
     "Utility": [

@@ -2,6 +2,54 @@
 {% block body %}
 <div class="jumbotron text-center">
   <h1>Welcome To DauntlessBuilds</h1>
-  <p class="lead">This is a test block!</p>
+  <p class="lead">This is a updated test block!</p>
 </div>
+<div>Weapon</div>
+<select class="form-control form-control-sm">
+  {% for weapon in weaponData %}
+  <optgroup label="{{ weapon.name }}">
+    <option>axe</option>
+    <option>sword</option>
+    <option>chainblades</option>
+    <option>hammer</option>
+    <option>war pike</option>
+  </optgroup>
+  {% endfor %}
+</select>
+<div>Lantern</div>
+<select class="form-control form-control-sm">
+  <option>Small select</option>
+</select>
+<div>Head</div>
+<select class="form-control form-control-sm">
+  {% for armor in armorData %}
+  <optgroup label="{{ armor.name }}">
+    <option>Small select</option>
+  </optgroup>
+  {% endfor %}
+</select>
+<div>Armor</div>
+<select class="form-control form-control-sm">
+  {% for armor in armorData %}
+  <optgroup label="{{ armor.name }}">
+    <option>Small select</option>
+  </optgroup>
+  {% endfor %}
+</select>
+<div>Gauntlets</div>
+<select class="form-control form-control-sm">
+  {% for armor in armorData %}
+  <optgroup label="{{ armor.name }}">
+    <option>Small select</option>
+  </optgroup>
+  {% endfor %}
+</select>
+<div>Feet</div>
+<select class="form-control form-control-sm">
+  {% for armor in armorData %}
+  <optgroup label="{{ armor.name }}">
+    <option>Small select</option>
+  </optgroup>
+  {% endfor %}
+</select>
 {% endblock %}
