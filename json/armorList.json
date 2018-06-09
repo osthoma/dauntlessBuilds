@@ -78,45 +78,10 @@
   }
 },
 {
-  "boss": "Quillshot",
-  "helmet":
-  {
-    "id": "102001",
-    "name": "Quillmask",
-    "cellslot": "Utility",
-    "bonus": [
-    {}]
-  },
-  "chestplate":
-  {
-    "id": "102002",
-    "name": "Quillspike Jacket",
-    "cellslot": "Technique",
-    "bonus": [
-    {}]
-  },
-  "gloves":
-  {
-    "id": "102003",
-    "name": "Quillspike Grips",
-    "cellslot": "Technique",
-    "bonus": [
-    {}]
-  },
-  "greaves":
-  {
-    "id": "102004",
-    "name": "Quillboots",
-    "cellslot": "Utility",
-    "bonus": [
-    {}]
-  }
-},
-{
   "boss": "Shrike",
   "helmet":
   {
-    "id": "103001",
+    "id": "102001",
     "name": "Shrike Helm",
     "cellslot": "Technique",
     "bonus": [
@@ -124,7 +89,7 @@
   },
   "chestplate":
   {
-    "id": "103002",
+    "id": "102002",
     "name": "Shrike Plate",
     "cellslot": "Mobility",
     "bonus": [
@@ -132,7 +97,7 @@
   },
   "gloves":
   {
-    "id": "103003",
+    "id": "102003",
     "name": "Shrike Gauntlets",
     "cellslot": "Mobility",
     "bonus": [
@@ -140,9 +105,44 @@
   },
   "greaves":
   {
-    "id": "103004",
+    "id": "102004",
     "name": "Shrike Greaves",
     "cellslot": "Mobility",
+    "bonus": [
+    {}]
+  }
+},
+{
+  "boss": "Quillshot",
+  "helmet":
+  {
+    "id": "103001",
+    "name": "Quillmask",
+    "cellslot": "Utility",
+    "bonus": [
+    {}]
+  },
+  "chestplate":
+  {
+    "id": "103002",
+    "name": "Quillspike Jacket",
+    "cellslot": "Technique",
+    "bonus": [
+    {}]
+  },
+  "gloves":
+  {
+    "id": "103003",
+    "name": "Quillspike Grips",
+    "cellslot": "Technique",
+    "bonus": [
+    {}]
+  },
+  "greaves":
+  {
+    "id": "103004",
+    "name": "Quillboots",
+    "cellslot": "Utility",
     "bonus": [
     {}]
   }
@@ -183,19 +183,19 @@
   }
 },
 {
-  "boss": "Drask",
+  "boss": "Charrogg",
   "helmet":
   {
     "id": "201001",
-    "name": "Draskscale Faceguard",
-    "cellslot": "Power",
+    "name": "Charrhelm",
+    "cellslot": "Defence",
     "bonus": [
     {}]
   },
   "chestplate":
   {
     "id": "201002",
-    "name": "Draskscale Plate",
+    "name": "Charrplate",
     "cellslot": "Power",
     "bonus": [
     {}]
@@ -203,16 +203,16 @@
   "gloves":
   {
     "id": "201003",
-    "name": "Draskscale Gauntlets",
-    "cellslot": "Utility",
+    "name": "Charrogg Gauntlets",
+    "cellslot": "Defence",
     "bonus": [
     {}]
   },
   "greaves":
   {
     "id": "201004",
-    "name": "Draskscale Greaves",
-    "cellslot": "Utility",
+    "name": "Charrogg Greaves",
+    "cellslot": "Power",
     "bonus": [
     {}]
   }
@@ -253,45 +253,10 @@
   }
 },
 {
-  "boss": "Charrogg",
-  "helmet":
-  {
-    "id": "203001",
-    "name": "Charrhelm",
-    "cellslot": "Defence",
-    "bonus": [
-    {}]
-  },
-  "chestplate":
-  {
-    "id": "203002",
-    "name": "Charrplate",
-    "cellslot": "Power",
-    "bonus": [
-    {}]
-  },
-  "gloves":
-  {
-    "id": "203003",
-    "name": "Charrogg Gauntlets",
-    "cellslot": "Defence",
-    "bonus": [
-    {}]
-  },
-  "greaves":
-  {
-    "id": "203004",
-    "name": "Charrogg Greaves",
-    "cellslot": "Power",
-    "bonus": [
-    {}]
-  }
-},
-{
   "boss": "Skraev",
   "helmet":
   {
-    "id": "204001",
+    "id": "203001",
     "name": "Skraev Helm",
     "cellslot": "Mobility",
     "bonus": [
@@ -299,7 +264,7 @@
   },
   "chestplate":
   {
-    "id": "204002",
+    "id": "203002",
     "name": "Skraev Plate",
     "cellslot": "Mobility",
     "bonus": [
@@ -307,7 +272,7 @@
   },
   "gloves":
   {
-    "id": "204003",
+    "id": "203003",
     "name": "Skraev Gloves",
     "cellslot": "Mobility",
     "bonus": [
@@ -315,8 +280,43 @@
   },
   "greaves":
   {
-    "id": "204004",
+    "id": "203004",
     "name": "Skraev Greaves",
+    "cellslot": "Utility",
+    "bonus": [
+    {}]
+  }
+},
+{
+  "boss": "Drask",
+  "helmet":
+  {
+    "id": "204001",
+    "name": "Draskscale Faceguard",
+    "cellslot": "Power",
+    "bonus": [
+    {}]
+  },
+  "chestplate":
+  {
+    "id": "204002",
+    "name": "Draskscale Plate",
+    "cellslot": "Power",
+    "bonus": [
+    {}]
+  },
+  "gloves":
+  {
+    "id": "204003",
+    "name": "Draskscale Gauntlets",
+    "cellslot": "Utility",
+    "bonus": [
+    {}]
+  },
+  "greaves":
+  {
+    "id": "204004",
+    "name": "Draskscale Greaves",
     "cellslot": "Utility",
     "bonus": [
     {}]
@@ -358,45 +358,10 @@
   }
 },
 {
-  "boss": "Hellion",
-  "helmet":
-  {
-    "id": "302001",
-    "name": "Hellcasque",
-    "cellslot": "Utility",
-    "bonus": [
-    {}]
-  },
-  "chestplate":
-  {
-    "id": "302002",
-    "name": "Hellplate",
-    "cellslot": "Utility",
-    "bonus": [
-    {}]
-  },
-  "gloves":
-  {
-    "id": "302003",
-    "name": "Hellbracers",
-    "cellslot": "Power",
-    "bonus": [
-    {}]
-  },
-  "greaves":
-  {
-    "id": "302004",
-    "name": "Hellgreaves",
-    "cellslot": "Power",
-    "bonus": [
-    {}]
-  }
-},
-{
   "boss": "Pangar",
   "helmet":
   {
-    "id": "303001",
+    "id": "302001",
     "name": "Pangar Helm",
     "cellslot": "Power",
     "bonus": [
@@ -404,7 +369,7 @@
   },
   "chestplate":
   {
-    "id": "303002",
+    "id": "302002",
     "name": "Pangar Scaleplate",
     "cellslot": "Defence",
     "bonus": [
@@ -412,7 +377,7 @@
   },
   "gloves":
   {
-    "id": "303003",
+    "id": "302003",
     "name": "Pangar Grips",
     "cellslot": "Power",
     "bonus": [
@@ -420,9 +385,44 @@
   },
   "greaves":
   {
-    "id": "303004",
+    "id": "302004",
     "name": "Pangar Boots",
     "cellslot": "Defence",
+    "bonus": [
+    {}]
+  }
+},
+{
+  "boss": "Hellion",
+  "helmet":
+  {
+    "id": "303001",
+    "name": "Hellcasque",
+    "cellslot": "Utility",
+    "bonus": [
+    {}]
+  },
+  "chestplate":
+  {
+    "id": "303002",
+    "name": "Hellplate",
+    "cellslot": "Utility",
+    "bonus": [
+    {}]
+  },
+  "gloves":
+  {
+    "id": "303003",
+    "name": "Hellbracers",
+    "cellslot": "Power",
+    "bonus": [
+    {}]
+  },
+  "greaves":
+  {
+    "id": "303004",
+    "name": "Hellgreaves",
+    "cellslot": "Power",
     "bonus": [
     {}]
   }
@@ -431,7 +431,7 @@
   "boss": "Stormclaw",
   "helmet":
   {
-    "id": "305001",
+    "id": "304001",
     "name": "Stormhelm",
     "cellslot": "Technique",
     "bonus": [
@@ -439,7 +439,7 @@
   },
   "chestplate":
   {
-    "id": "305002",
+    "id": "304002",
     "name": "Stormplate",
     "cellslot": "Mobility",
     "bonus": [
@@ -447,7 +447,7 @@
   },
   "gloves":
   {
-    "id": "305003",
+    "id": "304003",
     "name": "Stormbracers",
     "cellslot": "Mobility",
     "bonus": [
@@ -455,7 +455,7 @@
   },
   "greaves":
   {
-    "id": "305004",
+    "id": "304004",
     "name": "Stormboots",
     "cellslot": "Mobility",
     "bonus": [
@@ -466,7 +466,7 @@
   "boss": "Kharabak",
   "helmet":
   {
-    "id": "304001",
+    "id": "305001",
     "name": "Kharabak Helm",
     "cellslot": "Mobility",
     "bonus": [
@@ -474,7 +474,7 @@
   },
   "chestplate":
   {
-    "id": "304002",
+    "id": "305002",
     "name": "Kharabak Plate",
     "cellslot": "Mobility",
     "bonus": [
@@ -482,7 +482,7 @@
   },
   "gloves":
   {
-    "id": "304003",
+    "id": "305003",
     "name": "Kharabak Bracers",
     "cellslot": "Technique",
     "bonus": [
@@ -490,7 +490,7 @@
   },
   "greaves":
   {
-    "id": "304004",
+    "id": "305004",
     "name": "Kharabak Greaves",
     "cellslot": "Technique",
     "bonus": [

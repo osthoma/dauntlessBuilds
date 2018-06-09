@@ -22,7 +22,7 @@
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == weaponType %}
-          <option>{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -30,14 +30,14 @@
         <div>Lantern</div>
         <select class="form-control form-control-sm">
           {% for lantern in lanternData %}
-          <option>{{ lantern.name }}</option>
+          <option value="{{ lantern.id }}">{{ lantern.name }}</option>
           {% endfor %}
         </select>
         <div>Helmet</div>
         <select class="form-control form-control-sm">
           {% for boss in armorData %}
           {% if ('helmet' in boss) %}
-          <option>{{ boss.helmet.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.helmet.id }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -45,7 +45,7 @@
         <select class="form-control form-control-sm">
           {% for boss in armorData %}
           {% if ('chestplate' in boss) %}
-          <option>{{ boss.chestplate.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.chestplate.id }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -53,7 +53,7 @@
         <select class="form-control form-control-sm">
           {% for boss in armorData %}
           {% if ('gloves' in boss) %}
-          <option>{{ boss.gloves.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.gloves.id }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -61,7 +61,7 @@
         <select class="form-control form-control-sm">
           {% for boss in armorData %}
           {% if ('greaves' in boss) %}
-          <option>{{ boss.greaves.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.greaves.id }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
