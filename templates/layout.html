@@ -18,9 +18,15 @@
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="static/hashids.min.js"></script>
   <script>
+  var hashids = new Hashids();
+
   $(document).ready(function(){
     showSelectedWeapons('#Hammers');
+
+    updateUrl();
+    console.log("updated url");
   });
   function hideAllWeapons(){
     $('#Hammers').css('display', 'none');
@@ -33,6 +39,41 @@
   function showSelectedWeapons(type){
     hideAllWeapons();
     $(type).css('display', 'block')
+  }
+
+  function updateUrl(){
+    let selectedWeaponType = $( "#typeSelection option:selected" ).val();
+    console.log(selectedWeaponType);
+
+    let selectedWeapon;
+    if($( "#typeSelection option:selected" ).val() == '1'){
+      selectedWeapon = $( "#Hammers option:selected" ).val();
+    }
+    else if($( "#typeSelection option:selected" ).val() == '2'){
+      selectedWeapon = $( "#Axes option:selected" ).val();
+    }
+    else if($( "#typeSelection option:selected" ).val() == '3'){
+      selectedWeapon = $( "#Swords option:selected" ).val();
+    }
+    else if($( "#typeSelection option:selected" ).val() == '4'){
+      selectedWeapon = $( "#ChainBlades option:selected" ).val();
+    }
+    else{
+      selectedWeapon = $( "#WarPikes option:selected" ).val();
+    }
+console.log(selectedWeapon);
+    let selectedLantern = $( "#lanternSelection option:selected" ).val();
+    console.log(selectedLantern);
+    let selectedHelmet = $( "#helmetSelection option:selected" ).val();
+    console.log(selectedHelmet);
+    let selectedChestplate = $( "#chestplateSelection option:selected" ).val();
+    console.log(selectedChestplate);
+    let selectedGauntlets = $( "#gauntletsSelection option:selected" ).val();
+    console.log(selectedGauntlets);
+    let selectedGreaves = $( "#greavesSelection option:selected" ).val();
+    console.log(selectedGreaves);
+
+    console.log(hashids.encode(selectedWeaponType, selectedWeapon, selectedLantern, selectedHelmet, selectedChestplate, selectedGauntlets, selectedGreaves));
   }
 
   $( "#typeSelection" ).change(function() {
