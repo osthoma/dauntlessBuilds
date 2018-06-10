@@ -3,7 +3,7 @@
     "type": "Defence",
     "cells": [
     {
-      "id": "",
+      "id": "101",
       "name": "Assassin 's Vigor",
       "description": "Grants Health after breaking a Behemoth part.",
       "level01": "Heal 50 when you break a part",
@@ -14,7 +14,7 @@
       "level06": "Heal 300 when you break a part"
     },
     {
-      "id": "",
+      "id": "102",
       "name": "Bloodless",
       "description": "Protects against Wounded and Crippling Wounds statuses.",
       "level01": "Reduces duration of Wounded status by 50%",
@@ -25,7 +25,7 @@
       "level06": "Immune to Wounded status Immune to Crippling Wound status"
     },
     {
-      "id": "",
+      "id": "103",
       "name": "Fireproof",
       "description": "Protects against being set on fire.",
       "level01": "Reduces duration of On Fire status by 10%",
@@ -36,7 +36,7 @@
       "level06": "Immune to being set on fire."
     },
     {
-      "id": "",
+      "id": "104",
       "name": "Fortress",
       "description": "Grants a small shield after avoiding damage for a short time.",
       "level01": "Grants a 10 health shield after not getting hit for 10s",
@@ -47,7 +47,7 @@
       "level06": "Grants a 100 health shield after not getting hit for 10s"
     },
     {
-      "id": "",
+      "id": "105",
       "name": "Insulated",
       "description": "Protects against Shocked status effect and allows you to attack electric shields.",
       "level01": "Reduces duration of Shocked status by 25%",
@@ -58,7 +58,7 @@
       "level06": "Immune to Shocked status Prevents knockback and damage of hitting electrified shields."
     },
     {
-      "id": "",
+      "id": "106",
       "name": "Nine Lives",
       "description": "Grants a chance to reduce damage, and later the ability to cheat death.",
       "level01": "+5% chance to halve incoming damage",
@@ -69,7 +69,7 @@
       "level06": "+20% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400, and become empowered for 10 seconds"
     },
     {
-      "id": "",
+      "id": "107",
       "name": "Shellshock Resist",
       "description": "Protects against the explosion damage and status effect Shellshock.",
       "level01": "Reduces Shell Shocked explosion damage and status effect duration by 10%",
@@ -80,7 +80,7 @@
       "level06": "Immune to Shell Shocked explosion damage and status effect"
     },
     {
-      "id": "",
+      "id": "108",
       "name": "Sturdy",
       "description": "Prevents being staggered on a cooldown.",
       "level01": "Prevents you from being staggered (120 second cooldown)",
@@ -91,7 +91,7 @@
       "level06": "Prevents you from being staggered (15 second cooldown)"
     },
     {
-      "id": "",
+      "id": "109",
       "name": "Tough",
       "description": "Increases Max Health.",
       "level01": "Increases Max Health by 50",
@@ -102,7 +102,7 @@
       "level06": "Increases Max Health by 500"
     },
     {
-      "id": "",
+      "id": "110",
       "name": "Warmth",
       "description": "Protects against Chilled and Frozen status effects.",
       "level01": "Reduces duration of Frozen status by 30%",
@@ -117,7 +117,7 @@
     "type": "Mobility",
     "cells": [
     {
-      "id": "",
+      "id": "201",
       "name": "Agility",
       "description": "Reduces the stamina cost of dodging.",
       "level01": "",
@@ -128,7 +128,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "202",
       "name": "Conditioning",
       "description": "Increases Stamina Regen.",
       "level01": "",
@@ -139,7 +139,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "203",
       "name": "Endurance",
       "description": "Increases Max Stamina.",
       "level01": "",
@@ -150,7 +150,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "204",
       "name": "Evasion",
       "description": "Increases the time you are invincible when dodging.",
       "level01": "",
@@ -161,7 +161,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "205",
       "name": "Fleet Footed",
       "description": "Temporarily increases Movement Speed after a dodge.",
       "level01": "",
@@ -172,7 +172,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "206",
       "name": "Nimble",
       "description": "Restores Stamina when dodging through behemoth attacks.",
       "level01": "",
@@ -183,7 +183,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "207",
       "name": "Swift",
       "description": "Increases Movement Speed when your weapon is sheathed.",
       "level01": "",
@@ -199,7 +199,7 @@
     "type": "Power",
     "cells": [
     {
-      "id": "",
+      "id": "301",
       "name": "Aetherhunter",
       "description": "Increases damage against aether charged Behemoths.",
       "level01": "",
@@ -210,7 +210,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "302",
       "name": "Deconstruction",
       "description": "Bonus damage against objects created by Behemoths.",
       "level01": "",
@@ -221,7 +221,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "303",
       "name": "Knockout King",
       "description": "Percent increase to Stagger damage.",
       "level01": "",
@@ -232,7 +232,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "304",
       "name": "Overpower",
       "description": "Increases damage against staggered Behemoths.",
       "level01": "",
@@ -243,7 +243,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "305",
       "name": "Pacifier",
       "description": "Increases Stagger damage against enraged Behemoths.",
       "level01": "",
@@ -254,7 +254,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "306",
       "name": "Rage",
       "description": "Increases your damage when your health is low.",
       "level01": "",
@@ -265,7 +265,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "307",
       "name": "Ragehunter",
       "description": "Increases damage against enraged Behemoths.",
       "level01": "",
@@ -276,7 +276,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "308",
       "name": "Sharpened",
       "description": "Percent increase to part damage.",
       "level01": "",
@@ -292,7 +292,7 @@
     "type": "Technique",
     "cells": [
     {
-      "id": "",
+      "id": "401",
       "name": "Acidic",
       "description": "Increases Wound damage at the cost of Part damage.",
       "level01": "Converts 30% of Part Damage to Wound Damage",
@@ -303,7 +303,7 @@
       "level06": "Converts 50% of Part Damage to Wound Damage +20 % Part damage "
     },
     {
-      "id": "",
+      "id": "402",
       "name": "Barbed",
       "description": "Adds a flat amount of Wound damage on hit.",
       "level01": "",
@@ -314,7 +314,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "403",
       "name": "Bladestorm",
       "description": "Adds a flat amount of Part damage on hit.",
       "level01": "",
@@ -325,7 +325,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "404",
       "name": "Cunning",
       "description": "Grants a chance to deal double damage.",
       "level01": "",
@@ -336,7 +336,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "405",
       "name": "Evasive Fury",
       "description": "Temporarily increases attack speed when dodging through a Behemoth's attack.",
       "level01": "",
@@ -347,7 +347,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "406",
       "name": "Merciless",
       "description": "Increases Wound damage against staggered Behemoths.",
       "level01": "",
@@ -358,7 +358,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "407",
       "name": "Savagery",
       "description": "Increases damage against Wounded parts.",
       "level01": "",
@@ -369,7 +369,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "408",
       "name": "Wild Frenzy",
       "description": "Increases Attack Speed when at low health.",
       "level01": "",
@@ -380,7 +380,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "409",
       "name": "Weighted Strikes",
       "description": "Adds a flat amount of Stagger damage on hit. At later ranks, allows more weapon attacks to interrupt.",
       "level01": "",
@@ -396,7 +396,7 @@
     "type": "Utility",
     "cells": [
     {
-      "id": "",
+      "id": "501",
       "name": "Aetherborne",
       "description": "Increases the benefits of using aether vents.",
       "level01": "",
@@ -407,7 +407,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "502",
       "name": "Aetheric Attunement",
       "description": "Percent increase to Lantern Charge gained from attacks.",
       "level01": "",
@@ -418,7 +418,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "503",
       "name": "Aetheric Frenzy",
       "description": "Gains a flat amount of Lantern Charge on each weapon hit.",
       "level01": "",
@@ -429,7 +429,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "504",
       "name": "Energized",
       "description": "Increases weapon meter gain rate.",
       "level01": "",
@@ -440,7 +440,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "505",
       "name": "Medic",
       "description": "Improves your ability to revive allies.",
       "level01": "",
@@ -451,7 +451,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "506",
       "name": "Stunning Vigour",
       "description": "Restores some health whenever a Behemoth is staggered.",
       "level01": "",
@@ -462,7 +462,7 @@
       "level06": ""
     },
     {
-      "id": "",
+      "id": "507",
       "name": "Vampiric",
       "description": "Restores some health whenever a Behemoth part is Wounded.",
       "level01": "",

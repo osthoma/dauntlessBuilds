@@ -1,6 +1,20 @@
 {% extends 'layout.html' %}
 {% block body %}
+{% if buildString %}
+<script>
+var decodeUrl = true;
+var buildString = "{{ buildString }}";
+console.log("Site loaded with /b/" + buildString);
+</script>
+{% else %}
+<script>
+var decodeUrl = false;
+</script>
+{% endif %}
 <div class="container">
+  <div class="alert alert-danger" role="alert" id="wrongCodeWarning">
+    <strong>Cursed Behemoths!</strong> This link did not contain a valid build.
+  </div>
   <div class="jumbotron">
     <h1 class="display-4">Welcome, Slayer!</h1>
     <p class="lead">Create and share your custom Dauntless builds!</p>
@@ -10,7 +24,7 @@
         <div>Equipment</div>
         <div>Weapon</div>
         <select class="form-control form-control-sm" id="typeSelection">
-          <option value="1" selected>Hammers</option>
+          <option value="1">Hammers</option>
           <option value="2">Axes</option>
           <option value="3">Swords</option>
           <option value="4">Chain Blades</option>
@@ -20,7 +34,7 @@
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Hammers" %}
-          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -29,7 +43,7 @@
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Axes" %}
-          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -38,7 +52,7 @@
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Swords" %}
-          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -47,7 +61,7 @@
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Chain Blades" %}
-          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -56,7 +70,7 @@
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "War Pikes" %}
-          <option value="{{ item.id }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -64,14 +78,14 @@
         <div>Lantern</div>
         <select class="form-control form-control-sm" id="lanternSelection">
           {% for lantern in lanternData %}
-          <option value="{{ lantern.id }}">{{ lantern.name }}</option>
+          <option value="{{ lantern.id }}" data-cellslot="{{ lantern.cellslot }}">{{ lantern.name }}</option>
           {% endfor %}
         </select>
         <div>Helmet</div>
         <select class="form-control form-control-sm" id="helmetSelection">
           {% for boss in armorData %}
           {% if ('helmet' in boss) %}
-          <option value="{{ boss.helmet.id }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.helmet.id }}" data-cellslot="{{ boss.helmet.cellslot }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -79,7 +93,7 @@
         <select class="form-control form-control-sm" id="chestplateSelection">
           {% for boss in armorData %}
           {% if ('chestplate' in boss) %}
-          <option value="{{ boss.chestplate.id }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.chestplate.id }}" data-cellslot="{{ boss.chestplate.cellslot }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -87,7 +101,7 @@
         <select class="form-control form-control-sm" id="gauntletsSelection">
           {% for boss in armorData %}
           {% if ('gloves' in boss) %}
-          <option value="{{ boss.gloves.id }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.gloves.id }}" data-cellslot="{{ boss.gloves.cellslot }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -95,7 +109,7 @@
         <select class="form-control form-control-sm" id="greavesSelection">
           {% for boss in armorData %}
           {% if ('greaves' in boss) %}
-          <option value="{{ boss.greaves.id }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
+          <option value="{{ boss.greaves.id }}" data-cellslot="{{ boss.greaves.cellslot }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
           {% endif %}
           {% endfor %}
         </select>
@@ -104,70 +118,79 @@
         <div>Cells</div>
         <div>Weapon</div>
         <select class="form-control form-control-sm" id="weaponCellSelection01">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
+
         <select class="form-control form-control-sm" id="weaponCellSelection02">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
+
         <div>Lantern</div>
         <select class="form-control form-control-sm" id="lanternCellSelection">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
         <div>Helmet</div>
         <select class="form-control form-control-sm" id="helmetCellSelection">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
         <div>Chestplate</div>
         <select class="form-control form-control-sm" id="chestplateCellSelection">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
         <div>Gauntlets</div>
         <select class="form-control form-control-sm" id="gauntletsCellSelection">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
         <div>Greaves</div>
         <select class="form-control form-control-sm" id="greavesCellSelection">
+          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="">{{ cell.name }} +3</option>
-          <option value="">{{ cell.name }} +2</option>
-          <option value="">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>

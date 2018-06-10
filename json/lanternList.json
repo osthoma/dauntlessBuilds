@@ -1,41 +1,41 @@
 [
 {
-  "id": "001",
+  "id": "101",
   "name": "Recruit's Lantern",
   "cellslot": "None",
   "instant": "None",
   "hold": "Disperses aether that allows the Slayer to track the Behemoth."
 },
 {
-  "id": "002",
+  "id": "102",
   "name": "Drask's Fury",
   "cellslot": "Utility",
   "instant": "Deal 50% increased damage for 6 seconds.",
   "hold": "Fires a lightning bolt in a direction that deals 200 Shock damage multiple times as it passes through a Behemoth."
 },
 {
-  "id": "003",
+  "id": "103",
   "name": "Embermane's Rapture",
   "cellslot": "Utility",
   "instant": "Attack 30% faster for 8 seconds.",
   "hold": "Create a fire ball in front of you that explodes after 5 seconds, dealing 750 Blaze damage to all nearby Behemoths."
 },
 {
-  "id": "004",
+  "id": "104",
   "name": "Pangar's Resolve",
   "cellslot": "Utility",
   "instant": "Restore 25% of your maximum stamina.",
   "hold": "Create a frost pillar in front of you that deals 940 Frost damage to all nearby Behemoths over 12 seconds."
 },
 {
-  "id": "005",
+  "id": "105",
   "name": "Shrike's Zeal",
   "cellslot": "Utility",
   "instant": "Move 40% faster for 6 seconds.",
   "hold": "Creates an aura that grants nearby slayers 15% increased movespeed and attack speed for 15 seconds."
 },
 {
-  "id": "006",
+  "id": "106",
   "name": "Skarn's Defiance",
   "cellslot": "Utility",
   "instant": "Grants a 200 hit point shield for 4 seconds.",
