@@ -8,10 +8,8 @@
     "name": "",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "102",
@@ -19,10 +17,8 @@
     "name": "",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "103",
@@ -30,10 +26,8 @@
     "name": "Recruit's Hammer",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "104",
@@ -41,10 +35,8 @@
     "name": "Recruit's Sword",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "105",
@@ -52,10 +44,8 @@
     "name": "",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -67,10 +57,8 @@
     "name": "Gnashaxe",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10102",
@@ -78,10 +66,8 @@
     "name": "Gnashblades",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10103",
@@ -89,10 +75,8 @@
     "name": "Gnashmasher",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10104",
@@ -100,10 +84,8 @@
     "name": "Gnashsaber",
     "cellslot01": "Utility",
     "cellslot02": "Defence",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10105",
@@ -115,8 +97,7 @@
     {
       "Ragehunter": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   }]
 },
 {
@@ -128,10 +109,8 @@
     "name": "Shrike Axe",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10202",
@@ -139,10 +118,8 @@
     "name": "Shrikeblades",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10203",
@@ -150,10 +127,8 @@
     "name": "Shrikesmasher",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10204",
@@ -161,8 +136,7 @@
     "name": "Shrikesaber",
     "cellslot01": "Mobility",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special01": "+30 Part Damage on Next Hit After a Dodge"
@@ -174,10 +148,8 @@
     "name": "Shrike's Talon",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -189,10 +161,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10302",
@@ -200,10 +170,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10303",
@@ -211,10 +179,8 @@
     "name": "Quillhammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10304",
@@ -226,8 +192,7 @@
     {
       "Bladestorm": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "10305",
@@ -235,10 +200,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -250,10 +213,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10402",
@@ -261,10 +222,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10403",
@@ -272,10 +231,8 @@
     "name": "Skarnmaul",
     "cellslot01": "Defence",
     "cellslot02": "Defence",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "10404",
@@ -287,8 +244,7 @@
     {
       "Weighted Strikes": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "10405",
@@ -296,10 +252,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -310,10 +264,8 @@
     "type": "Axes",
     "name": "",
     "cellslot01": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20102",
@@ -321,10 +273,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20103",
@@ -332,10 +282,8 @@
     "name": "Charrhammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20104",
@@ -347,8 +295,7 @@
     {
       "Rage": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "20105",
@@ -356,10 +303,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -371,10 +316,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20202",
@@ -382,10 +325,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20203",
@@ -393,10 +334,8 @@
     "name": "Embermaul",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20204",
@@ -408,8 +347,7 @@
     {
       "Wild Frenzy": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "20205",
@@ -417,10 +355,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -432,10 +368,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20302",
@@ -443,10 +377,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20303",
@@ -454,10 +386,8 @@
     "name": "Skraevmaul",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20304",
@@ -465,8 +395,7 @@
     "name": "Skraevsaber",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special01": "The seventh hit in a row deals +200% Part damage"
@@ -479,10 +408,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -494,10 +421,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20402",
@@ -505,10 +430,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20403",
@@ -516,10 +439,8 @@
     "name": "Drasksmasher",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "20404",
@@ -527,8 +448,7 @@
     "name": "Draskrazor",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special": "120% Damage vs Behemoth Heads"
@@ -541,10 +461,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -556,10 +474,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30102",
@@ -567,10 +483,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30103",
@@ -578,10 +492,8 @@
     "name": "Zaga Maul",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30104",
@@ -589,8 +501,7 @@
     "name": "Zaga Sword",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special": "+5% Lifesteal vs Wounded parts"
@@ -603,10 +514,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -618,10 +527,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30202",
@@ -629,10 +536,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30203",
@@ -640,10 +545,8 @@
     "name": "Pangar's Roar",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30204",
@@ -655,8 +558,7 @@
     {
       "Aetherhunter": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "30205",
@@ -664,10 +566,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -679,10 +579,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30302",
@@ -690,10 +588,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30303",
@@ -701,10 +597,8 @@
     "name": "Hellcrusher",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30304",
@@ -716,8 +610,7 @@
     {
       "Overpower": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "30305",
@@ -725,10 +618,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -740,10 +631,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30402",
@@ -751,10 +640,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30403",
@@ -762,10 +649,8 @@
     "name": "Stormhammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30404",
@@ -773,8 +658,7 @@
     "name": "Storm Katana",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special": "After dodging through an attack, the next weapon attack has 200% meter gain"
@@ -786,10 +670,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -801,10 +683,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30502",
@@ -812,10 +692,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30503",
@@ -823,10 +701,8 @@
     "name": "Kharabasher",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "30504",
@@ -838,8 +714,7 @@
     {
       "Bladestorm": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "30505",
@@ -847,14 +722,12 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
-  "name": "Ragetail",
+  "name": "Ragetail Gnasher",
   "items": [
   {
     "id": "40101",
@@ -862,10 +735,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40102",
@@ -873,10 +744,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40103",
@@ -884,10 +753,8 @@
     "name": "Ragehammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40104",
@@ -900,8 +767,7 @@
       "Ragehunter": 2,
       "Rage": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "40105",
@@ -909,10 +775,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -924,10 +788,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40201",
@@ -935,10 +797,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40201",
@@ -946,10 +806,8 @@
     "name": "Firemace",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40201",
@@ -962,8 +820,7 @@
       "Rage": 2,
       "Aetherhunter": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "40201",
@@ -971,10 +828,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -986,10 +841,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40302",
@@ -997,10 +850,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40303",
@@ -1008,10 +859,8 @@
     "name": "Shockjaw Smasher",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40304",
@@ -1035,10 +884,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1050,10 +897,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40402",
@@ -1061,10 +906,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40403",
@@ -1072,10 +915,8 @@
     "name": "Razorwing Hammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40404",
@@ -1100,10 +941,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1115,10 +954,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40502",
@@ -1126,10 +963,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40503",
@@ -1137,10 +972,8 @@
     "name": "Frostmaul",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40504",
@@ -1153,8 +986,7 @@
       "Aetherhunter": 2,
       "Knockout King": 2
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "40505",
@@ -1162,10 +994,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1177,10 +1007,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40602",
@@ -1188,10 +1016,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40603",
@@ -1199,10 +1025,8 @@
     "name": "Deadeye Hammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40604",
@@ -1210,10 +1034,8 @@
     "name": "Deadeye Ripper",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40605",
@@ -1221,10 +1043,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1236,10 +1056,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40702",
@@ -1247,10 +1065,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40703",
@@ -1258,10 +1074,8 @@
     "name": "Bloodfire Hammer",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40704",
@@ -1269,10 +1083,8 @@
     "name": "Bloodfire Saber",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40705",
@@ -1280,10 +1092,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1295,10 +1105,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40802",
@@ -1306,10 +1114,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40803",
@@ -1317,10 +1123,8 @@
     "name": "Rezacrusher",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40804",
@@ -1328,8 +1132,7 @@
     "name": "Rezakatana",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special01": "The seventh hit in a row deals +200% Part damage",
@@ -1343,10 +1146,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1358,10 +1159,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40902",
@@ -1369,10 +1168,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40903",
@@ -1380,10 +1177,8 @@
     "name": "Shrowdmaul",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "40904",
@@ -1395,8 +1190,7 @@
     {
       "Cunning": 3
     },
-    "specials":
-    {}
+    "specials": "none"
   },
   {
     "id": "40905",
@@ -1404,10 +1198,8 @@
     "name": "",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   }]
 },
 {
@@ -1419,10 +1211,8 @@
     "name": "The Godhand",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
-    "specials":
-    {}
+    "bonuses": "none",
+    "specials": "none"
   },
   {
     "id": "90201",
@@ -1430,8 +1220,7 @@
     "name": "The Hunger",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses":
-    {},
+    "bonuses": "none",
     "specials":
     {
       "special": "Deal up to 25% increased damage as your meter increases. Activate at max meter to enter Feast, dealing 75% increased damage for 15 seconds, but taking damage after each hit. Activate again during Feast to unleash an Umbral attack that can regain lost health."

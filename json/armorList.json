@@ -38,40 +38,40 @@
     "id": "10101",
     "name": "Gnasher Touque",
     "cellslot": "Utility",
-    "bonus": [
+    "bonuses":
     {
-      "Tough": "1"
-    }]
+      "Tough": 1
+    }
   },
   "chestplate":
   {
     "id": "10102",
     "name": "Gnasher Cloak",
     "cellslot": "Defence",
-    "bonus": [
+    "bonuses":
     {
-      "Tough": "1"
-    }]
+      "Tough": 1
+    }
   },
   "gloves":
   {
     "id": "10103",
     "name": "Gnasher Gloves",
     "cellslot": "Defence",
-    "bonus": [
+    "bonuses":
     {
-      "Ragehunter": "1"
-    }]
+      "Ragehunter": 1
+    }
   },
   "greaves":
   {
     "id": "10104",
     "name": "Gnasher Boots",
     "cellslot": "Utility",
-    "bonus": [
+    "bonuses":
     {
-      "Ragehunter": "1"
-    }]
+      "Ragehunter": 1
+    }
   }
 },
 {

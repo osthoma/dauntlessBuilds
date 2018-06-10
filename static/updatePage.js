@@ -1,7 +1,6 @@
 let hashids = new Hashids("dauntlessBuilds");
 
 $(document).ready(function(){
-
   $('#wrongCodeWarning').css('display', 'none');
 
   hideAllCells();
@@ -271,9 +270,494 @@ function updateEverything(){
   updateGreavesCells();
 }
 
-
 function updateStats(){
-  let stats = {};
+  let stats = [];
+
+  if($( "#typeSelection option:selected" ).val() == '1'){
+    $('#Hammers option:selected').each(function(){
+      if($(this).data("bonuses")){
+        let bonusString = $(this).data("bonuses");
+        if(bonusString == undefined || bonusString == "none"){
+          return false;
+        }
+        bonusString = bonusString.replace(/'/g, "\"");
+        let bonuses = JSON.parse(bonusString);
+        let keys = Object.keys(bonuses);
+        console.log("keys: " + keys + " bonuses: " + bonuses);
+        for (let key in bonuses){
+          if (key in stats){
+            console.log("exists in stats, prev value: " + stats[key]);
+            stats[key] += bonuses[key];
+            console.log("value after: " + stats[key]);
+          } else {
+            console.log("does not exist in stats, value: " + bonuses[key]);
+            stats[key] = bonuses[key];
+            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+          }
+        }
+      }
+    })
+  }
+  if($( "#typeSelection option:selected" ).val() == '2'){
+    $('#Axes option:selected').each(function(){
+      if($(this).data("bonuses")){
+        let bonusString = $(this).data("bonuses");
+        if(bonusString == undefined || bonusString == "none"){
+          console.log($(this) + " returned false");
+          return false;
+        }
+        console.log(bonusString);
+        bonusString = bonusString.replace(/'/g, "\"");
+        console.log(bonusString);
+        let bonuses = JSON.parse(bonusString);
+        console.log(bonuses);
+        let keys = Object.keys(bonuses);
+        console.log("keys: " + keys + " bonuses: " + bonuses);
+        for(let key in bonuses){
+          if(stats.hasOwnProperty(key)){
+            console.log("exists in stats, prev value: " + stats[key]);
+            stats[key] += bonuses[key];
+            console.log("value after: " + stats[key]);
+          } else {
+            console.log("does not exist in stats, value: " + bonuses[key]);
+            stats[key] = bonuses[key];
+            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+          }
+        }
+      }
+    })
+  }
+  if($( "#typeSelection option:selected" ).val() == '3'){
+    $('#Swords option:selected').each(function(){
+      if($(this).data("bonuses")){
+        let bonusString = $(this).data("bonuses");
+        if(bonusString == undefined || bonusString == "none"){
+          console.log($(this) + " returned false");
+          return false;
+        }
+        console.log(bonusString);
+        bonusString = bonusString.replace(/'/g, "\"");
+        console.log(bonusString);
+        let bonuses = JSON.parse(bonusString);
+        console.log(bonuses);
+        let keys = Object.keys(bonuses);
+        console.log("keys: " + keys + " bonuses: " + bonuses);
+        console.log(bonuses);
+        for(let key in bonuses){
+          if(stats.hasOwnProperty(key)){
+            console.log(stats.hasOwnProperty(key) + " in stats, prev value: " + stats[key]);
+            stats[key] += bonuses[key];
+            console.log("value after: " + stats[key]);
+          } else {
+            console.log(stats.hasOwnProperty(key) + " in stats, value: " + bonuses[key]);
+            stats[key] = bonuses[key];
+            console.log("stats[key]: " + key + " = " + bonuses[key]);
+          }
+        }
+      }
+    })
+  }
+  if($( "#typeSelection option:selected" ).val() == '4'){
+    $('#ChainBlades option:selected').each(function(){
+      if($(this).data("bonuses")){
+        let bonusString = $(this).data("bonuses");
+        if(bonusString == undefined || bonusString == "none"){
+          console.log($(this) + " returned false");
+          return false;
+        }
+        console.log(bonusString);
+        bonusString = bonusString.replace(/'/g, "\"");
+        console.log(bonusString);
+        let bonuses = JSON.parse(bonusString);
+        console.log(bonuses);
+        let keys = Object.keys(bonuses);
+        console.log("keys: " + keys + " bonuses: " + bonuses);
+        for(let key in bonuses){
+          if(stats.hasOwnProperty(key)){
+            console.log("exists in stats, prev value: " + stats[key]);
+            stats[key] += bonuses[key];
+            console.log("value after: " + stats[key]);
+          } else {
+            console.log("does not exist in stats, value: " + bonuses[key]);
+            stats[key] = bonuses[key];
+            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+          }
+        }
+      }
+    })
+  }
+  if($( "#typeSelection option:selected" ).val() == '5'){
+    $('#WarPikes option:selected').each(function(){
+      if($(this).data("bonuses")){
+        let bonusString = $(this).data("bonuses");
+        if(bonusString == undefined || bonusString == "none"){
+          console.log($(this) + " returned false");
+          return false;
+        }
+        console.log(bonusString);
+        bonusString = bonusString.replace(/'/g, "\"");
+        console.log(bonusString);
+        let bonuses = JSON.parse(bonusString);
+        console.log(bonuses);
+        let keys = Object.keys(bonuses);
+        console.log("keys: " + keys + " bonuses: " + bonuses);
+        for(let key in bonuses){
+          console.log("key: " + key);
+          if(stats.hasOwnProperty(key)){
+            console.log("exists in stats, prev value: " + stats[key]);
+            stats[key] += bonuses[key];
+            console.log("value after: " + stats[key]);
+          } else {
+            console.log("does not exist in stats, value: " + bonuses[key]);
+            stats[key] = bonuses[key];
+            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+          }
+        }
+      }
+    })
+  }
+  $('#lanternSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#helmetSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#chestplateSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#gauntletsSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#greavesSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#weaponCellSelection01 option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+  $('#weaponCellSelection02 option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#lanternCellSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#helmetCellSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+  $('#chestplateCellSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+  $('#gauntletsCellSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+  $('#greavesCellSelection option:selected').each(function(){
+    if($(this).data("bonuses")){
+      let bonusString = $(this).data("bonuses");
+      if(bonusString == undefined || bonusString == "none"){
+        console.log($(this) + " returned false");
+        return false;
+      }
+      console.log(bonusString);
+      bonusString = bonusString.replace(/'/g, "\"");
+      console.log(bonusString);
+      let bonuses = JSON.parse(bonusString);
+      console.log(bonuses);
+      let keys = Object.keys(bonuses);
+      console.log(keys);
+      for(let key in bonuses){
+        if(stats.hasOwnProperty(key)){
+          console.log("exists in stats, prev value: " + stats[key]);
+          stats[key] += bonuses[key];
+          console.log("value after: " + stats[key]);
+        } else {
+          console.log("does not exist in stats, value: " + bonuses[key]);
+          stats[key] = bonuses[key];
+          console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+        }
+      }
+    }
+  })
+
+
+  $('#stats').empty();
+  for (const [key, value] of Object.entries(stats)) {
+    $('#stats').append('<button type="button" class="btn btn-secondary btn-block infusion" data-toggle="tooltip" data-placement="bottom" title="Tooltip">' + key + " +" + value + '</button>');
+    console.log(key, value);
+  }
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 }
 
 
@@ -500,7 +984,7 @@ $( "#helmetCellSelection" ).change(function() {
   updateStats();
 })
 
-$( "#chestPlateCellSelection" ).change(function() {
+$( "#chestplateCellSelection" ).change(function() {
   updateUrl();
   updateStats();
 })
