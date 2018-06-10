@@ -14,24 +14,21 @@
     "id": "102",
     "name": "Recruit's Breastplate",
     "cellslot": "None",
-    "bonus": [
-    {}]
+    "bonus": []
   },
   "gloves":
   {
     "id": "103",
     "name": "Recruit's Gloves",
     "cellslot": "None",
-    "bonus": [
-    {}]
+    "bonus": []
   },
   "greaves":
   {
     "id": "104",
     "name": "Recruit's Greaves",
     "cellslot": "None",
-    "bonus": [
-    {}]
+    "bonus": []
   }
 },
 {

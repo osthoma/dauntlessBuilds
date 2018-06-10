@@ -34,7 +34,9 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Hammers" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}"
+          {% if item.bonus|length > 0 %} data-bonuses='[{% for i in range(0, item.bonus|length): %}"{{ item.bonus[i] }}",{% endfor %}"]'{% endif %}
+          >{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -43,7 +45,9 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Axes" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}"
+          {% if item.bonus|length > 0 %} data-bonuses='[{% for i in range(0, item.bonus|length): %}"{{ item.bonus[i] }}",{% endfor %}"]'{% endif %}
+          >{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -52,7 +56,9 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Swords" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}"
+          {% if item.bonus|length > 0 %} data-bonuses='[{% for i in range(0, item.bonus|length): %}"{{ item.bonus[i] }}",{% endfor %}"]'{% endif %}
+          >{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -61,7 +67,9 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Chain Blades" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}"
+          {% if item.bonus|length > 0 %} data-bonuses='[{% for i in range(0, item.bonus|length): %}"{{ item.bonus[i] }}",{% endfor %}"]'{% endif %}
+          >{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -70,7 +78,9 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "War Pikes" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}"
+          {% if item.bonus|length > 0 %} data-bonuses='[{% for i in range(0, item.bonus|length): %}"{{ item.bonus[i] }}",{% endfor %}"]'{% endif %}
+          >{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -121,9 +131,9 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
@@ -132,9 +142,9 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
@@ -144,9 +154,9 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
@@ -155,9 +165,9 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
@@ -166,9 +176,9 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
@@ -177,9 +187,9 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
@@ -188,21 +198,23 @@ var decodeUrl = false;
           <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
           {% for category in cellData %}
           {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1">{{ cell.name }} +1</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="['{{ cell.name }}': '3']">{{ cell.name }} +3</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="['{{ cell.name }}': '2']">{{ cell.name }} +2</option>
+          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="['{{ cell.name }}': '1']">{{ cell.name }} +1</option>
           {% endfor %}
           {% endfor %}
         </select>
       </div>
       <div class = "col-6">
         <p>Total Bonuses</p>
+        <ul id="stats">
+        </ul>
       </div>
     </div>
   </div>
-  <div class="input-group input-group-lg">
+  <div class="input-group">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-lg">Link to your build:</span>
+      <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
     </div>
     <input type="text" class="form-control" value="http://dauntlessbuilds.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
   </div>

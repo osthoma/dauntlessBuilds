@@ -1,4 +1,4 @@
-var hashids = new Hashids("dauntlessBuilds");
+let hashids = new Hashids("dauntlessBuilds");
 
 $(document).ready(function(){
 
@@ -7,7 +7,7 @@ $(document).ready(function(){
   hideAllCells();
 
   if (decodeUrl == true){
-    var selectedItems = hashids.decode(buildString);
+    let selectedItems = hashids.decode(buildString);
 
     if (selectedItems.length > 0){
 
@@ -94,18 +94,16 @@ $(document).ready(function(){
 
       $('#greavesCellSelection').val(selectedItems[19]);
       $('#greavesCellSelectionLevel').val(selectedItems[20]);
-
-      updateUrl();
     } else {
       $('#wrongCodeWarning').css('display', 'block');
       showSelectedWeapons('#Hammers');
-      updateUrl();
     }
   }
   else {
     showSelectedWeapons('#Hammers');
-    updateUrl();
   }
+  updateUrl();
+  updateStats();
 });
 
 function hideAllWeapons(){
@@ -273,6 +271,12 @@ function updateEverything(){
   updateGreavesCells();
 }
 
+
+function updateStats(){
+  let stats = {};
+}
+
+
 function showSelectedWeapons(type){
   hideAllWeapons();
   $(type).css('display', 'block')
@@ -403,6 +407,7 @@ $( "#typeSelection" ).change(function() {
     showSelectedWeapons('#WarPikes');
   }
   updateUrl();
+  updateStats();
 }
 );
 
@@ -410,85 +415,102 @@ $( "#Hammers" ).change(function() {
   updateHammerCells();
   selectEmptyWeaponCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#Axes" ).change(function() {
   updateAxeCells();
   selectEmptyWeaponCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#Swords" ).change(function() {
   updateSwordCells();
   selectEmptyWeaponCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#ChainBlades" ).change(function() {
   updateChainBladeCells();
   selectEmptyWeaponCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#WarPikes" ).change(function() {
   updateWarPikeCells();
   selectEmptyWeaponCells();
   updateUrl();
+  updateStats();
 });
 
 
 $( "#lanternSelection" ).change(function() {
   updateLanternCells();
   updateUrl();
+  updateStats();
 });
 
 
 $( "#helmetSelection" ).change(function() {
   updateHelmetCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#chestplateSelection" ).change(function() {
   updateChestplateCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#gauntletsSelection" ).change(function() {
   updateGauntletsCells();
   updateUrl();
+  updateStats();
 });
 
 $( "#greavesSelection" ).change(function() {
   updateGreavesCells();
   updateUrl();
+  updateStats();
 })
 
 
 
 $( "#weaponCellSelection01" ).change(function() {
   updateUrl();
+  updateStats();
 })
 
 $( "#weaponCellSelection02" ).change(function() {
   updateUrl();
+  updateStats();
 })
 
 $( "#lanternCellSelection" ).change(function() {
   updateUrl();
+  updateStats();
 })
 
 $( "#helmetCellSelection" ).change(function() {
   updateUrl();
+  updateStats();
 })
 
 $( "#chestPlateCellSelection" ).change(function() {
   updateUrl();
+  updateStats();
 })
 
 $( "#gauntletsCellSelection" ).change(function() {
   updateUrl();
+  updateStats();
 })
 
 $( "#greavesCellSelection" ).change(function() {
   updateUrl();
+  updateStats();
 });
