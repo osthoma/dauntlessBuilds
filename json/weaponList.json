@@ -5,7 +5,7 @@
   {
     "id": "101",
     "type": "Axes",
-    "name": "",
+    "name": "Recruit`s Axe",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "none",
@@ -14,7 +14,7 @@
   {
     "id": "102",
     "type": "Chain Blades",
-    "name": "",
+    "name": "Recruit`s Chain Blades",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "none",
@@ -23,7 +23,7 @@
   {
     "id": "103",
     "type": "Hammers",
-    "name": "Recruit's Hammer",
+    "name": "Recruit`s Hammer",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "none",
@@ -32,7 +32,7 @@
   {
     "id": "104",
     "type": "Swords",
-    "name": "Recruit's Sword",
+    "name": "Recruit`s Sword",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "none",
@@ -41,7 +41,7 @@
   {
     "id": "105",
     "type": "War Pikes",
-    "name": "",
+    "name": "Recruit`s War Pike",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "none",
@@ -725,8 +725,8 @@
     "id": "30301",
     "type": "Axes",
     "name": "Hellcutter",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Power",
     "bonuses":
     {
       "Overpower": 2
@@ -789,8 +789,8 @@
     "id": "30401",
     "type": "Axes",
     "name": "Stormcutter",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
     "specials":
     {
@@ -837,8 +837,8 @@
     "id": "30405",
     "type": "War Pikes",
     "name": "Stormpike",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses": "none",
     "specials":
     {
@@ -877,8 +877,8 @@
     "id": "30503",
     "type": "Hammers",
     "name": "Kharabasher",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Technique",
     "bonuses": "none",
     "specials":
     {
@@ -901,8 +901,8 @@
     "id": "30505",
     "type": "War Pikes",
     "name": "Kharabak`s Sting",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses":
     {
       "Bladestorm": 2
@@ -986,8 +986,8 @@
     "id": "40201",
     "type": "Axes",
     "name": "Firecutter",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
     "bonuses":
     {
       "Rage": 2,
@@ -999,8 +999,8 @@
     "id": "40201",
     "type": "Chain Blades",
     "name": "Fireblades",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
     "bonuses":
     {
       "Rage": 2,
@@ -1229,8 +1229,8 @@
     "id": "40503",
     "type": "Hammers",
     "name": "Frostmaul",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
     "bonuses":
     {
       "Aetherhunter": 2,
@@ -1255,8 +1255,8 @@
     "id": "40505",
     "type": "War Pikes",
     "name": "Frostpike",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
     "bonuses":
     {
       "Aetherhunter": 2,
@@ -1272,45 +1272,65 @@
     "id": "40601",
     "type": "Axes",
     "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Savagery": 2,
+      "Acidic": 2
+    },
     "specials": "none"
   },
   {
     "id": "40602",
     "type": "Chain Blades",
     "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Barbed": 2,
+      "Acidic": 2
+    },
     "specials": "none"
   },
   {
     "id": "40603",
     "type": "Hammers",
     "name": "Deadeye Hammer",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Savagery": 2,
+      "Acidic": 2
+    },
     "specials": "none"
   },
   {
     "id": "40604",
     "type": "Swords",
     "name": "Deadeye Ripper",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Barbed": 2,
+      "Acidic": 2
+    },
     "specials": "none"
   },
   {
     "id": "40605",
     "type": "War Pikes",
     "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Barbed": 2,
+      "Acidic": 2
+    },
     "specials": "none"
   }]
 },
@@ -1321,46 +1341,72 @@
     "id": "40701",
     "type": "Axes",
     "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Wild Frenzy": 2
+    },
+    "specials":
+    {
+      "special01": "The fourth hit in quick succession deals 150-250 bonus damage"
+    }
   },
   {
     "id": "40702",
     "type": "Chain Blades",
     "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 2
+    },
+    "specials":
+    {
+      "special01": "The tenth hit in quick succession deals 150 bonus damage"
+    }
   },
   {
     "id": "40703",
     "type": "Hammers",
     "name": "Bloodfire Hammer",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "+25% attack speed after landing a Hammer Blast",
+      "special02": "The fifth hit in a row deals +100~150% Stagger damage"
+    }
   },
   {
     "id": "40704",
     "type": "Swords",
     "name": "Bloodfire Saber",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Wild Frenzy": 1
+    },
+    "specials":
+    {
+      "special01": "The seventh hit in a row deals +200-450% Part damage"
+    }
   },
   {
     "id": "40705",
     "type": "War Pikes",
     "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "+30% Attack Speed after hitting with a Special Attack missile",
+      "special02": "The seventh hit in a row deals +200-300 Wound damage"
+    }
   }]
 },
 {
@@ -1373,7 +1419,11 @@
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "The fourth hit in quick succession deals 150 bonus damage",
+      "special02": "10% chance for attacks to Hit twice"
+    }
   },
   {
     "id": "40802",
@@ -1385,17 +1435,21 @@
     "specials":
     {
       "special01": "10% chance for attacks to Hit twice",
-      "special02 ": "The tenth hit in a row deals 150 bonus damage."
+      "special02 ": "The tenth hit in quick succession deals 150 bonus damage"
     }
   },
   {
     "id": "40803",
     "type": "Hammers",
     "name": "Rezacrusher",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "The fifth hit in a row deals +100% Stagger damage",
+      "special02": "10% chance for attacks to Hit twice"
+    }
   },
   {
     "id": "40804",
@@ -1418,7 +1472,11 @@
     "cellslot01": "Technique",
     "cellslot02": "Power",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "The seventh hit in a row deals +200 Wound damage",
+      "special02": "10% chance for attacks to Hit twice"
+    }
   }]
 },
 {
@@ -1458,10 +1516,16 @@
     "id": "40903",
     "type": "Hammers",
     "name": "Shrowdmaul",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Cunning": 3
+    },
+    "specials":
+    {
+      "special": "When under 20% health, deal 150% damage"
+    }
   },
   {
     "id": "40904",
@@ -1482,10 +1546,16 @@
     "id": "40905",
     "type": "War Pikes",
     "name": "Shrowd Pike",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Technique",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Cunning": 3
+    },
+    "specials":
+    {
+      "special": "When under 20% health, deal 150% damage"
+    }
   }]
 },
 {

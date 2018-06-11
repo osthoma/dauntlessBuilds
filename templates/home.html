@@ -21,201 +21,198 @@ var decodeUrl = false;
     <strong>Cursed Behemoths!</strong> This link did not contain a valid build.
   </div>
 
-  <div class="bs-docs-section">
-    <h1>Welcome, Slayer!</h1>
-    <p class="lead">Create and share your custom Dauntless builds!</p>
-    <hr class="my-4">
-    <div class="row" style="margin-bottom: 2rem;">
-      <div class="col-3">
-        <div>Equipment</div>
-        <div>Weapon</div>
-        <select class="form-control form-control-sm" id="typeSelection">
-          <option value="1">Hammers</option>
-          <option value="2">Axes</option>
-          <option value="3">Swords</option>
-          <option value="4">Chain Blades</option>
-          <option value="5">War Pikes</option>
-        </select>
-        <select class="form-control form-control-sm" id="Hammers">
-          {% for weapon in weaponData %}
-          {% for item in weapon['items'] %}
-          {% if item.type == "Hammers" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <select class="form-control form-control-sm" id="Axes">
-          {% for weapon in weaponData %}
-          {% for item in weapon['items'] %}
-          {% if item.type == "Axes" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <select class="form-control form-control-sm" id="Swords">
-          {% for weapon in weaponData %}
-          {% for item in weapon['items'] %}
-          {% if item.type == "Swords" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <select class="form-control form-control-sm" id="ChainBlades">
-          {% for weapon in weaponData %}
-          {% for item in weapon['items'] %}
-          {% if item.type == "Chain Blades" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <select class="form-control form-control-sm" id="WarPikes">
-          {% for weapon in weaponData %}
-          {% for item in weapon['items'] %}
-          {% if item.type == "War Pikes" %}
-          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <div>Lantern</div>
-        <select class="form-control form-control-sm" id="lanternSelection">
-          {% for lantern in lanternData %}
-          <option value="{{ lantern.id }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}">{{ lantern.name }}</option>
-          {% endfor %}
-        </select>
-        <div>Helmet</div>
-        <select class="form-control form-control-sm" id="helmetSelection">
-          {% for boss in armorData %}
-          {% if ('helmet' in boss) %}
-          <option value="{{ boss.helmet.id }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
-          {% endif %}
-          {% endfor %}
-        </select>
-        <div>Chestplate</div>
-        <select class="form-control form-control-sm" id="chestplateSelection">
-          {% for boss in armorData %}
-          {% if ('chestplate' in boss) %}
-          <option value="{{ boss.chestplate.id }}" data-cellslot="{{ boss.chestplate.cellslot }}" data-bonuses="{{ boss.chestplate.bonuses }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
-          {% endif %}
-          {% endfor %}
-        </select>
-        <div>Gauntlets</div>
-        <select class="form-control form-control-sm" id="gauntletsSelection">
-          {% for boss in armorData %}
-          {% if ('gloves' in boss) %}
-          <option value="{{ boss.gloves.id }}" data-cellslot="{{ boss.gloves.cellslot }}" data-bonuses="{{ boss.gloves.bonuses }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
-          {% endif %}
-          {% endfor %}
-        </select>
-        <div>Greaves</div>
-        <select class="form-control form-control-sm" id="greavesSelection">
-          {% for boss in armorData %}
-          {% if ('greaves' in boss) %}
-          <option value="{{ boss.greaves.id }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
-          {% endif %}
-          {% endfor %}
-        </select>
-      </div>
-      <div class = "col-3">
-        <div>Cells</div>
-        <div>Weapon</div>
-        <select class="form-control form-control-sm" id="weaponCellSelection01">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
+  <h1>Welcome, Slayer!</h1>
+  <p class="lead">Create and share your custom Dauntless builds!</p>
+  <hr class="my-4">
+  <div class="row" style="margin-bottom: 2rem;">
+    <div class="col-3">
+      <div>Equipment</div>
+      <div>Weapon</div>
+      <select class="form-control form-control-sm" id="typeSelection">
+        <option value="1">Hammers</option>
+        <option value="2">Axes</option>
+        <option value="3">Swords</option>
+        <option value="4">Chain Blades</option>
+        <option value="5">War Pikes</option>
+      </select>
+      <select class="form-control form-control-sm" id="Hammers">
+        {% for weapon in weaponData %}
+        {% for item in weapon['items'] %}
+        {% if item.type == "Hammers" %}
+        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <select class="form-control form-control-sm" id="Axes">
+        {% for weapon in weaponData %}
+        {% for item in weapon['items'] %}
+        {% if item.type == "Axes" %}
+        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <select class="form-control form-control-sm" id="Swords">
+        {% for weapon in weaponData %}
+        {% for item in weapon['items'] %}
+        {% if item.type == "Swords" %}
+        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <select class="form-control form-control-sm" id="ChainBlades">
+        {% for weapon in weaponData %}
+        {% for item in weapon['items'] %}
+        {% if item.type == "Chain Blades" %}
+        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <select class="form-control form-control-sm" id="WarPikes">
+        {% for weapon in weaponData %}
+        {% for item in weapon['items'] %}
+        {% if item.type == "War Pikes" %}
+        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <div>Lantern</div>
+      <select class="form-control form-control-sm" id="lanternSelection">
+        {% for lantern in lanternData %}
+        <option value="{{ lantern.id }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}">{{ lantern.name }}</option>
+        {% endfor %}
+      </select>
+      <div>Helmet</div>
+      <select class="form-control form-control-sm" id="helmetSelection">
+        {% for boss in armorData %}
+        {% if ('helmet' in boss) %}
+        <option value="{{ boss.helmet.id }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
+        {% endif %}
+        {% endfor %}
+      </select>
+      <div>Chestplate</div>
+      <select class="form-control form-control-sm" id="chestplateSelection">
+        {% for boss in armorData %}
+        {% if ('chestplate' in boss) %}
+        <option value="{{ boss.chestplate.id }}" data-cellslot="{{ boss.chestplate.cellslot }}" data-bonuses="{{ boss.chestplate.bonuses }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
+        {% endif %}
+        {% endfor %}
+      </select>
+      <div>Gauntlets</div>
+      <select class="form-control form-control-sm" id="gauntletsSelection">
+        {% for boss in armorData %}
+        {% if ('gloves' in boss) %}
+        <option value="{{ boss.gloves.id }}" data-cellslot="{{ boss.gloves.cellslot }}" data-bonuses="{{ boss.gloves.bonuses }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
+        {% endif %}
+        {% endfor %}
+      </select>
+      <div>Greaves</div>
+      <select class="form-control form-control-sm" id="greavesSelection">
+        {% for boss in armorData %}
+        {% if ('greaves' in boss) %}
+        <option value="{{ boss.greaves.id }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
+        {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+    <div class = "col-3">
+      <div>Cells</div>
+      <div>Weapon</div>
+      <select class="form-control form-control-sm" id="weaponCellSelection01">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
 
-        <select class="form-control form-control-sm" id="weaponCellSelection02">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
+      <select class="form-control form-control-sm" id="weaponCellSelection02">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
 
-        <div>Lantern</div>
-        <select class="form-control form-control-sm" id="lanternCellSelection">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <div>Helmet</div>
-        <select class="form-control form-control-sm" id="helmetCellSelection">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <div>Chestplate</div>
-        <select class="form-control form-control-sm" id="chestplateCellSelection">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <div>Gauntlets</div>
-        <select class="form-control form-control-sm" id="gauntletsCellSelection">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
-        <div>Greaves</div>
-        <select class="form-control form-control-sm" id="greavesCellSelection">
-          <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
-          {% for category in cellData %}
-          {% for cell in category.cells %}
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
-          <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
-          {% endfor %}
-          {% endfor %}
-        </select>
-      </div>
-      <div class = "col-6">
-        <p>Total Bonuses</p>
-        <div id="stats">
-        </div>
+      <div>Lantern</div>
+      <select class="form-control form-control-sm" id="lanternCellSelection">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <div>Helmet</div>
+      <select class="form-control form-control-sm" id="helmetCellSelection">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <div>Chestplate</div>
+      <select class="form-control form-control-sm" id="chestplateCellSelection">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <div>Gauntlets</div>
+      <select class="form-control form-control-sm" id="gauntletsCellSelection">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
+      <div>Greaves</div>
+      <select class="form-control form-control-sm" id="greavesCellSelection">
+        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        {% for category in cellData %}
+        {% for cell in category.cells %}
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }} +2</option>
+        <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }} +1</option>
+        {% endfor %}
+        {% endfor %}
+      </select>
+    </div>
+    <div class = "col-6">
+      <p>Total Bonuses</p>
+      <div id="stats">
       </div>
     </div>
+
   </div>
-  <div class="form-group">
     <div class="input-group">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
       </div>
       <input type="text" class="form-control" value="http://fresh2k.pythonanywhere.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
     </div>
-  </div>
 </div>
 
 
