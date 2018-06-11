@@ -120,7 +120,6 @@ function hideAllWeapons(){
 
 function hideAllCells(){
   $('[data-category]').css('display', 'none');
-  $('[data-category="Empty"]').css('display', 'block');
 }
 
 function updateHammerCells(){
@@ -135,6 +134,27 @@ function updateHammerCells(){
     if($( '#Hammers option:selected' ).data("cellslot02") === $(this).data("category"))
     $(this).css('display', 'block');
   })
+
+  if($('#Hammers option:selected').data("cellslot01") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+  if($('#Hammers option:selected').data("cellslot02") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+
+  $('#weaponCellSelection01 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
+
+  $('#weaponCellSelection02 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateAxeCells(){
@@ -149,6 +169,28 @@ function updateAxeCells(){
     if($( '#Axes option:selected' ).data("cellslot02") === $(this).data("category"))
     $(this).css('display', 'block');
   })
+
+
+  if($('#Axes option:selected').data("cellslot01") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+  if($('#Axes option:selected').data("cellslot02") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+
+  $('#weaponCellSelection01 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
+
+  $('#weaponCellSelection02 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateSwordCells(){
@@ -163,6 +205,28 @@ function updateSwordCells(){
     if($( '#Swords option:selected' ).data("cellslot02") === $(this).data("category"))
     $(this).css('display', 'block');
   })
+
+
+  if($('#Swords option:selected').data("cellslot01") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+  if($('#Swords option:selected').data("cellslot02") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+
+  $('#weaponCellSelection01 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
+
+  $('#weaponCellSelection02 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateChainBladeCells(){
@@ -177,6 +241,28 @@ function updateChainBladeCells(){
     if($( '#ChainBlades option:selected' ).data("cellslot02") === $(this).data("category"))
     $(this).css('display', 'block');
   })
+
+
+  if($('#ChainBlades option:selected').data("cellslot01") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+  if($('#ChainBlades option:selected').data("cellslot02") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+
+  $('#weaponCellSelection01 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
+
+  $('#weaponCellSelection02 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateWarPikeCells(){
@@ -191,11 +277,31 @@ function updateWarPikeCells(){
     if($( '#WarPikes option:selected' ).data("cellslot02") === $(this).data("category"))
     $(this).css('display', 'block');
   })
+
+
+  if($('#WarPikes option:selected').data("cellslot01") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+  if($('#WarPikes option:selected').data("cellslot02") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
+
+  $('#weaponCellSelection01 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
+
+  $('#weaponCellSelection02 option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function selectEmptyWeaponCells(){
-  $('[data-category="Empty"]').css('display', 'block');
-
   $('#weaponCellSelection01 option:first').prop('selected', true).change();
   $('#weaponCellSelection02 option:first').prop('selected', true).change();
 }
@@ -207,9 +313,16 @@ function updateLanternCells(){
     $(this).css('display', 'block');
   })
 
-  $('[data-category="Empty"]').css('display', 'block');
+  if($( '#lanternSelection option:selected' ).data("cellslot") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
 
-  $('#lanternCellSelection option:first').prop('selected', true).change();
+  $('#lanternCellSelection option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateHelmetCells(){
@@ -219,9 +332,16 @@ function updateHelmetCells(){
     $(this).css('display', 'block');
   })
 
-  $('[data-category="Empty"]').css('display', 'block');
+  if($( '#helmetSelection option:selected' ).data("cellslot") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
 
-  $('#helmetCellSelection option:first').prop('selected', true).change();
+  $('#helmetCellSelection option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateChestplateCells(){
@@ -231,9 +351,16 @@ function updateChestplateCells(){
     $(this).css('display', 'block');
   })
 
-  $('[data-category="Empty"]').css('display', 'block');
+  if($( '#chestplateSelection option:selected' ).data("cellslot") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
 
-  $('#chestplateCellSelection option:first').prop('selected', true).change();
+  $('#chestplateCellSelection option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateGauntletsCells(){
@@ -243,21 +370,35 @@ function updateGauntletsCells(){
     $(this).css('display', 'block');
   })
 
-  $('[data-category="Empty"]').css('display', 'block');
+  if($( '#gauntletsSelection option:selected' ).data("cellslot") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
 
-  $('#gauntletsCellSelection option:first').prop('selected', true).change();
+  $('#gauntletsCellSelection option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateGreavesCells(){
   $('#greavesCellSelection option').css('display', 'none');
   $('#greavesCellSelection option').each(function(){
-    if($( '#greavesSelection option:selected' ).data("cellslot") === $(this).data("category"))
+    if($('#greavesSelection option:selected' ).data("cellslot") === $(this).data("category"))
     $(this).css('display', 'block');
   })
 
-  $('[data-category="Empty"]').css('display', 'block');
+  if($( '#greavesSelection option:selected' ).data("cellslot") == "None"){
+    $('[data-category="Empty"]').css('display', 'block');
+  }
 
-  $('#greavesCellSelection option:first').prop('selected', true).change();
+  $('#greavesCellSelection option').each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).prop("selected", true);
+      return false;
+    }
+  });
 }
 
 function updateStats(){
@@ -1012,35 +1153,30 @@ $( "#typeSelection" ).change(function() {
 
 $( "#Hammers" ).change(function() {
   updateHammerCells();
-  selectEmptyWeaponCells();
   updateUrl();
   updateStats();
 });
 
 $( "#Axes" ).change(function() {
   updateAxeCells();
-  selectEmptyWeaponCells();
   updateUrl();
   updateStats();
 });
 
 $( "#Swords" ).change(function() {
   updateSwordCells();
-  selectEmptyWeaponCells();
   updateUrl();
   updateStats();
 });
 
 $( "#ChainBlades" ).change(function() {
   updateChainBladeCells();
-  selectEmptyWeaponCells();
   updateUrl();
   updateStats();
 });
 
 $( "#WarPikes" ).change(function() {
   updateWarPikeCells();
-  selectEmptyWeaponCells();
   updateUrl();
   updateStats();
 });

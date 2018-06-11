@@ -24,7 +24,6 @@ var decodeUrl = false;
 
   <h1>Welcome, Slayer!</h1>
   <p class="lead">Create and share your custom Dauntless builds!</p>
-  <hr class="my-4">
   <div class="row" style="margin-bottom: 2rem;">
     <div class="col-3">
       <div>Equipment</div>
@@ -124,7 +123,12 @@ var decodeUrl = false;
       <div>Cells</div>
       <div>Weapon</div>
       <select class="form-control form-control-sm" id="weaponCellSelection01">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
@@ -135,7 +139,12 @@ var decodeUrl = false;
       </select>
 
       <select class="form-control form-control-sm" id="weaponCellSelection02">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
@@ -147,7 +156,12 @@ var decodeUrl = false;
 
       <div>Lantern</div>
       <select class="form-control form-control-sm" id="lanternCellSelection">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
@@ -158,7 +172,12 @@ var decodeUrl = false;
       </select>
       <div>Helmet</div>
       <select class="form-control form-control-sm" id="helmetCellSelection">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
@@ -169,7 +188,12 @@ var decodeUrl = false;
       </select>
       <div>Chestplate</div>
       <select class="form-control form-control-sm" id="chestplateCellSelection">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
@@ -180,7 +204,12 @@ var decodeUrl = false;
       </select>
       <div>Gauntlets</div>
       <select class="form-control form-control-sm" id="gauntletsCellSelection">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
@@ -191,7 +220,12 @@ var decodeUrl = false;
       </select>
       <div>Greaves</div>
       <select class="form-control form-control-sm" id="greavesCellSelection">
-        <option value="1" data-category="Empty" data-amount="0" selected>Empty</option>
+        <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+        <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+        <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+        <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+        <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+        <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
         {% for category in cellData %}
         {% for cell in category.cells %}
         <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }} +3</option>
