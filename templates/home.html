@@ -12,6 +12,11 @@ var decodeUrl = false;
 </script>
 {% endif %}
 <div class="container">
+
+  <div class="alert alert-secondary">
+    <strong>Hi!</strong> Thank you for helping me test dauntlessBuilds.</br>This tool is still a work in progress, so if you find any bugs or have any suggestions don`t hesitate to contact me on Discord (fresh2k#9240).
+  </div>
+
   <div class="alert alert-danger" role="alert" id="wrongCodeWarning">
     <strong>Cursed Behemoths!</strong> This link did not contain a valid build.
   </div>
@@ -43,7 +48,7 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Axes" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -52,7 +57,7 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Swords" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -61,7 +66,7 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "Chain Blades" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -70,7 +75,7 @@ var decodeUrl = false;
           {% for weapon in weaponData %}
           {% for item in weapon['items'] %}
           {% if item.type == "War Pikes" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
+          <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}">{{ item.name }} ({{ weapon.name }})</option>
           {% endif %}
           {% endfor %}
           {% endfor %}

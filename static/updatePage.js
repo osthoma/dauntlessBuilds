@@ -704,7 +704,7 @@ function updateStats(){
 
   $('#stats').empty();
   for (const [key, value] of Object.entries(stats)) {
-    $('#stats').append('<button type="button" class="btn btn-secondary btn-block infusion" data-toggle="tooltip" data-placement="bottom" title="Tooltip">' + key + " +" + value + '</button>');
+    $('#stats').append('<button type="button" class="btn btn-primary btn-lg btn-block infusion" data-toggle="tooltip" data-placement="bottom" title="Tooltip">' + key + " +" + value + '</button>');
     console.log(key, value);
   }
   $(function () {
