@@ -595,36 +595,45 @@
   {
     "id": "30101",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Zagachopper",
+    "cellslot01": "Utility",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "Heal 200 on perfectly charged vertical attacks"
+    }
   },
   {
     "id": "30102",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Zagablades",
+    "cellslot01": "Utility",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+5% Lifesteal vs Wounded Parts"
+    }
   },
   {
     "id": "30103",
     "type": "Hammers",
     "name": "Zaga Maul",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Utility",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "Heal for 300 whenever a Behemoth is Staggered"
+    }
   },
   {
     "id": "30104",
     "type": "Swords",
     "name": "Zaga Sword",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Utility",
+    "cellslot02": "Mobility",
     "bonuses": "none",
     "specials":
     {
@@ -635,11 +644,14 @@
   {
     "id": "30105",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Nayzaga`s Claw",
+    "cellslot01": "Utility",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+5% Lifesteal vs Wounded parts"
+    }
   }]
 },
 {
@@ -648,36 +660,45 @@
   {
     "id": "30201",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Pangax",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Aetherhunter": 2
+    },
     "specials": "none"
   },
   {
     "id": "30202",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Pangblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Aetherhunter": 2
+    },
     "specials": "none"
   },
   {
     "id": "30203",
     "type": "Hammers",
-    "name": "Pangar's Roar",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Pangar`s Roar",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Aetherhunter": 2
+    },
     "specials": "none"
   },
   {
     "id": "30204",
     "type": "Swords",
     "name": "Pangsaber",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
     "bonuses":
     {
       "Aetherhunter": 2
@@ -687,10 +708,13 @@
   {
     "id": "30205",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Pangar`s Tooth",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Aetherhunter": 2
+    },
     "specials": "none"
   }]
 },
@@ -700,34 +724,7 @@
   {
     "id": "30301",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "30302",
-    "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "30303",
-    "type": "Hammers",
-    "name": "Hellcrusher",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "30304",
-    "type": "Swords",
-    "name": "Hellsaber",
+    "name": "Hellcutter",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses":
@@ -737,12 +734,51 @@
     "specials": "none"
   },
   {
+    "id": "30302",
+    "type": "Chain Blades",
+    "name": "Hellblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Overpower": 2
+    },
+    "specials": "none"
+  },
+  {
+    "id": "30303",
+    "type": "Hammers",
+    "name": "Hellcrusher",
+    "cellslot01": "Power",
+    "cellslot02": "Power",
+    "bonuses": "none",
+    "specials":
+    {
+      "special": "125% Primed hammer attack damage"
+    }
+  },
+  {
+    "id": "30304",
+    "type": "Swords",
+    "name": "Hellsaber",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Overpower": 2
+    },
+    "specials": "none"
+  },
+  {
     "id": "30305",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Hellpike",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Merciless": 2
+    },
     "specials": "none"
   }]
 },
@@ -752,36 +788,45 @@
   {
     "id": "30401",
     "type": "Axes",
-    "name": "",
+    "name": "Stormcutter",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "After dodging through an attack the next weapon attack has 200% meter gain"
+    }
   },
   {
     "id": "30402",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Stormteeth",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "After dodging through an attack the next weapon attack has 200% meter gain"
+    }
   },
   {
     "id": "30403",
     "type": "Hammers",
     "name": "Stormhammer",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "Reloads 4 Hammer Ammo after Blastdodging through an attack"
+    }
   },
   {
     "id": "30404",
     "type": "Swords",
     "name": "Storm Katana",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses": "none",
     "specials":
     {
@@ -791,11 +836,14 @@
   {
     "id": "30405",
     "type": "War Pikes",
-    "name": "",
+    "name": "Stormpike",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "After dodging through an attack, the next weapon attack has 200% meter gain"
+    }
   }]
 },
 {
@@ -804,19 +852,25 @@
   {
     "id": "30501",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Kharabaxe",
+    "cellslot01": "Power",
+    "cellslot02": "Technique",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "Combo finishers deal 200 bonus damage"
+    }
   },
   {
     "id": "30502",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Kharablades",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Bladestorm": 2
+    },
     "specials": "none"
   },
   {
@@ -826,14 +880,17 @@
     "cellslot01": "",
     "cellslot02": "",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "Restore 30 Stamina after reloading a shell"
+    }
   },
   {
     "id": "30504",
     "type": "Swords",
     "name": "Kharabak Cleaver",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses":
     {
       "Bladestorm": 2
@@ -843,10 +900,13 @@
   {
     "id": "30505",
     "type": "War Pikes",
-    "name": "",
+    "name": "Kharabak`s Sting",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses": "none",
+    "bonuses":
+    {
+      "Bladestorm": 2
+    },
     "specials": "none"
   }]
 },
@@ -856,28 +916,40 @@
   {
     "id": "40101",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Ragecleaver",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Ragehunter": 2,
+      "Pacifier": 2
+    },
     "specials": "none"
   },
   {
     "id": "40102",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Rageblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Ragehunter": 2,
+      "Rage": 2
+    },
     "specials": "none"
   },
   {
     "id": "40103",
     "type": "Hammers",
     "name": "Ragehammer",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Ragehunter": 2,
+      "Pacifier": 2
+    },
     "specials": "none"
   },
   {
@@ -896,10 +968,14 @@
   {
     "id": "40105",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Ragepike",
+    "cellslot01": "Technique",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Ragehunter": 2,
+      "Rage": 2
+    },
     "specials": "none"
   }]
 },
@@ -909,34 +985,7 @@
   {
     "id": "40201",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "40201",
-    "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "40201",
-    "type": "Hammers",
-    "name": "Firemace",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "40201",
-    "type": "Swords",
-    "name": "Firesaber",
+    "name": "Firecutter",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses":
@@ -948,11 +997,54 @@
   },
   {
     "id": "40201",
-    "type": "War Pikes",
-    "name": "",
+    "type": "Chain Blades",
+    "name": "Fireblades",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses": "none",
+    "bonuses":
+    {
+      "Rage": 2,
+      "Aetherhunter": 2
+    },
+    "specials": "none"
+  },
+  {
+    "id": "40201",
+    "type": "Hammers",
+    "name": "Firemace",
+    "cellslot01": "",
+    "cellslot02": "",
+    "bonuses":
+    {
+      "Rage": 2,
+      "Aetherhunter": 2
+    },
+    "specials": "none"
+  },
+  {
+    "id": "40201",
+    "type": "Swords",
+    "name": "Firesaber",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Rage": 2,
+      "Aetherhunter": 2
+    },
+    "specials": "none"
+  },
+  {
+    "id": "40201",
+    "type": "War Pikes",
+    "name": "Firepike",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Rage": 2,
+      "Aetherhunter": 2
+    },
     "specials": "none"
   }]
 },
@@ -962,16 +1054,22 @@
   {
     "id": "40301",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Shockjaw Scythe",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Energized": 2
+    },
+    "specials":
+    {
+      "special": "Heal 200 on perfectly charged vertical attacks"
+    }
   },
   {
     "id": "40302",
     "type": "Chain Blades",
-    "name": "",
+    "name": "Shockjaw Blades",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses": "none",
@@ -981,17 +1079,20 @@
     "id": "40303",
     "type": "Hammers",
     "name": "Shockjaw Smasher",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Conditioning": 2
+    },
     "specials": "none"
   },
   {
     "id": "40304",
     "type": "Swords",
     "name": "Shockjaw Sword",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Utility",
+    "cellslot02": "Mobility",
     "bonuses":
     {
       "Energized": 2
@@ -1005,11 +1106,17 @@
   {
     "id": "40305",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Shockjaw Pikes",
+    "cellslot01": "Utility",
+    "cellslot02": "Technique",
+    "bonuses":
+    {
+      "Energized": 1
+    },
+    "specials":
+    {
+      "special01": "+5% Lifesteal when damaging wounded parts"
+    }
   }]
 },
 {
@@ -1018,36 +1125,52 @@
   {
     "id": "40401",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Razorwing Axe",
+    "cellslot01": "Power",
+    "cellslot02": "Technique",
+    "bonuses":
+    {
+      "Sharpened": 2
+    },
+    "specials":
+    {
+      "special01": "Combo Finishers deal 200 bonus damage"
+    }
   },
   {
     "id": "40402",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Razorwing Blades",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Bladestorm": 2,
+      "Sharpened": 2
+    },
     "specials": "none"
   },
   {
     "id": "40403",
     "type": "Hammers",
     "name": "Razorwing Hammer",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Technique",
+    "cellslot02": "Power",
+    "bonuses":
+    {
+      "Sharpened": 2
+    },
+    "specials":
+    {
+      "special01": "Restore 30 Stamina after reloading a shell."
+    }
   },
   {
     "id": "40404",
     "type": "Swords",
     "name": "Razorwing Sword",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses":
     {
       "Bladestorm": 2,
@@ -1062,10 +1185,14 @@
   {
     "id": "40405",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Razorwing Pike",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Bladestorm": 2,
+      "Sharpened": 2
+    },
     "specials": "none"
   }]
 },
@@ -1075,34 +1202,33 @@
   {
     "id": "40501",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Frostaxe",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Aetherhunter": 2,
+      "Knockout King": 2
+    },
     "specials": "none"
   },
   {
     "id": "40502",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Frostblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Overpower": 2,
+      "Weighted Strikes": 2
+    },
     "specials": "none"
   },
   {
     "id": "40503",
     "type": "Hammers",
     "name": "Frostmaul",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
-  },
-  {
-    "id": "40504",
-    "type": "Swords",
-    "name": "Frostsaber",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses":
@@ -1113,12 +1239,29 @@
     "specials": "none"
   },
   {
+    "id": "40504",
+    "type": "Swords",
+    "name": "Frostsaber",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Aetherhunter": 2,
+      "Knockout King": 2
+    },
+    "specials": "none"
+  },
+  {
     "id": "40505",
     "type": "War Pikes",
-    "name": "",
+    "name": "Frostpike",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses": "none",
+    "bonuses":
+    {
+      "Aetherhunter": 2,
+      "Weighted Strikes": 2
+    },
     "specials": "none"
   }]
 },
@@ -1226,20 +1369,24 @@
   {
     "id": "40801",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Rezacutter",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
     "bonuses": "none",
     "specials": "none"
   },
   {
     "id": "40802",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Rezakiri`s Fangs",
+    "cellslot01": "Technique",
+    "cellslot02": "Power",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "10% chance for attacks to Hit twice",
+      "special02 ": "The tenth hit in a row deals 150 bonus damage."
+    }
   },
   {
     "id": "40803",
@@ -1254,8 +1401,8 @@
     "id": "40804",
     "type": "Swords",
     "name": "Rezakatana",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Technique",
+    "cellslot02": "Utility",
     "bonuses": "none",
     "specials":
     {
@@ -1267,9 +1414,9 @@
   {
     "id": "40805",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Rezakiller",
+    "cellslot01": "Technique",
+    "cellslot02": "Power",
     "bonuses": "none",
     "specials": "none"
   }]
@@ -1280,20 +1427,32 @@
   {
     "id": "40901",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Shrowd Reaper",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Cunning": 3
+    },
+    "specials":
+    {
+      "special": "When under 20% health, deal 150% damage"
+    }
   },
   {
     "id": "40902",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Shrowd Blades",
+    "cellslot01": "Technique",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Cunning": 3
+    },
+    "specials":
+    {
+      "special": "When under 20% health, deal 150% damage"
+    }
   },
   {
     "id": "40903",
@@ -1308,18 +1467,21 @@
     "id": "40904",
     "type": "Swords",
     "name": "Shrowd Slicer",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
     "bonuses":
     {
       "Cunning": 3
     },
-    "specials": "none"
+    "specials":
+    {
+      "special": "When under 20% health, deal 150% damage"
+    }
   },
   {
     "id": "40905",
     "type": "War Pikes",
-    "name": "",
+    "name": "Shrowd Pike",
     "cellslot01": "",
     "cellslot02": "",
     "bonuses": "none",
@@ -1336,7 +1498,10 @@
     "cellslot01": "Power",
     "cellslot02": "Technique",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "Channel a beam that deals increasing damage, up to 200%, while it continues to hit a target."
+    }
   },
   {
     "id": "90201",
