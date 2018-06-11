@@ -110,7 +110,10 @@
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+30 Part Damage on Next Hit After a Dodge"
+    }
   },
   {
     "id": "10202",
@@ -119,7 +122,10 @@
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+30 Part Damage on Next Hit After a Dodge"
+    }
   },
   {
     "id": "10203",
@@ -128,7 +134,10 @@
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+30 Part Damage on Next Hit After a Dodge"
+    }
   },
   {
     "id": "10204",
@@ -149,7 +158,10 @@
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+30 Part Damage on Next Hit After a Dodge"
+    }
   }]
 },
 {
@@ -158,29 +170,47 @@
   {
     "id": "10301",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Quillcutter",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Bladestorm": 2
+    },
+    "specials":
+    {
+      "special": "+10% Part Damage"
+    }
   },
   {
     "id": "10302",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Quillblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Bladestorm": 2
+    },
+    "specials":
+    {
+      "special": "+10 Part Damage on Hit"
+    }
   },
   {
     "id": "10303",
     "type": "Hammers",
     "name": "Quillhammer",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Sharpened": 2
+    },
+    "specials":
+    {
+      "special": "+10% Part Damage"
+    }
   },
   {
     "id": "10304",
@@ -197,11 +227,17 @@
   {
     "id": "10305",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Quillpike",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Bladestorm": 2
+    },
+    "specials":
+    {
+      "special": "+10 Part Damage on Hit"
+    }
   }]
 },
 {
@@ -210,29 +246,47 @@
   {
     "id": "10401",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Skarnchopper",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Knockout King": 2
+    },
+    "specials":
+    {
+      "special": "+10% Stagger Damage"
+    }
   },
   {
     "id": "10402",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Skarnblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Weighted Strikes": 2
+    },
+    "specials":
+    {
+      "special": "+10 Stagger Damage on Hit"
+    }
   },
   {
     "id": "10403",
     "type": "Hammers",
     "name": "Skarnmaul",
-    "cellslot01": "Defence",
+    "cellslot01": "Power",
     "cellslot02": "Defence",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses":
+    {
+      "Knockout King": 2
+    },
+    "specials":
+    {
+      "special": "+10% Stagger Damage"
+    }
   },
   {
     "id": "10404",
@@ -249,11 +303,17 @@
   {
     "id": "10405",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Skarnpike",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Weighted Strikes": 3
+    },
+    "specials":
+    {
+      "special": "+10 Stagger Damage on Hit"
+    }
   }]
 },
 {
@@ -262,28 +322,47 @@
   {
     "id": "20101",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Charrcutter",
+    "cellslot01": "Power",
+    "cellslot02": "Power",
+    "bonuses":
+    {
+      "Rage": 2
+    },
+    "specials":
+    {
+      "special": "When under 30% health, deal 108% damage"
+    }
   },
   {
     "id": "20102",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Charrblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Rage": 2
+    },
+    "specials":
+    {
+      "special": "When under 30% health, deal 108% damage"
+    }
   },
   {
     "id": "20103",
     "type": "Hammers",
     "name": "Charrhammer",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "cellslot01": "Power",
+    "cellslot02": "Power",
+    "bonuses":
+    {
+      "Rage": 2
+    },
+    "specials":
+    {
+      "special": "When under 30% health, deal 108% damage"
+    }
   },
   {
     "id": "20104",
@@ -295,16 +374,25 @@
     {
       "Rage": 2
     },
-    "specials": "none"
+    "specials":
+    {
+      "special": "When under 30% health, deal 108% damage"
+    }
   },
   {
     "id": "20105",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "name": "Charrpike",
+    "cellslot01": "Technique",
+    "cellslot02": "Defence",
+    "bonuses":
+    {
+      "Rage": 2
+    },
+    "specials":
+    {
+      "special": "When under 30% health, deal 108% damage"
+    }
   }]
 },
 {
@@ -313,29 +401,38 @@
   {
     "id": "20201",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Emberscythe",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Wild Frenzy": 2
+    },
     "specials": "none"
   },
   {
     "id": "20202",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Emberblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 2
+    },
     "specials": "none"
   },
   {
     "id": "20203",
     "type": "Hammers",
     "name": "Embermaul",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+25% Attack Speed for 8 Seconds after landing a Hammer Blast."
+    }
   },
   {
     "id": "20204",
@@ -352,11 +449,14 @@
   {
     "id": "20205",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Emberpike",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "+30% Attack Speed for 4-10 seconds after hitting with a Special Attack missile. Duration depends on missile strength."
+    }
   }]
 },
 {
@@ -365,29 +465,38 @@
   {
     "id": "20301",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Skraev Axe",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "The fourth hit in quick succession deals 150 bonus damage."
+    }
   },
   {
     "id": "20302",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Skraev Blades",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "The tenth hit in quick succession deals 150 bonus damage."
+    }
   },
   {
     "id": "20303",
     "type": "Hammers",
     "name": "Skraevmaul",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special": "The fifth hit in a row deals +100% Stagger damage."
+    }
   },
   {
     "id": "20304",
@@ -405,11 +514,14 @@
   {
     "id": "20305",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Skraevpike",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "The seventh hit in a row deals +200 Wound damage"
+    }
   }]
 },
 {
@@ -418,29 +530,38 @@
   {
     "id": "20401",
     "type": "Axes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
+    "name": "Drask Axe",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "120% damage increase versus Behemoth heads."
+    }
   },
   {
     "id": "20402",
     "type": "Chain Blades",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Draskblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Power",
+    "bonuses":
+    {
+      "Savagery": 2
+    },
     "specials": "none"
   },
   {
     "id": "20403",
     "type": "Hammers",
     "name": "Drasksmasher",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
     "bonuses": "none",
-    "specials": "none"
+    "specials":
+    {
+      "special01": "120% damage increase versus Behemoth heads."
+    }
   },
   {
     "id": "20404",
@@ -451,17 +572,20 @@
     "bonuses": "none",
     "specials":
     {
-      "special": "120% Damage vs Behemoth Heads"
+      "special": "120% damage increase versus Behemoth heads."
     }
 
   },
   {
     "id": "20405",
     "type": "War Pikes",
-    "name": "",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "none",
+    "name": "Drask Spine",
+    "cellslot01": "Technique",
+    "cellslot02": "Power",
+    "bonuses":
+    {
+      "Savagery": 2
+    },
     "specials": "none"
   }]
 },
