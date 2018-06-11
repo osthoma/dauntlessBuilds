@@ -1176,11 +1176,7 @@
       "Bladestorm": 2,
       "Sharpened": 2
     },
-    "specials":
-    {
-      "special01": "+10% Part damage"
-    }
-
+    "specials": "None"
   },
   {
     "id": "40405",
