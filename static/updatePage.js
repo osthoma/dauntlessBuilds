@@ -866,7 +866,7 @@ function updateUrl(){
   selectedGreavesCellLevel = $('#greavesCellSelection option:selected').data("amount");
 
   let hash = hashids.encode(selectedWeaponType, selectedWeapon, selectedWeaponCell01, selectedWeaponCell01level, selectedWeaponCell02, selectedWeaponCell02level, selectedLantern, selectedLanternCell, selectedLanternCellLevel, selectedHelmet, selectedHelmetCell, selectedHelmetCellLevel, selectedChestplate, selectedChestplateCell, selectedChestplateCellLevel, selectedGauntlets, selectedGauntletsCell, selectedGauntletsCellLevel,selectedGreaves, selectedGreavesCell, selectedGreavesCellLevel);
-  $( "#permaLink" ).val("http://dauntlessbuilds.com/b/" + hash);
+  $( "#permaLink" ).val("http://fresh2k.pythonanywhere.com/b/" + hash);
 }
 
 $( "#typeSelection" ).change(function() {

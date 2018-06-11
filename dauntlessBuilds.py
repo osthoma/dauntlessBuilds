@@ -1,10 +1,8 @@
-#!/usr/bin/python3.4
-
-print("Content-Type: text/html\n\n")
-
-
 import json
+
 from flask import Flask, render_template
+
+
 app = Flask(__name__)
 
 
