@@ -20,12 +20,13 @@ var decodeUrl = false;
   <div class="alert alert-danger" role="alert" id="wrongCodeWarning">
     <strong>Cursed Behemoths!</strong> This link did not contain a valid build.
   </div>
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome, Slayer!</h1>
+
+  <div class="bs-docs-section">
+    <h1>Welcome, Slayer!</h1>
     <p class="lead">Create and share your custom Dauntless builds!</p>
     <hr class="my-4">
-    <div class = "row">
-      <div class = "col-3">
+    <div class="row" style="margin-bottom: 2rem;">
+      <div class="col-3">
         <div>Equipment</div>
         <div>Weapon</div>
         <select class="form-control form-control-sm" id="typeSelection">
@@ -207,11 +208,13 @@ var decodeUrl = false;
       </div>
     </div>
   </div>
-  <div class="input-group">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
+      </div>
+      <input type="text" class="form-control" value="http://fresh2k.pythonanywhere.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
     </div>
-    <input type="text" class="form-control" value="http://fresh2k.pythonanywhere.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
   </div>
 </div>
 
