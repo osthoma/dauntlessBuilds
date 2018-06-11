@@ -598,8 +598,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Tough": "1",
-      "Bloodless": "2"
+      "Tough": 1,
+      "Bloodless": 2
     }
   },
   "chestplate":
@@ -609,8 +609,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Tough": "2",
-      "Bloodless": "1"
+      "Tough": 2,
+      "Bloodless": 1
     }
   },
   "gloves":
@@ -620,8 +620,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Ragehunter": "2",
-      "Tough": "1"
+      "Ragehunter": 2,
+      "Tough": 1
     }
   },
   "greaves":
@@ -631,8 +631,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Ragehunter": "1",
-      "Bloodless": "2"
+      "Ragehunter": 1,
+      "Bloodless": 2
     }
   }
 },
@@ -645,8 +645,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Fireproof": "1",
-      "Energized": "2"
+      "Fireproof": 1,
+      "Energized": 2
     }
   },
   "chestplate":
@@ -656,8 +656,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Fireproof": "2",
-      "Energized": "1"
+      "Fireproof": 2,
+      "Energized": 1
     }
   },
   "gloves":
@@ -667,8 +667,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Rage": "2",
-      "Energized": "1"
+      "Rage": 2,
+      "Energized": 1
     }
   },
   "greaves":
@@ -678,8 +678,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Fireproof": "2",
-      "Rage": "1"
+      "Fireproof": 2,
+      "Rage": 1
     }
   }
 },
@@ -692,8 +692,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Insulated": "2",
-      "Medic": "1"
+      "Insulated": 2,
+      "Medic": 1
     }
   },
   "chestplate":
@@ -703,8 +703,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Insulated": "2",
-      "Aetheric Attunement": "1"
+      "Insulated": 2,
+      "Aetheric Attunement": 1
     }
   },
   "gloves":
@@ -714,8 +714,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Aetheric Attunement": "2",
-      "Medic": "1"
+      "Aetheric Attunement": 2,
+      "Medic": 1
     }
   },
   "greaves":
@@ -725,8 +725,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Medic": "2",
-      "Insulated": "1"
+      "Medic": 2,
+      "Insulated": 1
     }
   }
 },
@@ -739,8 +739,8 @@
     "cellslot": "Mobility",
     "bonuses":
     {
-      "Endurance": "2",
-      "Deconstruction": "1"
+      "Endurance": 2,
+      "Deconstruction": 1
     }
   },
   "chestplate":
@@ -750,8 +750,8 @@
     "cellslot": "Technique",
     "bonuses":
     {
-      "Bladestorm": "2",
-      "Deconstruction": "1"
+      "Bladestorm": 2,
+      "Deconstruction": 1
     }
   },
   "gloves":
@@ -761,8 +761,8 @@
     "cellslot": "Mobility",
     "bonuses":
     {
-      "Bladestorm": "2",
-      "Endurance": "1"
+      "Bladestorm": 2,
+      "Endurance": 1
     }
   },
   "greaves":
@@ -772,8 +772,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Deconstruction": "2",
-      "Bladestorm": "1"
+      "Deconstruction": 2,
+      "Bladestorm": 1
     }
   }
 },
@@ -786,8 +786,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Warmth": "2",
-      "Knockout King": "1"
+      "Warmth": 2,
+      "Knockout King": 1
     }
   },
   "chestplate":
@@ -797,8 +797,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Knockout King": "2",
-      "Fortress": "1"
+      "Knockout King": 2,
+      "Fortress": 1
     }
   },
   "gloves":
@@ -808,8 +808,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Fortress": "2",
-      "Warmth": "1"
+      "Fortress": 2,
+      "Warmth": 1
     }
   },
   "greaves":
@@ -819,8 +819,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Warmth": "2",
-      "Fortress": "1"
+      "Warmth": 2,
+      "Fortress": 1
     }
   }
 },
@@ -833,8 +833,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Barbed": "2",
-      "Shellshock Resist": "1"
+      "Barbed": 2,
+      "Shellshock Resist": 1
     }
   },
   "chestplate":
@@ -844,8 +844,8 @@
     "cellslot": "Technique",
     "bonuses":
     {
-      "Shellshock Resist": "2",
-      "Savagery": "1"
+      "Shellshock Resist": 2,
+      "Savagery": 1
     }
   },
   "gloves":
@@ -855,8 +855,8 @@
     "cellslot": "Technique",
     "bonuses":
     {
-      "Barbed": "2",
-      "Savagery": "1"
+      "Barbed": 2,
+      "Savagery": 1
     }
   },
   "greaves":
@@ -866,8 +866,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Savagery": "2",
-      "Shellshock Resist": "1"
+      "Savagery": 2,
+      "Shellshock Resist": 1
     }
   }
 },
@@ -915,8 +915,8 @@
     "cellslot": "Technique",
     "bonuses":
     {
-      "Energized": "2",
-      "Cunning": "1"
+      "Energized": 2,
+      "Cunning": 1
     }
   },
   "chestplate":
@@ -926,8 +926,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Energized": "2",
-      "Agility": "1"
+      "Energized": 2,
+      "Agility": 1
     }
   },
   "gloves":
@@ -937,8 +937,8 @@
     "cellslot": "Technique",
     "bonuses":
     {
-      "Cunning": "2",
-      "Agility": "1"
+      "Cunning": 2,
+      "Agility": 1
     }
   },
   "greaves":
@@ -948,8 +948,8 @@
     "cellslot": "Mobility",
     "bonuses":
     {
-      "Agility": "2",
-      "Energized": "1"
+      "Agility": 2,
+      "Energized": 1
     }
   }
 },
@@ -962,8 +962,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Medic": "2",
-      "Rage": "1"
+      "Medic": 2,
+      "Rage": 1
     }
   },
   "chestplate":
@@ -973,8 +973,8 @@
     "cellslot": "Power",
     "bonuses":
     {
-      "Nine Lives": "2",
-      "Medic": "1"
+      "Nine Lives": 2,
+      "Medic": 1
     }
   },
   "gloves":
@@ -984,8 +984,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Rage": "2",
-      "Medic": "1"
+      "Rage": 2,
+      "Medic": 1
     }
   },
   "greaves":
@@ -995,8 +995,8 @@
     "cellslot": "Utility",
     "bonuses":
     {
-      "Medic": "2",
-      "Nine Lives": "1"
+      "Medic": 2,
+      "Nine Lives": 1
     }
   }
 },
@@ -1007,8 +1007,11 @@
     "id": "90101",
     "name": "Prismatic Grace",
     "cellslot": "Technique",
-    "bonuses": [
-    {}]
+    "bonuses": "none",
+    "specials":
+    {
+      "special01": "After reviving another player, grant them a Radiant Prism that blocks incoming damage for 5 seconds. The first time you take lethal damage, gain a Radiant Prism that blocks incoming damage for 10 seconds. While active, reviving another player fully restores both players but removes the Prism even at full danger."
+    }
   }
 },
 {
@@ -1018,7 +1021,10 @@
     "id": "90201",
     "name": "Tragic Echo",
     "cellslot": "Technique",
-    "bonuses": [
-    {}]
+    "bonuses": "none",
+    "specials":
+    {
+      "special01": "Upon your first death, become a shadow clone that deals 100% increased damage for 15 seconds."
+    }
   }
 }]
