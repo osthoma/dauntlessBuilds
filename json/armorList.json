@@ -877,33 +877,45 @@
   {
     "id": "40701",
     "name": "Bloodfire Helm",
-    "cellslot": "",
+    "cellslot": "Mobility",
     "bonuses":
-    {}
+    {
+      "Fireproof": 2,
+      "Evasive Fury": 1
+    }
   },
   "chestplate":
   {
     "id": "40702",
     "name": "Bloodfire Plate",
-    "cellslot": "",
+    "cellslot": "Technique",
     "bonuses":
-    {}
+    {
+      "Evasion": 2,
+      "Fireproof": 1
+    }
   },
   "gloves":
   {
     "id": "40703",
     "name": "Bloodfire Gloves",
-    "cellslot": "",
+    "cellslot": "Mobility",
     "bonuses":
-    {}
+    {
+      "Evasive Fury": 2,
+      "Evasion": 1
+    }
   },
   "greaves":
   {
     "id": "40704",
     "name": "Bloodfire Greaves",
-    "cellslot": "",
+    "cellslot": "Mobility",
     "bonuses":
-    {}
+    {
+      "Fireproof": 2,
+      "Evasive Fury": 1
+    }
   }
 },
 {
@@ -1020,7 +1032,7 @@
   {
     "id": "90201",
     "name": "Tragic Echo",
-    "cellslot": "Technique",
+    "cellslot": "Power",
     "bonuses": "none",
     "specials":
     {
