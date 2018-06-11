@@ -76,28 +76,56 @@ $(document).ready(function(){
       updateGreavesCells();
 
 
-      $('#weaponCellSelection01').val(selectedItems[2]);
-      $('#weaponCellSelection01Level').val(selectedItems[3]);
+      $('#weaponCellSelection01 option').each(function(){
+        if($(this).val() == selectedItems[2] && $(this).data("amount") == selectedItems[3]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
 
-      $('#weaponCellSelection02').val(selectedItems[4]);
-      $('#weaponCellSelection02Level').val(selectedItems[5]);
+      $('#weaponCellSelection02 option').each(function(){
+        if($(this).val() == selectedItems[4] && $(this).data("amount") == selectedItems[5]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
 
 
-      $('#lanternCellSelection').val(selectedItems[7]);
-      $('#lanternCellSelectionLevel').val(selectedItems[8]);
+      $('#lanternCellSelection option').each(function(){
+        if($(this).val() == selectedItems[7] && $(this).data("amount") == selectedItems[8]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
 
 
-      $('#helmetCellSelection').val(selectedItems[10]);
-      $('#helmetCellSelectionLevel').val(selectedItems[11]);
+      $('#helmetCellSelection option').each(function(){
+        if($(this).val() == selectedItems[10] && $(this).data("amount") == selectedItems[11]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
 
-      $('#chestplateCellSelection').val(selectedItems[13]);
-      $('#chestplateCellSelectionLevel').val(selectedItems[14]);
+      $('#chestplateCellSelection option').each(function(){
+        if($(this).val() == selectedItems[13] && $(this).data("amount") == selectedItems[14]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
 
-      $('#gauntletsCellSelection').val(selectedItems[16]);
-      $('#gauntletsCellSelectionLevel').val(selectedItems[17]);
+      $('#gauntletsCellSelection option').each(function(){
+        if($(this).val() == selectedItems[16] && $(this).data("amount") == selectedItems[17]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
 
-      $('#greavesCellSelection').val(selectedItems[19]);
-      $('#greavesCellSelectionLevel').val(selectedItems[20]);
+      $('#greavesCellSelection option').each(function(){
+        if($(this).val() == selectedItems[19] && $(this).data("amount") == selectedItems[20]){
+          $(this).prop("selected", true);
+          return false;
+        }
+      });
     } else {
       $('#wrongCodeWarning').css('display', 'block');
       showSelectedWeapons('#Hammers');
