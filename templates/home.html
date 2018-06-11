@@ -13,7 +13,8 @@ var decodeUrl = false;
 {% endif %}
 <div class="container">
 
-  <div class="alert alert-secondary">
+  <div class="alert alert-dismissible alert-secondary">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>Hi!</strong> Thank you for helping me test dauntlessBuilds.</br>This tool is still a work in progress, so if you find any bugs or have any suggestions don`t hesitate to contact me on Discord (fresh2k#9240).
   </div>
 
@@ -200,22 +201,28 @@ var decodeUrl = false;
         {% endfor %}
       </select>
     </div>
-    <div class = "col-6">
-      <p>Total Bonuses</p>
-      <div id="stats">
-      </div>
-      <p>Unique Effects</p>
-      <div id="uniqueEffects">
+    <div class="col-6">
+      <div class="card border-light mb-6">
+        <div class="card-header">Total Bonuses</div>
+        <div class="card-body">
+          <h6 class="card-title">Infusions</h6>
+          <div id="stats"></div>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">Unique Effects</h6>
+          <ul class="list-group list-group-flush"  id="uniqueEffects">
+          </ul>
+        </div>
       </div>
     </div>
 
   </div>
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
-      </div>
-      <input type="text" class="form-control" value="http://fresh2k.pythonanywhere.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
     </div>
+    <input type="text" class="form-control" value="http://fresh2k.pythonanywhere.com/b/" aria-describedby="inputGroup-sizing-sm" id="permaLink">
+  </div>
 </div>
 
 

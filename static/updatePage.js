@@ -850,17 +850,24 @@ function updateStats(){
   })
 
 
+
   $('#stats').empty();
-  for (const [key, value] of Object.entries(stats)) {
-    $('#stats').append('<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip">' + key + " +" + value + '</button>');
-    console.log(key, value);
+  if(Object.keys(stats).length > 0){
+    for (const [key, value] of Object.entries(stats)) {
+      $('#stats').append('<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip">' + key + " +" + value + '</button>');
+      console.log(key, value);
+    }
+  } else {
+    $('#stats').append('<h6 class="card-subtitle text-muted">No bonuses from items or infusions.</h6>');
   }
 
   $('#uniqueEffects').empty();
   if(uniqueEffects.length > 0){
     for(let i = 0; i < uniqueEffects.length; i++){
-      $('#uniqueEffects').append('<button type="button" class="btn btn-primary btn-sm btn-block" data-placement="bottom">'+ uniqueEffects[i] + '</button>');
+      $('#uniqueEffects').append('<li class="list-group-item">'+ uniqueEffects[i] + '</li>');
     }
+  } else {
+    $('#uniqueEffects').append('<h6 class="card-subtitle text-muted">No unique effects from items.</h6>');
   }
 
   $(function () {
