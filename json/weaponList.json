@@ -8,8 +8,8 @@
     "name": "Recruit`s Axe",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "102",
@@ -17,8 +17,8 @@
     "name": "Recruit`s Chain Blades",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "103",
@@ -26,8 +26,8 @@
     "name": "Recruit`s Hammer",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "104",
@@ -35,8 +35,8 @@
     "name": "Recruit`s Sword",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "105",
@@ -44,8 +44,8 @@
     "name": "Recruit`s War Pike",
     "cellslot01": "None",
     "cellslot02": "None",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   }]
 },
 {
@@ -57,8 +57,8 @@
     "name": "Gnashaxe",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "10102",
@@ -66,8 +66,8 @@
     "name": "Gnashblades",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "10103",
@@ -75,8 +75,8 @@
     "name": "Gnashmasher",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "10104",
@@ -84,8 +84,8 @@
     "name": "Gnashsaber",
     "cellslot01": "Utility",
     "cellslot02": "Defence",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "10105",
@@ -97,7 +97,7 @@
     {
       "Ragehunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -109,7 +109,7 @@
     "name": "Shrike Axe",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+30 Part Damage on Next Hit After a Dodge"
@@ -121,7 +121,7 @@
     "name": "Shrikeblades",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+30 Part Damage on Next Hit After a Dodge"
@@ -133,7 +133,7 @@
     "name": "Shrikesmasher",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+30 Part Damage on Next Hit After a Dodge"
@@ -145,7 +145,7 @@
     "name": "Shrikesaber",
     "cellslot01": "Mobility",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "+30 Part Damage on Next Hit After a Dodge"
@@ -157,7 +157,7 @@
     "name": "Shrike's Talon",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+30 Part Damage on Next Hit After a Dodge"
@@ -222,7 +222,7 @@
     {
       "Bladestorm": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "10305",
@@ -298,7 +298,7 @@
     {
       "Weighted Strikes": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "10405",
@@ -408,7 +408,7 @@
     {
       "Wild Frenzy": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "20202",
@@ -420,7 +420,7 @@
     {
       "Evasive Fury": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "20203",
@@ -428,7 +428,7 @@
     "name": "Embermaul",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+25% Attack Speed for 8 Seconds after landing a Hammer Blast."
@@ -444,7 +444,7 @@
     {
       "Wild Frenzy": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "20205",
@@ -452,7 +452,7 @@
     "name": "Emberpike",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+30% Attack Speed for 4-10 seconds after hitting with a Special Attack missile. Duration depends on missile strength."
@@ -468,7 +468,7 @@
     "name": "Skraev Axe",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "The fourth hit in quick succession deals 150 bonus damage."
@@ -480,7 +480,7 @@
     "name": "Skraev Blades",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "The tenth hit in quick succession deals 150 bonus damage."
@@ -492,7 +492,7 @@
     "name": "Skraevmaul",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "The fifth hit in a row deals +100% Stagger damage."
@@ -504,7 +504,7 @@
     "name": "Skraevsaber",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "The seventh hit in a row deals +200% Part damage"
@@ -517,7 +517,7 @@
     "name": "Skraevpike",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "The seventh hit in a row deals +200 Wound damage"
@@ -533,7 +533,7 @@
     "name": "Drask Axe",
     "cellslot01": "Power",
     "cellslot02": "Defence",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "120% damage increase versus Behemoth heads."
@@ -549,7 +549,7 @@
     {
       "Savagery": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "20403",
@@ -557,7 +557,7 @@
     "name": "Drasksmasher",
     "cellslot01": "Power",
     "cellslot02": "Defence",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "120% damage increase versus Behemoth heads."
@@ -569,7 +569,7 @@
     "name": "Draskrazor",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "120% damage increase versus Behemoth heads."
@@ -586,7 +586,7 @@
     {
       "Savagery": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -598,7 +598,7 @@
     "name": "Zagachopper",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Heal 200 on perfectly charged vertical attacks"
@@ -610,7 +610,7 @@
     "name": "Zagablades",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+5% Lifesteal vs Wounded Parts"
@@ -622,7 +622,7 @@
     "name": "Zaga Maul",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Heal for 300 whenever a Behemoth is Staggered"
@@ -634,7 +634,7 @@
     "name": "Zaga Sword",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+5% Lifesteal vs Wounded parts"
@@ -647,7 +647,7 @@
     "name": "Nayzaga`s Claw",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "+5% Lifesteal vs Wounded parts"
@@ -667,7 +667,7 @@
     {
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30202",
@@ -679,7 +679,7 @@
     {
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30203",
@@ -691,7 +691,7 @@
     {
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30204",
@@ -703,7 +703,7 @@
     {
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30205",
@@ -715,7 +715,7 @@
     {
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -731,7 +731,7 @@
     {
       "Overpower": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30302",
@@ -743,7 +743,7 @@
     {
       "Overpower": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30303",
@@ -751,7 +751,7 @@
     "name": "Hellcrusher",
     "cellslot01": "Power",
     "cellslot02": "Power",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "125% Primed hammer attack damage"
@@ -767,7 +767,7 @@
     {
       "Overpower": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30305",
@@ -779,7 +779,7 @@
     {
       "Merciless": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -791,7 +791,7 @@
     "name": "Stormcutter",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "After dodging through an attack the next weapon attack has 200% meter gain"
@@ -803,7 +803,7 @@
     "name": "Stormteeth",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "After dodging through an attack the next weapon attack has 200% meter gain"
@@ -815,7 +815,7 @@
     "name": "Stormhammer",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Reloads 4 Hammer Ammo after Blastdodging through an attack"
@@ -827,7 +827,7 @@
     "name": "Storm Katana",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "After dodging through an attack, the next weapon attack has 200% meter gain"
@@ -839,7 +839,7 @@
     "name": "Stormpike",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "After dodging through an attack, the next weapon attack has 200% meter gain"
@@ -855,7 +855,7 @@
     "name": "Kharabaxe",
     "cellslot01": "Power",
     "cellslot02": "Technique",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Combo finishers deal 200 bonus damage"
@@ -871,7 +871,7 @@
     {
       "Bladestorm": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30503",
@@ -879,7 +879,7 @@
     "name": "Kharabasher",
     "cellslot01": "Power",
     "cellslot02": "Technique",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Restore 30 Stamina after reloading a shell"
@@ -895,7 +895,7 @@
     {
       "Bladestorm": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "30505",
@@ -907,7 +907,7 @@
     {
       "Bladestorm": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -924,7 +924,7 @@
       "Ragehunter": 2,
       "Pacifier": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40102",
@@ -937,7 +937,7 @@
       "Ragehunter": 2,
       "Rage": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40103",
@@ -950,7 +950,7 @@
       "Ragehunter": 2,
       "Pacifier": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40104",
@@ -963,7 +963,7 @@
       "Ragehunter": 2,
       "Rage": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40105",
@@ -976,7 +976,7 @@
       "Ragehunter": 2,
       "Rage": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -993,7 +993,7 @@
       "Rage": 2,
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40201",
@@ -1006,7 +1006,7 @@
       "Rage": 2,
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40201",
@@ -1019,7 +1019,7 @@
       "Rage": 2,
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40201",
@@ -1032,7 +1032,7 @@
       "Rage": 2,
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40201",
@@ -1045,7 +1045,7 @@
       "Rage": 2,
       "Aetherhunter": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -1072,8 +1072,8 @@
     "name": "Shockjaw Blades",
     "cellslot01": "",
     "cellslot02": "",
-    "bonuses": "none",
-    "specials": "none"
+    "bonuses": "None",
+    "specials": "None"
   },
   {
     "id": "40303",
@@ -1085,7 +1085,7 @@
     {
       "Conditioning": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40304",
@@ -1148,7 +1148,7 @@
       "Bladestorm": 2,
       "Sharpened": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40403",
@@ -1193,7 +1193,7 @@
       "Bladestorm": 2,
       "Sharpened": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -1210,7 +1210,7 @@
       "Aetherhunter": 2,
       "Knockout King": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40502",
@@ -1223,7 +1223,7 @@
       "Overpower": 2,
       "Weighted Strikes": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40503",
@@ -1236,7 +1236,7 @@
       "Aetherhunter": 2,
       "Knockout King": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40504",
@@ -1249,7 +1249,7 @@
       "Aetherhunter": 2,
       "Knockout King": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40505",
@@ -1262,7 +1262,7 @@
       "Aetherhunter": 2,
       "Weighted Strikes": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -1279,7 +1279,7 @@
       "Savagery": 2,
       "Acidic": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40602",
@@ -1292,7 +1292,7 @@
       "Barbed": 2,
       "Acidic": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40603",
@@ -1305,7 +1305,7 @@
       "Savagery": 2,
       "Acidic": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40604",
@@ -1318,7 +1318,7 @@
       "Barbed": 2,
       "Acidic": 2
     },
-    "specials": "none"
+    "specials": "None"
   },
   {
     "id": "40605",
@@ -1331,7 +1331,7 @@
       "Barbed": 2,
       "Acidic": 2
     },
-    "specials": "none"
+    "specials": "None"
   }]
 },
 {
@@ -1373,7 +1373,7 @@
     "name": "Bloodfire Hammer",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "+25% attack speed after landing a Hammer Blast",
@@ -1401,7 +1401,7 @@
     "name": "",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "+30% Attack Speed after hitting with a Special Attack missile",
@@ -1418,7 +1418,7 @@
     "name": "Rezacutter",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "The fourth hit in quick succession deals 150 bonus damage",
@@ -1431,7 +1431,7 @@
     "name": "Rezakiri`s Fangs",
     "cellslot01": "Technique",
     "cellslot02": "Power",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "10% chance for attacks to Hit twice",
@@ -1444,7 +1444,7 @@
     "name": "Rezacrusher",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "The fifth hit in a row deals +100% Stagger damage",
@@ -1457,7 +1457,7 @@
     "name": "Rezakatana",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "The seventh hit in a row deals +200% Part damage",
@@ -1471,7 +1471,7 @@
     "name": "Rezakiller",
     "cellslot01": "Technique",
     "cellslot02": "Power",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "The seventh hit in a row deals +200 Wound damage",
@@ -1567,7 +1567,7 @@
     "name": "The Godhand",
     "cellslot01": "Power",
     "cellslot02": "Technique",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Channel a beam that deals increasing damage, up to 200%, while it continues to hit a target."
@@ -1579,7 +1579,7 @@
     "name": "The Hunger",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special": "Deal up to 25% increased damage as your meter increases. Activate at max meter to enter Feast, dealing 75% increased damage for 15 seconds, but taking damage after each hit. Activate again during Feast to unleash an Umbral attack that can regain lost health."

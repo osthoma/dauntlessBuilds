@@ -6,28 +6,28 @@
     "id": "101",
     "name": "Recruit's Mask",
     "cellslot": "None",
-    "bonuses": "none"
+    "bonuses": "None"
   },
   "chestplate":
   {
     "id": "102",
     "name": "Recruit's Breastplate",
     "cellslot": "None",
-    "bonuses": "none"
+    "bonuses": "None"
   },
   "gloves":
   {
     "id": "103",
     "name": "Recruit's Gloves",
     "cellslot": "None",
-    "bonuses": "none"
+    "bonuses": "None"
   },
   "greaves":
   {
     "id": "104",
     "name": "Recruit's Greaves",
     "cellslot": "None",
-    "bonuses": "none"
+    "bonuses": "None"
   }
 },
 {
@@ -1019,7 +1019,7 @@
     "id": "90101",
     "name": "Prismatic Grace",
     "cellslot": "Technique",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "After reviving another player, grant them a Radiant Prism that blocks incoming damage for 5 seconds. The first time you take lethal damage, gain a Radiant Prism that blocks incoming damage for 10 seconds. While active, reviving another player fully restores both players but removes the Prism even at full danger."
@@ -1033,7 +1033,7 @@
     "id": "90201",
     "name": "Tragic Echo",
     "cellslot": "Power",
-    "bonuses": "none",
+    "bonuses": "None",
     "specials":
     {
       "special01": "Upon your first death, become a shadow clone that deals 100% increased damage for 15 seconds."
