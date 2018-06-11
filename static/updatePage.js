@@ -68,7 +68,12 @@ $(document).ready(function(){
       $('#greavesSelection').val(selectedItems[18]);
 
 
-      updateEverything();
+      updateLanternCells();
+
+      updateHelmetCells(),
+      updateChestplateCells();
+      updateGauntletsCells();
+      updateGreavesCells();
 
 
       $('#weaponCellSelection01').val(selectedItems[2]);
@@ -253,21 +258,6 @@ function updateGreavesCells(){
   $('[data-category="Empty"]').css('display', 'block');
 
   $('#greavesCellSelection option:first').prop('selected', true).change();
-}
-
-function updateEverything(){
-  updateHammerCells();
-  updateAxeCells(),
-  updateSwordCells();
-  updateChainBladeCells();
-  updateWarPikeCells()
-
-  updateLanternCells();
-
-  updateHelmetCells(),
-  updateChestplateCells();
-  updateGauntletsCells();
-  updateGreavesCells();
 }
 
 function updateStats(){
