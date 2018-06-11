@@ -6,29 +6,28 @@
     "id": "101",
     "name": "Recruit's Mask",
     "cellslot": "None",
-    "bonus": [
-    {}]
+    "bonuses": "none"
   },
   "chestplate":
   {
     "id": "102",
     "name": "Recruit's Breastplate",
     "cellslot": "None",
-    "bonus": []
+    "bonuses": "none"
   },
   "gloves":
   {
     "id": "103",
     "name": "Recruit's Gloves",
     "cellslot": "None",
-    "bonus": []
+    "bonuses": "none"
   },
   "greaves":
   {
     "id": "104",
     "name": "Recruit's Greaves",
     "cellslot": "None",
-    "bonus": []
+    "bonuses": "none"
   }
 },
 {
@@ -81,32 +80,40 @@
     "id": "10201",
     "name": "Shrike Helm",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasion": 1
+    }
   },
   "chestplate":
   {
     "id": "10202",
     "name": "Shrike Plate",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Conditioning": 1
+    }
   },
   "gloves":
   {
     "id": "10203",
     "name": "Shrike Gauntlets",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Conditioning": 1
+    }
   },
   "greaves":
   {
     "id": "10204",
     "name": "Shrike Greaves",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasion": 1
+    }
   }
 },
 {
@@ -116,32 +123,40 @@
     "id": "10301",
     "name": "Quillmask",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": 1
+    }
   },
   "chestplate":
   {
     "id": "10302",
     "name": "Quillspike Jacket",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Sharpened": 1
+    }
   },
   "gloves":
   {
     "id": "10303",
     "name": "Quillspike Grips",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": 1
+    }
   },
   "greaves":
   {
     "id": "10304",
     "name": "Quillboots",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Sharpened": 1
+    }
   }
 },
 {
@@ -151,32 +166,40 @@
     "id": "10401",
     "name": "Skarn Helm",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Tough": 1
+    }
   },
   "chestplate":
   {
     "id": "10402",
     "name": "Skarn Plate",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Tough": 1
+    }
   },
   "gloves":
   {
     "id": "10403",
     "name": "Skarn Bracers",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Sturdy": 1
+    }
   },
   "greaves":
   {
     "id": "10404",
     "name": "Skarn Boots",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Sturdy": 1
+    }
   }
 },
 {
@@ -186,32 +209,40 @@
     "id": "20101",
     "name": "Charrhelm",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Energized": 1
+    }
   },
   "chestplate":
   {
     "id": "20102",
     "name": "Charrplate",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Energized": 1
+    }
   },
   "gloves":
   {
     "id": "20103",
     "name": "Charrogg Gauntlets",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Tough": 1
+    }
   },
   "greaves":
   {
     "id": "20104",
     "name": "Charrogg Greaves",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Tough": 1
+    }
   }
 },
 {
@@ -221,32 +252,40 @@
     "id": "20201",
     "name": "Emberhelm",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    }
   },
   "chestplate":
   {
     "id": "20202",
     "name": "Emberplate",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasion": 1
+    }
   },
   "gloves":
   {
     "id": "20203",
     "name": "Embergloves",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    }
   },
   "greaves":
   {
     "id": "20204",
     "name": "Embergreaves",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    }
   }
 },
 {
@@ -256,32 +295,40 @@
     "id": "20301",
     "name": "Skraev Helm",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Agility": 1
+    }
   },
   "chestplate":
   {
     "id": "20302",
     "name": "Skraev Plate",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Agility": 1
+    }
   },
   "gloves":
   {
     "id": "20303",
     "name": "Skraev Gloves",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasion": 1
+    }
   },
   "greaves":
   {
     "id": "20304",
     "name": "Skraev Greaves",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Evasion": 1
+    }
   }
 },
 {
@@ -291,32 +338,40 @@
     "id": "20401",
     "name": "Draskscale Faceguard",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Attunement": 1
+    }
   },
   "chestplate":
   {
     "id": "20402",
     "name": "Draskscale Plate",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Sharpened": 1
+    }
   },
   "gloves":
   {
     "id": "20403",
     "name": "Draskscale Gauntlets",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Sharpened": 1
+    }
   },
   "greaves":
   {
     "id": "20404",
     "name": "Draskscale Greaves",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Attunement": 1
+    }
   }
 },
 {
@@ -326,32 +381,40 @@
     "id": "30101",
     "name": "Zaga Mask",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Medic": 1
+    }
   },
   "chestplate":
   {
     "id": "30102",
     "name": "Zaga Jacket",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Attunement": 1
+    }
   },
   "gloves":
   {
     "id": "30103",
     "name": "Zaga Bracers",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Attunement": 1
+    }
   },
   "greaves":
   {
     "id": "30104",
     "name": "Zaga Greaves",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Medic": 1
+    }
   }
 },
 {
@@ -361,32 +424,40 @@
     "id": "30201",
     "name": "Pangar Helm",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Knockout King": 1
+    }
   },
   "chestplate":
   {
     "id": "30202",
     "name": "Pangar Scaleplate",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Endurance": 1
+    }
   },
   "gloves":
   {
     "id": "30203",
     "name": "Pangar Grips",
-    "cellslot": "Power",
-    "bonus": [
-    {}]
+    "cellslot": "Utility",
+    "bonuses":
+    {
+      "Knockout King": 1
+    }
   },
   "greaves":
   {
     "id": "30204",
     "name": "Pangar Boots",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Endurance": 1
+    }
   }
 },
 {
@@ -396,32 +467,40 @@
     "id": "30301",
     "name": "Hellcasque",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Fortress": 1
+    }
   },
   "chestplate":
   {
     "id": "30302",
     "name": "Hellplate",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Fortress": 1
+    }
   },
   "gloves":
   {
     "id": "30303",
     "name": "Hellbracers",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Ragehunter": 1
+    }
   },
   "greaves":
   {
     "id": "30304",
     "name": "Hellgreaves",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Ragehunter": 1
+    }
   }
 },
 {
@@ -431,32 +510,40 @@
     "id": "30401",
     "name": "Stormhelm",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Energized": 1
+    }
   },
   "chestplate":
   {
     "id": "30402",
     "name": "Stormplate",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Frenzy": 1
+    }
   },
   "gloves":
   {
     "id": "30403",
     "name": "Stormbracers",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Frenzy": 1
+    }
   },
   "greaves":
   {
     "id": "30404",
     "name": "Stormboots",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Energized": 1
+    }
   }
 },
 {
@@ -466,32 +553,40 @@
     "id": "30501",
     "name": "Kharabak Helm",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Endurance": 1
+    }
   },
   "chestplate":
   {
     "id": "30502",
     "name": "Kharabak Plate",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": 1
+    }
   },
   "gloves":
   {
     "id": "30503",
     "name": "Kharabak Bracers",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": 1
+    }
   },
   "greaves":
   {
     "id": "30504",
     "name": "Kharabak Greaves",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": 1
+    }
   }
 },
 {
@@ -501,44 +596,44 @@
     "id": "40101",
     "name": "Ragetail Touque",
     "cellslot": "Defence",
-    "bonus": [
+    "bonuses":
     {
       "Tough": "1",
       "Bloodless": "2"
-    }]
+    }
   },
   "chestplate":
   {
     "id": "40102",
     "name": "Ragetail Cloak",
     "cellslot": "Defence",
-    "bonus": [
+    "bonuses":
     {
       "Tough": "2",
       "Bloodless": "1"
-    }]
+    }
   },
   "gloves":
   {
     "id": "40103",
     "name": "Ragetail Grips",
     "cellslot": "Power",
-    "bonus": [
+    "bonuses":
     {
       "Ragehunter": "2",
       "Tough": "1"
-    }]
+    }
   },
   "greaves":
   {
     "id": "40104",
     "name": "Ragetail Treads",
     "cellslot": "Power",
-    "bonus": [
+    "bonuses":
     {
       "Ragehunter": "1",
       "Bloodless": "2"
-    }]
+    }
   }
 },
 {
@@ -548,32 +643,44 @@
     "id": "40201",
     "name": "Firebrand Charrhelm",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Fireproof": "1",
+      "Energized": "2"
+    }
   },
   "chestplate":
   {
     "id": "40202",
     "name": "Firebrand Charrplate",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Fireproof": "2",
+      "Energized": "1"
+    }
   },
   "gloves":
   {
     "id": "40203",
     "name": "Firebrand Gauntlets",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Rage": "2",
+      "Energized": "1"
+    }
   },
   "greaves":
   {
     "id": "40204",
     "name": "Firebrand Greaves",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Fireproof": "2",
+      "Rage": "1"
+    }
   }
 },
 {
@@ -583,32 +690,44 @@
     "id": "40301",
     "name": "Shockjaw Mask",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Insulated": "2",
+      "Medic": "1"
+    }
   },
   "chestplate":
   {
     "id": "40302",
     "name": "Shockjaw Vest",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Insulated": "2",
+      "Aetheric Attunement": "1"
+    }
   },
   "gloves":
   {
     "id": "40303",
     "name": "Shockjaw Bracers",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Aetheric Attunement": "2",
+      "Medic": "1"
+    }
   },
   "greaves":
   {
     "id": "40304",
     "name": "Shockjaw Greaves",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Medic": "2",
+      "Insulated": "1"
+    }
   }
 },
 {
@@ -618,32 +737,44 @@
     "id": "40401",
     "name": "Razorwing Helm",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Endurance": "2",
+      "Deconstruction": "1"
+    }
   },
   "chestplate":
   {
     "id": "40402",
     "name": "Razorwing Plate",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": "2",
+      "Deconstruction": "1"
+    }
   },
   "gloves":
   {
     "id": "40403",
     "name": "Razorwing Bracers",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Bladestorm": "2",
+      "Endurance": "1"
+    }
   },
   "greaves":
   {
     "id": "40404",
     "name": "Razorwing Greaves",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Deconstruction": "2",
+      "Bladestorm": "1"
+    }
   }
 },
 {
@@ -653,32 +784,44 @@
     "id": "40501",
     "name": "Frosthelm",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Warmth": "2",
+      "Knockout King": "1"
+    }
   },
   "chestplate":
   {
     "id": "40502",
     "name": "Frostplate",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Knockout King": "2",
+      "Fortress": "1"
+    }
   },
   "gloves":
   {
     "id": "40503",
     "name": "Frostgrips",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Fortress": "2",
+      "Warmth": "1"
+    }
   },
   "greaves":
   {
     "id": "40504",
     "name": "Frostboots",
     "cellslot": "Defence",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Warmth": "2",
+      "Fortress": "1"
+    }
   }
 },
 {
@@ -687,33 +830,45 @@
   {
     "id": "40601",
     "name": "Deadeye Mask",
-    "cellslot": "",
-    "bonus": [
-    {}]
+    "cellslot": "Defence",
+    "bonuses":
+    {
+      "Barbed": "2",
+      "Shellshock Resist": "1"
+    }
   },
   "chestplate":
   {
     "id": "40602",
     "name": "Deadeye Jacket",
-    "cellslot": "",
-    "bonus": [
-    {}]
+    "cellslot": "Technique",
+    "bonuses":
+    {
+      "Shellshock Resist": "2",
+      "Savagery": "1"
+    }
   },
   "gloves":
   {
     "id": "40603",
     "name": "Deadeye Grips",
-    "cellslot": "",
-    "bonus": [
-    {}]
+    "cellslot": "Technique",
+    "bonuses":
+    {
+      "Barbed": "2",
+      "Savagery": "1"
+    }
   },
   "greaves":
   {
     "id": "40604",
     "name": "Deadeye Boots",
-    "cellslot": "",
-    "bonus": [
-    {}]
+    "cellslot": "Utility",
+    "bonuses":
+    {
+      "Savagery": "2",
+      "Shellshock Resist": "1"
+    }
   }
 },
 {
@@ -723,32 +878,32 @@
     "id": "40701",
     "name": "Bloodfire Helm",
     "cellslot": "",
-    "bonus": [
-    {}]
+    "bonuses":
+    {}
   },
   "chestplate":
   {
     "id": "40702",
     "name": "Bloodfire Plate",
     "cellslot": "",
-    "bonus": [
-    {}]
+    "bonuses":
+    {}
   },
   "gloves":
   {
     "id": "40703",
     "name": "Bloodfire Gloves",
     "cellslot": "",
-    "bonus": [
-    {}]
+    "bonuses":
+    {}
   },
   "greaves":
   {
     "id": "40704",
     "name": "Bloodfire Greaves",
     "cellslot": "",
-    "bonus": [
-    {}]
+    "bonuses":
+    {}
   }
 },
 {
@@ -758,32 +913,44 @@
     "id": "40801",
     "name": "Reza Helm",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Energized": "2",
+      "Cunning": "1"
+    }
   },
   "chestplate":
   {
     "id": "40802",
     "name": "Reza Scales",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Energized": "2",
+      "Agility": "1"
+    }
   },
   "gloves":
   {
     "id": "40803",
     "name": "Reza Grips",
     "cellslot": "Technique",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Cunning": "2",
+      "Agility": "1"
+    }
   },
   "greaves":
   {
     "id": "40804",
     "name": "Reza Greaves",
     "cellslot": "Mobility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Agility": "2",
+      "Energized": "1"
+    }
   }
 },
 {
@@ -793,32 +960,44 @@
     "id": "40901",
     "name": "Shrowd Hood",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Medic": "2",
+      "Rage": "1"
+    }
   },
   "chestplate":
   {
     "id": "40902",
     "name": "Shrowd Cloak",
     "cellslot": "Power",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Nine Lives": "2",
+      "Medic": "1"
+    }
   },
   "gloves":
   {
     "id": "40903",
     "name": "Shrowd Bracers",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Rage": "2",
+      "Medic": "1"
+    }
   },
   "greaves":
   {
     "id": "40904",
     "name": "Shrowd Boots",
     "cellslot": "Utility",
-    "bonus": [
-    {}]
+    "bonuses":
+    {
+      "Medic": "2",
+      "Nine Lives": "1"
+    }
   }
 },
 {
@@ -828,7 +1007,7 @@
     "id": "90101",
     "name": "Prismatic Grace",
     "cellslot": "Technique",
-    "bonus": [
+    "bonuses": [
     {}]
   }
 },
@@ -839,7 +1018,7 @@
     "id": "90201",
     "name": "Tragic Echo",
     "cellslot": "Technique",
-    "bonus": [
+    "bonuses": [
     {}]
   }
 }]

@@ -420,18 +420,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -448,18 +444,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -476,18 +468,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -504,18 +492,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -532,18 +516,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -560,18 +540,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -587,18 +563,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -615,18 +587,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -643,18 +611,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -671,18 +635,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -698,18 +658,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);
@@ -725,18 +681,14 @@ function updateStats(){
     if($(this).data("bonuses")){
       let bonusString = $(this).data("bonuses");
       if(bonusString == undefined || bonusString == "none"){
-        console.log($(this) + " returned false");
         return false;
       }
-      console.log(bonusString);
       bonusString = bonusString.replace(/'/g, "\"");
-      console.log(bonusString);
       let bonuses = JSON.parse(bonusString);
-      console.log(bonuses);
       let keys = Object.keys(bonuses);
-      console.log(keys);
-      for(let key in bonuses){
-        if(stats.hasOwnProperty(key)){
+      console.log("keys: " + keys + " bonuses: " + bonuses);
+      for (let key in bonuses){
+        if (key in stats){
           console.log("exists in stats, prev value: " + stats[key]);
           stats[key] += bonuses[key];
           console.log("value after: " + stats[key]);

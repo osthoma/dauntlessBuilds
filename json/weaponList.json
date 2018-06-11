@@ -1209,8 +1209,8 @@
     "id": "90101",
     "type": "War Pikes",
     "name": "The Godhand",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Technique",
     "bonuses": "none",
     "specials": "none"
   },
@@ -1218,8 +1218,8 @@
     "id": "90201",
     "type": "Swords",
     "name": "The Hunger",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Utility",
     "bonuses": "none",
     "specials":
     {
