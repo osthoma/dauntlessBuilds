@@ -1,3 +1,5 @@
+/* global Hashids */
+
 const hashids = new Hashids('dauntlessBuilds');
 
 
@@ -15,14 +17,14 @@ function hideAllCells() {
 
 function updateWeaponCells(type) {
   $('#weaponCellSelection01 option').css('display', 'none');
-  $('#weaponCellSelection01 option').each(function () {
+  $('#weaponCellSelection01 option').each(function displayMatchingCells() {
     if ($(`${type} option:selected`).data('cellslot01') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
   });
 
   $('#weaponCellSelection02 option').css('display', 'none');
-  $('#weaponCellSelection02 option').each(function () {
+  $('#weaponCellSelection02 option').each(function displayMatchingCells() {
     if ($(`${type} option:selected`).data('cellslot02') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
@@ -35,7 +37,7 @@ function updateWeaponCells(type) {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#weaponCellSelection01 option').each(function () {
+  $('#weaponCellSelection01 option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -43,7 +45,7 @@ function updateWeaponCells(type) {
     return true;
   });
 
-  $('#weaponCellSelection02 option').each(function () {
+  $('#weaponCellSelection02 option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -54,7 +56,7 @@ function updateWeaponCells(type) {
 
 function updateLanternCells() {
   $('#lanternCellSelection option').css('display', 'none');
-  $('#lanternCellSelection option').each(function () {
+  $('#lanternCellSelection option').each(function displayMatchingCells() {
     if ($('#lanternSelection option:selected').data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
@@ -64,7 +66,7 @@ function updateLanternCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#lanternCellSelection option').each(function () {
+  $('#lanternCellSelection option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -75,7 +77,7 @@ function updateLanternCells() {
 
 function updateHelmetCells() {
   $('#helmetCellSelection option').css('display', 'none');
-  $('#helmetCellSelection option').each(function () {
+  $('#helmetCellSelection option').each(function displayMatchingCells() {
     if ($('#helmetSelection option:selected').data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
@@ -85,7 +87,7 @@ function updateHelmetCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#helmetCellSelection option').each(function () {
+  $('#helmetCellSelection option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -96,7 +98,7 @@ function updateHelmetCells() {
 
 function updateChestplateCells() {
   $('#chestplateCellSelection option').css('display', 'none');
-  $('#chestplateCellSelection option').each(function () {
+  $('#chestplateCellSelection option').each(function displayMatchingCells() {
     if ($('#chestplateSelection option:selected').data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
@@ -106,7 +108,7 @@ function updateChestplateCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#chestplateCellSelection option').each(function () {
+  $('#chestplateCellSelection option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -117,7 +119,7 @@ function updateChestplateCells() {
 
 function updateGauntletsCells() {
   $('#gauntletsCellSelection option').css('display', 'none');
-  $('#gauntletsCellSelection option').each(function () {
+  $('#gauntletsCellSelection option').each(function displayMatchingCells() {
     if ($('#gauntletsSelection option:selected').data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
@@ -127,7 +129,7 @@ function updateGauntletsCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#gauntletsCellSelection option').each(function () {
+  $('#gauntletsCellSelection option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -138,7 +140,7 @@ function updateGauntletsCells() {
 
 function updateGreavesCells() {
   $('#greavesCellSelection option').css('display', 'none');
-  $('#greavesCellSelection option').each(function () {
+  $('#greavesCellSelection option').each(function displayMatchingCells() {
     if ($('#greavesSelection option:selected').data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
@@ -148,7 +150,7 @@ function updateGreavesCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#greavesCellSelection option').each(function () {
+  $('#greavesCellSelection option').each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
       return false;
@@ -158,18 +160,18 @@ function updateGreavesCells() {
 }
 
 function updateStats() {
-  let stats = [];
-  let uniqueEffects = [];
+  const stats = [];
+  const uniqueEffects = [];
 
   if ($('#typeSelection option:selected').val() === '1') {
-    $('#Hammers option:selected').each(function () {
+    $('#Hammers option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
         let bonusString = $(this).data('bonuses');
         if (bonusString !== undefined && bonusString !== 'None') {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (let key in bonuses) {
+          for (const key in bonuses) {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
@@ -185,21 +187,23 @@ function updateStats() {
         }
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
-        for (let key in specials) {
+
+        Object.keys(specials).forEach((key) => {
           uniqueEffects.push(specials[key]);
-        }
+        });
       }
+      return true;
     });
   }
   if ($('#typeSelection option:selected').val() === '2') {
-    $('#Axes option:selected').each(function () {
+    $('#Axes option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
         let bonusString = $(this).data('bonuses');
         if (bonusString !== undefined && bonusString !== 'None') {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (let key in bonuses) {
+          for (const key in bonuses) {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
@@ -214,22 +218,24 @@ function updateStats() {
           }
           specialsString = specialsString.replace(/'/g, '"');
           const specials = JSON.parse(specialsString);
-          for (let key in specials) {
+
+          Object.keys(specials).forEach((key) => {
             uniqueEffects.push(specials[key]);
-          }
+          });
         }
       }
-    })
+      return true;
+    });
   }
-  if ($("#typeSelection option:selected").val() === '3') {
-    $('#Swords option:selected').each(function () {
+  if ($('#typeSelection option:selected').val() === '3') {
+    $('#Swords option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
         let bonusString = $(this).data('bonuses');
         if (bonusString !== undefined && bonusString !== 'None') {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (let key in bonuses) {
+          for (const key in bonuses) {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
@@ -244,22 +250,24 @@ function updateStats() {
           }
           specialsString = specialsString.replace(/'/g, '"');
           const specials = JSON.parse(specialsString);
-          for (let key in specials) {
+          Object.keys(specials).forEach((key) => {
             uniqueEffects.push(specials[key]);
-          }
+          });
         }
       }
-    })
+      return true;
+    });
   }
-  if ($("#typeSelection option:selected").val() === '4') {
-    $('#ChainBlades option:selected').each(function () {
+
+  if ($('#typeSelection option:selected').val() === '4') {
+    $('#ChainBlades option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
         let bonusString = $(this).data('bonuses');
         if (bonusString !== undefined && bonusString !== 'None') {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (let key in bonuses) {
+          for (const key in bonuses) {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
@@ -274,23 +282,23 @@ function updateStats() {
           }
           specialsString = specialsString.replace(/'/g, '"');
           const specials = JSON.parse(specialsString);
-          for (let key in specials) {
+          Object.keys(specials).forEach((key) => {
             uniqueEffects.push(specials[key]);
-          }
+          });
         }
       }
       return true;
     });
   }
   if ($('#typeSelection option:selected').val() === '5') {
-    $('#WarPikes option:selected').each(function () {
+    $('#WarPikes option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
         let bonusString = $(this).data('bonuses');
         if (bonusString !== undefined && bonusString !== 'None') {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (let key in bonuses) {
+          for (const key in bonuses) {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
@@ -305,22 +313,22 @@ function updateStats() {
           }
           specialsString = specialsString.replace(/'/g, '"');
           const specials = JSON.parse(specialsString);
-          for (let key in specials) {
+          Object.keys(specials).forEach((key) => {
             uniqueEffects.push(specials[key]);
-          }
+          });
         }
       }
       return true;
     });
   }
-  $('#lanternSelection option:selected').each(function () {
+  $('#lanternSelection option:selected').each(function addBonusesAndSpecials() {
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (let key in bonuses) {
+        for (const key in bonuses) {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
@@ -332,215 +340,7 @@ function updateStats() {
     return true;
   });
 
-  $('#helmetSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
-    return true;
-  });
-
-  $('#chestplateSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
-  });
-
-  $('#gauntletsSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
-    return true;
-  });
-
-  $('#greavesSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
-    return true;
-  })
-
-  $('#weaponCellSelection01 option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-
-        }
-      }
-    }
-  })
-  $('#weaponCellSelection02 option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-
-        }
-      }
-    }
-  })
-
-  $('#lanternCellSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-
-        }
-      }
-    }
-  })
-
-  $('#helmetCellSelection option:selected').each(function () {
+  $('#helmetSelection option:selected').each(function addBonusesAndSpecials() {
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
@@ -562,97 +362,232 @@ function updateStats() {
         }
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
-        for (let key in specials) {
+        Object.keys(specials).forEach((key) => {
           uniqueEffects.push(specials[key]);
-
-        }
+        });
       }
     }
-  })
-
-  $('#chestplateCellSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
-  })
-  $('#gauntletsCellSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
-  })
-  $('#greavesCellSelection option:selected').each(function () {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-        for (let key in bonuses) {
-          if (key in stats) {
-            stats[key] += bonuses[key];
-          } else {
-            stats[key] = bonuses[key];
-          }
-        }
-      }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
-        specialsString = specialsString.replace(/'/g, '"');
-        const specials = JSON.parse(specialsString);
-        for (let key in specials) {
-          uniqueEffects.push(specials[key]);
-        }
-      }
-    }
+    return true;
   });
 
+  $('#chestplateSelection option:selected').each(function addBonusesAndSpecials() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+      if ($(this).data('specials')) {
+        let specialsString = $(this).data('specials');
+        if (specialsString === undefined || specialsString === 'None') {
+          return false;
+        }
+        specialsString = specialsString.replace(/'/g, '"');
+        const specials = JSON.parse(specialsString);
+        Object.keys(specials).forEach((key) => {
+          uniqueEffects.push(specials[key]);
+        });
+      }
+    }
+    return true;
+  });
+
+  $('#gauntletsSelection option:selected').each(function addBonusesAndSpecials() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+      if ($(this).data('specials')) {
+        let specialsString = $(this).data('specials');
+        if (specialsString === undefined || specialsString === 'None') {
+          return false;
+        }
+        specialsString = specialsString.replace(/'/g, '"');
+        const specials = JSON.parse(specialsString);
+        Object.keys(specials).forEach((key) => {
+          uniqueEffects.push(specials[key]);
+        });
+      }
+    }
+    return true;
+  });
+
+  $('#greavesSelection option:selected').each(function addBonusesAndSpecials() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+      if ($(this).data('specials')) {
+        let specialsString = $(this).data('specials');
+        if (specialsString === undefined || specialsString === 'None') {
+          return false;
+        }
+        specialsString = specialsString.replace(/'/g, '"');
+        const specials = JSON.parse(specialsString);
+        Object.keys(specials).forEach((key) => {
+          uniqueEffects.push(specials[key]);
+        });
+      }
+    }
+    return true;
+  });
+
+  $('#weaponCellSelection01 option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
+
+  $('#weaponCellSelection02 option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
+
+  $('#lanternCellSelection option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
+
+  $('#helmetCellSelection option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
+
+  $('#chestplateCellSelection option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
+
+  $('#gauntletsCellSelection option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
+
+  $('#greavesCellSelection option:selected').each(function addCellBonuses() {
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+        for (const key in bonuses) {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        }
+      }
+    }
+    return true;
+  });
 
   $('#stats').empty();
   if (Object.keys(stats).length > 0) {
@@ -666,7 +601,7 @@ function updateStats() {
     for (const [key, value] of Object.entries(stats)) {
       let tooltip = '';
       for (const cellDescription in cellDescriptions) {
-        let object = cellDescriptions[cellDescription];
+        const object = cellDescriptions[cellDescription];
         if (object.name === key) {
           for (let i = 0; i < 6; i += 1) {
             const key = Object.keys(object)[i + 1];
@@ -807,7 +742,14 @@ function updateUrl() {
   selectedGreavesCell = $('#greavesCellSelection option:selected').val();
   selectedGreavesCellLevel = $('#greavesCellSelection option:selected').data('amount');
 
-  const hash = hashids.encode(selectedWeaponType, selectedWeapon, selectedWeaponCell01, selectedWeaponCell01level, selectedWeaponCell02, selectedWeaponCell02level, selectedLantern, selectedLanternCell, selectedLanternCellLevel, selectedHelmet, selectedHelmetCell, selectedHelmetCellLevel, selectedChestplate, selectedChestplateCell, selectedChestplateCellLevel, selectedGauntlets, selectedGauntletsCell, selectedGauntletsCellLevel, selectedGreaves, selectedGreavesCell, selectedGreavesCellLevel);
+  const hash = hashids.encode(
+    selectedWeaponType, selectedWeapon, selectedWeaponCell01, selectedWeaponCell01level,
+    selectedWeaponCell02, selectedWeaponCell02level, selectedLantern, selectedLanternCell,
+    selectedLanternCellLevel, selectedHelmet, selectedHelmetCell, selectedHelmetCellLevel,
+    selectedChestplate, selectedChestplateCell, selectedChestplateCellLevel, selectedGauntlets,
+    selectedGauntletsCell, selectedGauntletsCellLevel, selectedGreaves, selectedGreavesCell,
+    selectedGreavesCellLevel,
+  );
   $('#permaLink').val(`http://dauntlessbuilds.com/b/${hash}`);
 }
 
@@ -935,11 +877,13 @@ $(document).ready(() => {
 
   hideAllCells();
 
+
+  /* global decodeUrl:true/false buildString:hash */
+
   if (decodeUrl === true) {
     const selectedItems = hashids.decode(buildString);
 
     if (selectedItems.length > 0) {
-
       // 0 selectedWeaponType
       // 1 selectedWeapon
       // 2 selectedWeaponCell01
@@ -1002,7 +946,7 @@ $(document).ready(() => {
       updateGreavesCells();
 
 
-      $('#weaponCellSelection01 option').each(function () {
+      $('#weaponCellSelection01 option').each(function selectCellById() {
         if ($(this).val() === selectedItems[2] && $(this).data('amount') === selectedItems[3]) {
           $(this).prop('selected', true);
           return false;
@@ -1010,7 +954,7 @@ $(document).ready(() => {
         return true;
       });
 
-      $('#weaponCellSelection02 option').each(function () {
+      $('#weaponCellSelection02 option').each(function selectCellById() {
         if ($(this).val() === selectedItems[4] && $(this).data('amount') === selectedItems[5]) {
           $(this).prop('selected', true);
           return false;
@@ -1019,7 +963,7 @@ $(document).ready(() => {
       });
 
 
-      $('#lanternCellSelection option').each(function () {
+      $('#lanternCellSelection option').each(function selectCellById() {
         if ($(this).val() === selectedItems[7] && $(this).data('amount') === selectedItems[8]) {
           $(this).prop('selected', true);
           return false;
@@ -1028,7 +972,7 @@ $(document).ready(() => {
       });
 
 
-      $('#helmetCellSelection option').each(function () {
+      $('#helmetCellSelection option').each(function selectCellById() {
         if ($(this).val() === selectedItems[10] && $(this).data('amount') === selectedItems[11]) {
           $(this).prop('selected', true);
           return false;
@@ -1036,7 +980,7 @@ $(document).ready(() => {
         return true;
       });
 
-      $('#chestplateCellSelection option').each(function () {
+      $('#chestplateCellSelection option').each(function selectCellById() {
         if ($(this).val() === selectedItems[13] && $(this).data('amount') === selectedItems[14]) {
           $(this).prop('selected', true);
           return false;
@@ -1044,7 +988,7 @@ $(document).ready(() => {
         return true;
       });
 
-      $('#gauntletsCellSelection option').each(function () {
+      $('#gauntletsCellSelection option').each(function selectCellById() {
         if ($(this).val() === selectedItems[16] && $(this).data('amount') === selectedItems[17]) {
           $(this).prop('selected', true);
           return false;
@@ -1052,7 +996,7 @@ $(document).ready(() => {
         return true;
       });
 
-      $('#greavesCellSelection option').each(function () {
+      $('#greavesCellSelection option').each(function selectCellById() {
         if ($(this).val() === selectedItems[19] && $(this).data('amount') === selectedItems[20]) {
           $(this).prop('selected', true);
           return false;
