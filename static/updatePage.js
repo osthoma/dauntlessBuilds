@@ -1024,6 +1024,14 @@ function updateStats() {
     $('#stats').append('<h6 class="card-subtitle text-muted">No bonuses from items or infusions.</h6>');
   }
 
+  $('#lanternEffects').empty();
+
+  let lanternEffectInstant = "Instant: " + $('#lanternSelection option:selected').data("instant");;
+  let lanternEffectHold = "Hold: " + $('#lanternSelection option:selected').data("hold");;
+
+  $('#lanternEffects').append('<li class="list-group-item">' + lanternEffectInstant + '</li>');
+  $('#lanternEffects').append('<li class="list-group-item">' + lanternEffectHold + '</li>');
+
   $('#uniqueEffects').empty();
   if (uniqueEffects.length > 0) {
     for (let i = 0; i < uniqueEffects.length; i++) {
