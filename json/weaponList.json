@@ -1434,7 +1434,7 @@
     "type": "Axes",
     "name": "Rezacutter",
     "cellslot01": "Power",
-    "cellslot02": "Utility",
+    "cellslot02": "Mobility",
     "bonuses": "None",
     "specials":
     {
