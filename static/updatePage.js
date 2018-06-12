@@ -1,7 +1,8 @@
-/* global Hashids cellDescriptions */
+/* global Hashids ClipboardJS cellDescriptions */
 
 const hashids = new Hashids('dauntlessBuilds');
 
+const clipboard = new ClipboardJS('.btn-clipboard');
 
 function hideAllWeapons() {
   $('#Hammers').css('display', 'none');
