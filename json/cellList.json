@@ -20,9 +20,9 @@
       "level01": "Reduces duration of Wounded status by 50%",
       "level02": "Reduces duration of Wounded status by 80%",
       "level03": "Immune to Wounded status",
-      "level04": "Reduces effectiveness of Crippling Wounded status by 50% Immune to Wounded status",
-      "level05": "Reduces effectiveness of Crippling Wounded status by 80% Immune to Wounded status",
-      "level06": "Immune to Wounded status Immune to Crippling Wound status"
+      "level04": "Reduces effectiveness of Crippling Wounded status by 50%</br>Immune to Wounded status",
+      "level05": "Reduces effectiveness of Crippling Wounded status by 80%</br>Immune to Wounded status",
+      "level06": "Immune to Wounded status</br>Immune to Crippling Wound status"
     },
     {
       "id": "103",
@@ -53,9 +53,9 @@
       "level01": "Reduces duration of Shocked status by 25%",
       "level02": "Reduces duration of Shocked status by 50%",
       "level03": "Reduces duration of Shocked status by 75%",
-      "level04": "Reduces duration of Shocked status by 75% Reduces knockback and damage of hitting electrified shields.",
-      "level05": "Reduces duration of Shocked status by 75% Prevents knockback and damage of hitting electrified shields.",
-      "level06": "Immune to Shocked status Prevents knockback and damage of hitting electrified shields."
+      "level04": "Reduces duration of Shocked status by 75%</br>Reduces knockback and damage of hitting electrified shields.",
+      "level05": "Reduces duration of Shocked status by 75%</br>Prevents knockback and damage of hitting electrified shields.",
+      "level06": "Immune to Shocked status</br>Prevents knockback and damage of hitting electrified shields."
     },
     {
       "id": "106",
@@ -64,9 +64,9 @@
       "level01": "+5% chance to halve incoming damage",
       "level02": "+8% chance to halve incoming damage",
       "level03": "+12% chance to halve incoming damage",
-      "level04": "+12% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400",
-      "level05": "+16% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400",
-      "level06": "+20% chance to halve incoming damage The first time you would be knocked out, stay up and heal for 400, and become empowered for 10 seconds"
+      "level04": "+12% chance to halve incoming damage</br>The first time you would be knocked out, stay up and heal for 400",
+      "level05": "+16% chance to halve incoming damage</br>The first time you would be knocked out, stay up and heal for 400",
+      "level06": "+20% chance to halve incoming damage</br>The first time you would be knocked out, stay up and heal for 400, and become empowered for 10 seconds"
     },
     {
       "id": "107",
@@ -108,9 +108,9 @@
       "level01": "Reduces duration of Frozen status by 30%",
       "level02": "Reduces duration of Frozen status by 60%",
       "level03": "Immune to being Frozen",
-      "level04": "Reduces duration of Chilled status by 30% Immune to being Frozen",
-      "level05": "Reduces duration of Chilled status by 60% Immune to being Frozen",
-      "level06": "Immune to being Frozen Immune to being Chilled"
+      "level04": "Reduces duration of Chilled status by 30%</br>Immune to being Frozen",
+      "level05": "Reduces duration of Chilled status by 60%</br>Immune to being Frozen",
+      "level06": "Immune to being Frozen</br>Immune to being Chilled"
     }]
   },
   {
@@ -191,7 +191,7 @@
       "level03": "While sheathed, increases Movement Speed by 15%",
       "level04": "While sheathed, increases Movement Speed by 20%",
       "level05": "While sheathed, increases Movement Speed by 25%",
-      "level06": "While sheathed, increases Movement Speed by 30% Also affects other nearby Slayers."
+      "level06": "While sheathed, increases Movement Speed by 30%</br>Also affects other nearby Slayers."
     }]
   },
 
@@ -227,9 +227,9 @@
       "level01": "5% Stagger Damage",
       "level02": "10% Stagger Damage",
       "level03": "15% Stagger Damage",
-      "level04": "20% Stagger Damage After dodging through an attack, the next weapon attack's Stagger is increased by 50%",
-      "level05": "25% Stagger Damage After dodging through an attack, the next weapon attack's Stagger is increased by 50%",
-      "level06": "30% Stagger Damage After dodging through an attack, the next weapon attack's Stagger is increased by 100%"
+      "level04": "20% Stagger Damage</br>After dodging through an attack, the next weapon attack's Stagger is increased by 50%",
+      "level05": "25% Stagger Damage</br>After dodging through an attack, the next weapon attack's Stagger is increased by 50%",
+      "level06": "30% Stagger Damage</br>After dodging through an attack, the next weapon attack's Stagger is increased by 100%"
     },
     {
       "id": "304",
@@ -282,9 +282,9 @@
       "level01": "+5% Part Damage",
       "level02": "+10% Part Damage",
       "level03": "+15% Part Damage",
-      "level04": "+20% Part Damage After dodging through an attack, the next weapon attack's Part Break Damage is increased by 50%",
-      "level05": "+25% Part Damage After dodging through an attack, the next weapon attack's Part Break Damage is increased by 50%",
-      "level06": "+30% Part Damage After dodging through an attack, the next weapon attack's Part Break Damage is increased by 100%"
+      "level04": "+20% Part Damage</br>After dodging through an attack, the next weapon attack's Part Break Damage is increased by 50%",
+      "level05": "+25% Part Damage</br>After dodging through an attack, the next weapon attack's Part Break Damage is increased by 50%",
+      "level06": "+30% Part Damage</br>After dodging through an attack, the next weapon attack's Part Break Damage is increased by 100%"
     }]
   },
 
@@ -298,9 +298,9 @@
       "level01": "Converts 30% of Part Damage to Wound Damage",
       "level02": "Converts 40% of Part Damage to Wound Damage",
       "level03": "Converts 50% of Part Damage to Wound Damage",
-      "level04": "Converts 50% of Part Damage to Wound Damage +10 % Part damage ",
-      "level05": "Converts 50% of Part Damage to Wound Damage +15 % Part damage ",
-      "level06": "Converts 50% of Part Damage to Wound Damage +20 % Part damage "
+      "level04": "Converts 50% of Part Damage to Wound Damage</br>+10 % Part damage ",
+      "level05": "Converts 50% of Part Damage to Wound Damage</br>+15 % Part damage ",
+      "level06": "Converts 50% of Part Damage to Wound Damage</br>+20 % Part damage "
     },
     {
       "id": "402",
@@ -309,9 +309,9 @@
       "level01": "+5 Wound Damage on Hit",
       "level02": "+10 Wound Damage on Hit",
       "level03": "+15 Wound Damage on Hit",
-      "level04": "+20 Wound Damage on Hit After dodging through an attack, the next attack's Expose Damage is increased by 200",
-      "level05": "+30 Wound Damage on Hit After dodging through an attack, the next attack's Expose Damage is increased by 200",
-      "level06": "+40 Wound Damage on Hit After dodging through an attack, the next attack's Expose Damage is increased by 400"
+      "level04": "+20 Wound Damage on Hit</br>After dodging through an attack, the next attack's Expose Damage is increased by 200",
+      "level05": "+30 Wound Damage on Hit</br>After dodging through an attack, the next attack's Expose Damage is increased by 200",
+      "level06": "+40 Wound Damage on Hit</br>After dodging through an attack, the next attack's Expose Damage is increased by 400"
     },
     {
       "id": "403",
@@ -320,9 +320,9 @@
       "level01": "+5 Part Damage on Hit",
       "level02": "+10 Part Damage on Hit",
       "level03": "+15 Part Damage on Hit",
-      "level04": "+20 Part Damage on Hit +200 Part Damage after dodging through an attack",
-      "level05": "+30 Part Damage on Hit +200 Part Damage after dodging through an attack",
-      "level06": "+40 Part Damage on Hit +400 Part Damage after dodging through an attack"
+      "level04": "+20 Part Damage on Hit</br>+200 Part Damage after dodging through an attack",
+      "level05": "+30 Part Damage on Hit</br>+200 Part Damage after dodging through an attack",
+      "level06": "+40 Part Damage on Hit</br>+400 Part Damage after dodging through an attack"
     },
     {
       "id": "404",
@@ -388,7 +388,7 @@
       "level03": "+15 Stagger Damage on Hit",
       "level04": "+20 Stagger Damage on Hit +200 Stagger after dodging through an attack",
       "level05": "+30 Stagger Damage on Hit +200 Stagger after dodging through an attack",
-      "level06": "+40 Stagger Damage on Hit +400 Stagger after dodging through an attack Ranged swings and missiles interrupt unstable Behemoth attacks"
+      "level06": "+40 Stagger Damage on Hit +400 Stagger after dodging through an attack</br>Ranged swings and missiles interrupt unstable Behemoth attacks"
     }]
   },
 
@@ -399,12 +399,12 @@
       "id": "501",
       "name": "Aetherborne",
       "description": "Increases the benefits of using aether vents.",
-      "level01": "25% chance not to consume an Aether Vent charge on use. 25 additional Aether Vent healing.",
-      "level02": "25% chance not to consume an Aether Vent charge on use. 50 additional Aether Vent healing.",
-      "level03": "25% chance not to consume an Aether Vent charge on use. 75 additional Aether Vent healing.",
-      "level04": "25% chance not to consume an Aether Vent charge on use. 100 additional Aether Vent healing.",
-      "level05": "25% chance not to consume an Aether Vent charge on use. 150 additional Aether Vent healing.",
-      "level06": "25% chance not to consume an Aether Vent charge on use. 200 additional Aether Vent healing."
+      "level01": "25% chance not to consume an Aether Vent charge on use.</br>25 additional Aether Vent healing.",
+      "level02": "25% chance not to consume an Aether Vent charge on use.</br>50 additional Aether Vent healing.",
+      "level03": "25% chance not to consume an Aether Vent charge on use.</br>75 additional Aether Vent healing.",
+      "level04": "25% chance not to consume an Aether Vent charge on use.</br>100 additional Aether Vent healing.",
+      "level05": "25% chance not to consume an Aether Vent charge on use.</br>150 additional Aether Vent healing.",
+      "level06": "25% chance not to consume an Aether Vent charge on use.</br>200 additional Aether Vent healing."
     },
     {
       "id": "502",
@@ -446,9 +446,9 @@
       "level01": "When reviving an ally, they are healed an additional 10%",
       "level02": "When reviving an ally, they are healed an additional 20%",
       "level03": "When reviving an ally, they are healed an additional 30%",
-      "level04": "When reviving an ally, they are healed an additional 30% Increases Revive Speed by 66%",
-      "level05": "When reviving an ally, they are healed an additional 50% Increases Revive Speed by 66%",
-      "level06": "When reviving an ally, they are healed an additional 100% Increases Revive Speed by 66% Grants a 400 health shield for 20 seconds after reviving an ally."
+      "level04": "When reviving an ally, they are healed an additional 30%</br>Increases Revive Speed by 66%",
+      "level05": "When reviving an ally, they are healed an additional 50%</br>Increases Revive Speed by 66%",
+      "level06": "When reviving an ally, they are healed an additional 100%</br>Increases Revive Speed by 66%</br>Grants a 400 health shield for 20 seconds after reviving an ally."
     },
     {
       "id": "506",
