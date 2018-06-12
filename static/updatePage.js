@@ -617,7 +617,7 @@ function updateStats() {
       $('#stats').append(`<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="${tooltip}">${key} +${value}</button>`);
     }
   } else {
-    $('#stats').append('<h6 class="card-subtitle text-muted">No bonuses from items or infusions.</h6>');
+    $('#stats').append('<p class="card-subtitle text-muted">No bonuses from items or infusions.</p>');
   }
 
   $('#lanternEffects').empty();
@@ -625,16 +625,16 @@ function updateStats() {
   const lanternEffectInstant = `Instant: ${$('#lanternSelection option:selected').data('instant')}`;
   const lanternEffectHold = `Hold: ${$('#lanternSelection option:selected').data('hold')}`;
 
-  $('#lanternEffects').append(`<li class="list-group-item">${lanternEffectInstant}</li>`);
-  $('#lanternEffects').append(`<li class="list-group-item">${lanternEffectHold}</li>`);
+  $('#lanternEffects').append(`<li>${lanternEffectInstant}</li>`);
+  $('#lanternEffects').append(`<li>${lanternEffectHold}</li>`);
 
   $('#uniqueEffects').empty();
   if (uniqueEffects.length > 0) {
     for (let i = 0; i < uniqueEffects.length; i += 1) {
-      $('#uniqueEffects').append(`<li class="list-group-item">${uniqueEffects[i]}</li>`);
+      $('#uniqueEffects').append(`<li>${uniqueEffects[i]}</li>`);
     }
   } else {
-    $('#uniqueEffects').append('<h6 class="card-subtitle text-muted">No unique effects from items.</h6>');
+    $('#uniqueEffects').append('<p class="card-subtitle text-muted">No unique effects from items.</p>');
   }
 
   $(() => {
