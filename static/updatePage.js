@@ -1,4 +1,4 @@
-/* global Hashids */
+/* global Hashids cellDescriptions */
 
 const hashids = new Hashids('dauntlessBuilds');
 
@@ -171,13 +171,13 @@ function updateStats() {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (const key in bonuses) {
+          Object.keys(bonuses).forEach((key) => {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
               stats[key] = bonuses[key];
             }
-          }
+          });
         }
       }
       if ($(this).data('specials')) {
@@ -203,13 +203,13 @@ function updateStats() {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (const key in bonuses) {
+          Object.keys(bonuses).forEach((key) => {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
               stats[key] = bonuses[key];
             }
-          }
+          });
         }
         if ($(this).data('specials')) {
           let specialsString = $(this).data('specials');
@@ -235,13 +235,13 @@ function updateStats() {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (const key in bonuses) {
+          Object.keys(bonuses).forEach((key) => {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
               stats[key] = bonuses[key];
             }
-          }
+          });
         }
         if ($(this).data('specials')) {
           let specialsString = $(this).data('specials');
@@ -267,13 +267,13 @@ function updateStats() {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (const key in bonuses) {
+          Object.keys(bonuses).forEach((key) => {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
               stats[key] = bonuses[key];
             }
-          }
+          });
         }
         if ($(this).data('specials')) {
           let specialsString = $(this).data('specials');
@@ -298,13 +298,13 @@ function updateStats() {
           bonusString = bonusString.replace(/'/g, '"');
           const bonuses = JSON.parse(bonusString);
 
-          for (const key in bonuses) {
+          Object.keys(bonuses).forEach((key) => {
             if (key in stats) {
               stats[key] += bonuses[key];
             } else {
               stats[key] = bonuses[key];
             }
-          }
+          });
         }
         if ($(this).data('specials')) {
           let specialsString = $(this).data('specials');
@@ -328,13 +328,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -347,13 +347,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
       if ($(this).data('specials')) {
         let specialsString = $(this).data('specials');
@@ -377,13 +377,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
       if ($(this).data('specials')) {
         let specialsString = $(this).data('specials');
@@ -407,13 +407,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
       if ($(this).data('specials')) {
         let specialsString = $(this).data('specials');
@@ -437,13 +437,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
       if ($(this).data('specials')) {
         let specialsString = $(this).data('specials');
@@ -467,13 +467,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -486,13 +486,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -504,13 +504,13 @@ function updateStats() {
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -522,13 +522,13 @@ function updateStats() {
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -541,13 +541,13 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
 
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -559,13 +559,13 @@ function updateStats() {
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -577,13 +577,13 @@ function updateStats() {
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
-        for (const key in bonuses) {
+        Object.keys(bonuses).forEach((key) => {
           if (key in stats) {
             stats[key] += bonuses[key];
           } else {
             stats[key] = bonuses[key];
           }
-        }
+        });
       }
     }
     return true;
@@ -608,7 +608,7 @@ function updateStats() {
             if (i < value) {
               tooltip += `<p><b>${object[key]}</b></p>`;
             } else {
-              tooltip += `<p>${object[key]}</p>`;
+              tooltip += `<p class='text-secondary'>${object[key]}</p>`;
             }
           }
         }
