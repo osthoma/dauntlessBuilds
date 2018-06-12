@@ -1014,13 +1014,11 @@ function updateStats() {
   if (Object.keys(stats).length > 0) {
     for (const [key, value] of Object.entries(stats)) {
       let tooltip = "";
-      console.log("key: " + key);
       for (let cellDescription in cellDescriptions) {
         let object = cellDescriptions[cellDescription];
         if (object.name == key) {
           for (let i = 0; i < 6; i++) {
             let key = Object.keys(object)[i + 1];
-            console.log(key);
             if (i < value) {
               tooltip += "<p><b>" + object[key] + "</b></p>";
             } else {
@@ -1030,7 +1028,6 @@ function updateStats() {
         }
       }
       $('#stats').append('<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="' + tooltip + '">' + key + " +" + value + '</button>');
-      console.log(key, value);
     }
   } else {
     $('#stats').append('<h6 class="card-subtitle text-muted">No bonuses from items or infusions.</h6>');
