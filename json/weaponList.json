@@ -1070,10 +1070,16 @@
     "id": "40302",
     "type": "Chain Blades",
     "name": "Shockjaw Blades",
-    "cellslot01": "",
-    "cellslot02": "",
-    "bonuses": "None",
-    "specials": "None"
+    "cellslot01": "Technique",
+    "cellslot02": "Utility",
+    "bonuses":
+    {
+      "Energized": 2
+    },
+    "specials":
+    {
+      "special": "+5% Lifesteal vs Wounded parts"
+    }
   },
   {
     "id": "40303",
