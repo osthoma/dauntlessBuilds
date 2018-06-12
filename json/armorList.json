@@ -590,7 +590,7 @@
   }
 },
 {
-  "boss": "Ragetail",
+  "boss": "Ragetail Gnasher",
   "helmet":
   {
     "id": "40101",
@@ -863,7 +863,7 @@
   {
     "id": "40604",
     "name": "Deadeye Boots",
-    "cellslot": "Utility",
+    "cellslot": "Technique",
     "bonuses":
     {
       "Savagery": 2,
@@ -888,7 +888,7 @@
   {
     "id": "40702",
     "name": "Bloodfire Plate",
-    "cellslot": "Technique",
+    "cellslot": "Mobility",
     "bonuses":
     {
       "Evasion": 2,
@@ -899,7 +899,7 @@
   {
     "id": "40703",
     "name": "Bloodfire Gloves",
-    "cellslot": "Mobility",
+    "cellslot": "Technique",
     "bonuses":
     {
       "Evasive Fury": 2,
@@ -910,7 +910,7 @@
   {
     "id": "40704",
     "name": "Bloodfire Greaves",
-    "cellslot": "Mobility",
+    "cellslot": "Defence",
     "bonuses":
     {
       "Fireproof": 2,

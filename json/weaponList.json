@@ -1279,9 +1279,12 @@
     "bonuses":
     {
       "Savagery": 2,
-      "Acidic": 2
+      "Acidic": 1
     },
-    "specials": "None"
+    "specials":
+    {
+      "special01": "Converts 30% of Part damage to Wound damage"
+    }
   },
   {
     "id": "40602",
@@ -1292,9 +1295,12 @@
     "bonuses":
     {
       "Barbed": 2,
-      "Acidic": 2
+      "Acidic": 1
     },
-    "specials": "None"
+    "specials":
+    {
+      "special01": "Converts 30% of Part damage to Wound damage"
+    }
   },
   {
     "id": "40603",
@@ -1305,9 +1311,12 @@
     "bonuses":
     {
       "Savagery": 2,
-      "Acidic": 2
+      "Acidic": 1
     },
-    "specials": "None"
+    "specials":
+    {
+      "special01": "Converts 30% of Part damage to Wound damage"
+    }
   },
   {
     "id": "40604",
@@ -1318,9 +1327,12 @@
     "bonuses":
     {
       "Barbed": 2,
-      "Acidic": 2
+      "Acidic": 1
     },
-    "specials": "None"
+    "specials":
+    {
+      "special01": "Converts 30% of Part damage to Wound damage"
+    }
   },
   {
     "id": "40605",
@@ -1331,9 +1343,12 @@
     "bonuses":
     {
       "Barbed": 2,
-      "Acidic": 2
+      "Acidic": 1
     },
-    "specials": "None"
+    "specials":
+    {
+      "special01": "Converts 30% of Part damage to Wound damage"
+    }
   }]
 },
 {
@@ -1351,7 +1366,7 @@
     },
     "specials":
     {
-      "special01": "The fourth hit in quick succession deals 150-250 bonus damage"
+      "special01": "The fourth hit in quick succession deals 150 bonus damage"
     }
   },
   {
@@ -1362,7 +1377,7 @@
     "cellslot02": "Mobility",
     "bonuses":
     {
-      "Evasive Fury": 2
+      "Evasive Fury": 1
     },
     "specials":
     {
@@ -1379,7 +1394,7 @@
     "specials":
     {
       "special01": "+25% attack speed after landing a Hammer Blast",
-      "special02": "The fifth hit in a row deals +100~150% Stagger damage"
+      "special02": "The fifth hit in a row deals +100% Stagger damage"
     }
   },
   {
@@ -1394,7 +1409,7 @@
     },
     "specials":
     {
-      "special01": "The seventh hit in a row deals +200-450% Part damage"
+      "special01": "The seventh hit in a row deals +200% Part damage"
     }
   },
   {
@@ -1406,8 +1421,8 @@
     "bonuses": "None",
     "specials":
     {
-      "special01": "+30% Attack Speed after hitting with a Special Attack missile",
-      "special02": "The seventh hit in a row deals +200-300 Wound damage"
+      "special01": "+30% Attack Speed for 4-10 seonds after hitting with a Special Attack missile",
+      "special02": "The seventh hit in a row deals +200 Wound damage"
     }
   }]
 },

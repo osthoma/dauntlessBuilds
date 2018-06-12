@@ -751,14 +751,6 @@ function updateUrl() {
     selectedGreavesCellLevel,
   );
 
-  console.log(
-    selectedWeaponType, selectedWeapon, selectedWeaponCell01, selectedWeaponCell01level,
-    selectedWeaponCell02, selectedWeaponCell02level, selectedLantern, selectedLanternCell,
-    selectedLanternCellLevel, selectedHelmet, selectedHelmetCell, selectedHelmetCellLevel,
-    selectedChestplate, selectedChestplateCell, selectedChestplateCellLevel, selectedGauntlets,
-    selectedGauntletsCell, selectedGauntletsCellLevel, selectedGreaves, selectedGreavesCell,
-    selectedGreavesCellLevel,
-  );
   $('#permaLink').val(`http://dauntlessbuilds.com/b/${hash}`);
 }
 
@@ -890,8 +882,6 @@ $(document).ready(() => {
 
   if (decodeUrl === true) {
     const selectedItems = hashids.decode(buildString);
-
-    console.log(selectedItems);
 
     if (selectedItems.length > 0) {
       // 0 selectedWeaponType
