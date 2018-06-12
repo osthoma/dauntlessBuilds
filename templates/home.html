@@ -11,6 +11,16 @@ console.log("Site loaded with /b/" + buildString);
 var decodeUrl = false;
 </script>
 {% endif %}
+<script>
+let cellDescriptions = [];
+{% for category in cellData %}
+{% for infusion in category['cells'] %}
+var cellDescription = {name:"{{ infusion.name }}", level01:"{{ infusion.level01 }}", level02:"{{ infusion.level02 }}", level03:"{{ infusion.level03 }}", level04:"{{ infusion.level04 }}", level05:"{{ infusion.level05 }}", level06:"{{ infusion.level06 }}"};
+cellDescriptions.push(cellDescription);
+{% endfor %}
+{% endfor %}
+console.log(cellDescriptions);
+</script>
 <div class="container">
 
   <div class="alert alert-dismissible alert-secondary">

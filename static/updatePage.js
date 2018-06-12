@@ -441,16 +441,16 @@ function updateStats(){
           bonusString = bonusString.replace(/'/g, "\"");
           let bonuses = JSON.parse(bonusString);
           let keys = Object.keys(bonuses);
-          console.log("keys: " + keys + " bonuses: " + bonuses);
+
           for (let key in bonuses){
             if (key in stats){
-              console.log("exists in stats, prev value: " + stats[key]);
+
               stats[key] += bonuses[key];
-              console.log("value after: " + stats[key]);
+
             } else {
-              console.log("does not exist in stats, value: " + bonuses[key]);
+
               stats[key] = bonuses[key];
-              console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
             }
           }
         }
@@ -464,7 +464,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     })
@@ -477,16 +477,16 @@ function updateStats(){
           bonusString = bonusString.replace(/'/g, "\"");
           let bonuses = JSON.parse(bonusString);
           let keys = Object.keys(bonuses);
-          console.log("keys: " + keys + " bonuses: " + bonuses);
+
           for (let key in bonuses){
             if (key in stats){
-              console.log("exists in stats, prev value: " + stats[key]);
+
               stats[key] += bonuses[key];
-              console.log("value after: " + stats[key]);
+
             } else {
-              console.log("does not exist in stats, value: " + bonuses[key]);
+
               stats[key] = bonuses[key];
-              console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
             }
           }
         }
@@ -499,7 +499,7 @@ function updateStats(){
           let specials = JSON.parse(specialsString);
           for (let key in specials){
             uniqueEffects.push(specials[key]);
-            console.log("added " + specials[key] + " to uniqueEffects");
+
           }
         }
       }
@@ -513,16 +513,16 @@ function updateStats(){
           bonusString = bonusString.replace(/'/g, "\"");
           let bonuses = JSON.parse(bonusString);
           let keys = Object.keys(bonuses);
-          console.log("keys: " + keys + " bonuses: " + bonuses);
+
           for (let key in bonuses){
             if (key in stats){
-              console.log("exists in stats, prev value: " + stats[key]);
+
               stats[key] += bonuses[key];
-              console.log("value after: " + stats[key]);
+
             } else {
-              console.log("does not exist in stats, value: " + bonuses[key]);
+
               stats[key] = bonuses[key];
-              console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
             }
           }
         }
@@ -535,7 +535,7 @@ function updateStats(){
           let specials = JSON.parse(specialsString);
           for (let key in specials){
             uniqueEffects.push(specials[key]);
-            console.log("added " + specials[key] + " to uniqueEffects");
+
           }
         }
       }
@@ -549,16 +549,16 @@ function updateStats(){
           bonusString = bonusString.replace(/'/g, "\"");
           let bonuses = JSON.parse(bonusString);
           let keys = Object.keys(bonuses);
-          console.log("keys: " + keys + " bonuses: " + bonuses);
+
           for (let key in bonuses){
             if (key in stats){
-              console.log("exists in stats, prev value: " + stats[key]);
+
               stats[key] += bonuses[key];
-              console.log("value after: " + stats[key]);
+
             } else {
-              console.log("does not exist in stats, value: " + bonuses[key]);
+
               stats[key] = bonuses[key];
-              console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
             }
           }
         }
@@ -571,7 +571,7 @@ function updateStats(){
           let specials = JSON.parse(specialsString);
           for (let key in specials){
             uniqueEffects.push(specials[key]);
-            console.log("added " + specials[key] + " to uniqueEffects");
+
           }
         }
       }
@@ -585,16 +585,16 @@ function updateStats(){
           bonusString = bonusString.replace(/'/g, "\"");
           let bonuses = JSON.parse(bonusString);
           let keys = Object.keys(bonuses);
-          console.log("keys: " + keys + " bonuses: " + bonuses);
+
           for (let key in bonuses){
             if (key in stats){
-              console.log("exists in stats, prev value: " + stats[key]);
+
               stats[key] += bonuses[key];
-              console.log("value after: " + stats[key]);
+
             } else {
-              console.log("does not exist in stats, value: " + bonuses[key]);
+
               stats[key] = bonuses[key];
-              console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
             }
           }
         }
@@ -607,7 +607,7 @@ function updateStats(){
           let specials = JSON.parse(specialsString);
           for (let key in specials){
             uniqueEffects.push(specials[key]);
-            console.log("added " + specials[key] + " to uniqueEffects");
+
           }
         }
       }
@@ -620,16 +620,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -643,16 +643,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -665,7 +665,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -678,16 +678,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -700,7 +700,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -713,16 +713,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -735,7 +735,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -748,16 +748,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -770,7 +770,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -783,16 +783,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -805,7 +805,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -817,16 +817,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -839,7 +839,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -852,16 +852,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -874,7 +874,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -887,16 +887,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -909,7 +909,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -922,16 +922,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -944,7 +944,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -956,16 +956,16 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
+
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
+
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
+
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
+
           }
         }
       }
@@ -978,7 +978,7 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
+
         }
       }
     }
@@ -990,16 +990,12 @@ function updateStats(){
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-        console.log("keys: " + keys + " bonuses: " + bonuses);
+
         for (let key in bonuses){
           if (key in stats){
-            console.log("exists in stats, prev value: " + stats[key]);
             stats[key] += bonuses[key];
-            console.log("value after: " + stats[key]);
           } else {
-            console.log("does not exist in stats, value: " + bonuses[key]);
             stats[key] = bonuses[key];
-            console.log("stats[key]: " + stats[key] + " = " + bonuses[key]);
           }
         }
       }
@@ -1012,7 +1008,6 @@ function updateStats(){
         let specials = JSON.parse(specialsString);
         for (let key in specials){
           uniqueEffects.push(specials[key]);
-          console.log("added " + specials[key] + " to uniqueEffects");
         }
       }
     }
@@ -1023,7 +1018,23 @@ function updateStats(){
   $('#stats').empty();
   if(Object.keys(stats).length > 0){
     for (const [key, value] of Object.entries(stats)) {
-      $('#stats').append('<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip">' + key + " +" + value + '</button>');
+      let tooltip = "";
+      console.log("key: " + key);
+      for (let cellDescription in cellDescriptions){
+        let object = cellDescriptions[cellDescription];
+        if(object.name == key){
+          for(let i = 0; i < 6; i++){
+            let key = Object.keys(object)[i+1];
+            console.log(key);
+            if(i < value){
+              tooltip +="<p><b>" + object[key] + "</b></p>";
+            } else {
+              tooltip +="<p>" + object[key] + "</p>";
+            }
+          }
+        }
+      }
+      $('#stats').append('<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="' + tooltip + '">' + key + " +" + value + '</button>');
       console.log(key, value);
     }
   } else {
