@@ -750,6 +750,15 @@ function updateUrl() {
     selectedGauntletsCell, selectedGauntletsCellLevel, selectedGreaves, selectedGreavesCell,
     selectedGreavesCellLevel,
   );
+
+  console.log(
+    selectedWeaponType, selectedWeapon, selectedWeaponCell01, selectedWeaponCell01level,
+    selectedWeaponCell02, selectedWeaponCell02level, selectedLantern, selectedLanternCell,
+    selectedLanternCellLevel, selectedHelmet, selectedHelmetCell, selectedHelmetCellLevel,
+    selectedChestplate, selectedChestplateCell, selectedChestplateCellLevel, selectedGauntlets,
+    selectedGauntletsCell, selectedGauntletsCellLevel, selectedGreaves, selectedGreavesCell,
+    selectedGreavesCellLevel,
+  );
   $('#permaLink').val(`http://dauntlessbuilds.com/b/${hash}`);
 }
 
@@ -877,11 +886,12 @@ $(document).ready(() => {
 
   hideAllCells();
 
-
   /* global decodeUrl:true/false buildString:hash */
 
   if (decodeUrl === true) {
     const selectedItems = hashids.decode(buildString);
+
+    console.log(selectedItems);
 
     if (selectedItems.length > 0) {
       // 0 selectedWeaponType
@@ -908,19 +918,19 @@ $(document).ready(() => {
 
       $('#typeSelection').val(selectedItems[0]);
 
-      if (selectedItems[0] === '1') {
+      if (selectedItems[0] === 1) {
         showSelectedWeapons('#Hammers');
         $('#Hammers').val(selectedItems[1]);
         updateWeaponCells('#Hammers');
-      } else if (selectedItems[0] === '2') {
+      } else if (selectedItems[0] === 2) {
         showSelectedWeapons('#Axes');
         $('#Axes').val(selectedItems[1]);
         updateWeaponCells('#Axes');
-      } else if (selectedItems[0] === '3') {
+      } else if (selectedItems[0] === 3) {
         showSelectedWeapons('#Swords');
         $('#Swords').val(selectedItems[1]);
         updateWeaponCells('#Swords');
-      } else if (selectedItems[0] === '4') {
+      } else if (selectedItems[0] === 4) {
         showSelectedWeapons('#ChainBlades');
         $('#ChainBlades').val(selectedItems[1]);
         updateWeaponCells('#ChainBlades');
@@ -947,7 +957,7 @@ $(document).ready(() => {
 
 
       $('#weaponCellSelection01 option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[2] && $(this).data('amount') === selectedItems[3]) {
+        if (parseInt($(this).val(), 10) === selectedItems[2] && $(this).data('amount') === selectedItems[3]) {
           $(this).prop('selected', true);
           return false;
         }
@@ -955,7 +965,7 @@ $(document).ready(() => {
       });
 
       $('#weaponCellSelection02 option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[4] && $(this).data('amount') === selectedItems[5]) {
+        if (parseInt($(this).val(), 10) === selectedItems[4] && $(this).data('amount') === selectedItems[5]) {
           $(this).prop('selected', true);
           return false;
         }
@@ -964,7 +974,7 @@ $(document).ready(() => {
 
 
       $('#lanternCellSelection option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[7] && $(this).data('amount') === selectedItems[8]) {
+        if (parseInt($(this).val(), 10) === selectedItems[7] && $(this).data('amount') === selectedItems[8]) {
           $(this).prop('selected', true);
           return false;
         }
@@ -973,7 +983,7 @@ $(document).ready(() => {
 
 
       $('#helmetCellSelection option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[10] && $(this).data('amount') === selectedItems[11]) {
+        if (parseInt($(this).val(), 10) === selectedItems[10] && $(this).data('amount') === selectedItems[11]) {
           $(this).prop('selected', true);
           return false;
         }
@@ -981,7 +991,7 @@ $(document).ready(() => {
       });
 
       $('#chestplateCellSelection option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[13] && $(this).data('amount') === selectedItems[14]) {
+        if (parseInt($(this).val(), 10) === selectedItems[13] && $(this).data('amount') === selectedItems[14]) {
           $(this).prop('selected', true);
           return false;
         }
@@ -989,7 +999,7 @@ $(document).ready(() => {
       });
 
       $('#gauntletsCellSelection option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[16] && $(this).data('amount') === selectedItems[17]) {
+        if (parseInt($(this).val(), 10) === selectedItems[16] && $(this).data('amount') === selectedItems[17]) {
           $(this).prop('selected', true);
           return false;
         }
@@ -997,7 +1007,7 @@ $(document).ready(() => {
       });
 
       $('#greavesCellSelection option').each(function selectCellById() {
-        if ($(this).val() === selectedItems[19] && $(this).data('amount') === selectedItems[20]) {
+        if (parseInt($(this).val(), 10) === selectedItems[19] && $(this).data('amount') === selectedItems[20]) {
           $(this).prop('selected', true);
           return false;
         }
