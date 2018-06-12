@@ -618,13 +618,9 @@ function updateStats() {
 
         for (let key in bonuses) {
           if (key in stats) {
-
             stats[key] += bonuses[key];
-
           } else {
-
             stats[key] = bonuses[key];
-
           }
         }
       }
@@ -638,16 +634,11 @@ function updateStats() {
         bonusString = bonusString.replace(/'/g, "\"");
         let bonuses = JSON.parse(bonusString);
         let keys = Object.keys(bonuses);
-
         for (let key in bonuses) {
           if (key in stats) {
-
             stats[key] += bonuses[key];
-
           } else {
-
             stats[key] = bonuses[key];
-
           }
         }
       }
@@ -1149,7 +1140,7 @@ function updateUrl() {
   selectedGreavesCellLevel = $('#greavesCellSelection option:selected').data("amount");
 
   let hash = hashids.encode(selectedWeaponType, selectedWeapon, selectedWeaponCell01, selectedWeaponCell01level, selectedWeaponCell02, selectedWeaponCell02level, selectedLantern, selectedLanternCell, selectedLanternCellLevel, selectedHelmet, selectedHelmetCell, selectedHelmetCellLevel, selectedChestplate, selectedChestplateCell, selectedChestplateCellLevel, selectedGauntlets, selectedGauntletsCell, selectedGauntletsCellLevel, selectedGreaves, selectedGreavesCell, selectedGreavesCellLevel);
-  $("#permaLink").val("http://fresh2k.pythonanywhere.com/b/" + hash);
+  $("#permaLink").val("http://dauntlessbuilds.com/b/" + hash);
 }
 
 $("#typeSelection").change(function() {
