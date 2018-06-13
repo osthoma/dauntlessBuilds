@@ -245,19 +245,33 @@ cellDescriptions.push(cellDescription);
       </select>
     </div>
     <div class="col-6">
-      <div class="card border-light mb-6">
-        <div class="card-header">Total Bonuses</div>
-        <div class="card-body">
-          <h6 class="card-title">Infusions</h6>
-          <div id="stats"></div>
-        </div>
-        <div class="card-body">
-          <h6 class="card-title">Lantern Effects</h6>
-          <ul id="lanternEffects">
-          </ul>
-          <h6 class="card-title">Unique Effects</h6>
-          <ul id="uniqueEffects">
-          </ul>
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active show" data-toggle="tab" href="#totalBonuses">Total Bonuses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#itemStats">Item Stats</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active show" id="totalBonuses">
+            <div class="card-body">
+              <h6 class="card-title">Infusions</h6>
+              <div id="stats"></div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Lantern Effects</h6>
+              <ul id="lanternEffects">
+              </ul>
+              <h6 class="card-title">Unique Effects</h6>
+              <ul id="uniqueEffects">
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="itemStats">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+          </div>
         </div>
       </div>
     </div>

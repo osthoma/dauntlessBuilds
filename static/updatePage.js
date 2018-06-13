@@ -617,7 +617,7 @@ function updateStats() {
       $('#stats').append(`<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="${tooltip}">${key} +${value}</button>`);
     }
   } else {
-    $('#stats').append('<p class="card-subtitle text-muted">No bonuses from items or infusions.</p>');
+    $('#stats').append('<ul><p class="card-subtitle text-muted">No bonuses from items or infusions.</p></ul>');
   }
 
   $('#lanternEffects').empty();

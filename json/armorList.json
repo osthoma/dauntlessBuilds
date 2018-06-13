@@ -833,8 +833,8 @@
     "cellslot": "Defence",
     "bonuses":
     {
-      "Barbed": 2,
-      "Shellshock Resist": 1
+      "Barbed": 1,
+      "Shellshock Resist": 2
     }
   },
   "chestplate":
