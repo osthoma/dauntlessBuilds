@@ -99,7 +99,7 @@ cellDescriptions.push(cellDescription);
       <select class="form-control form-control-sm" id="helmetSelection">
         {% for boss in armorData %}
         {% if ('helmet' in boss) %}
-        <option value="{{ boss.helmet.id }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}" data-specials="{{ boss.helmet.specials }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
+        <option value="{{ boss.helmet.id }}" data-name="{{ boss.helmet.name }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}" data-specials="{{ boss.helmet.specials }}">{{ boss.helmet.name }} ({{ boss.boss }})</option>
         {% endif %}
         {% endfor %}
       </select>
@@ -107,7 +107,7 @@ cellDescriptions.push(cellDescription);
       <select class="form-control form-control-sm" id="chestplateSelection">
         {% for boss in armorData %}
         {% if ('chestplate' in boss) %}
-        <option value="{{ boss.chestplate.id }}" data-cellslot="{{ boss.chestplate.cellslot }}" data-bonuses="{{ boss.chestplate.bonuses }}" data-specials="{{ boss.chestplate.specials }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
+        <option value="{{ boss.chestplate.id }}" data-name="{{ boss.chestplate.name }}" data-cellslot="{{ boss.chestplate.cellslot }}" data-bonuses="{{ boss.chestplate.bonuses }}" data-specials="{{ boss.chestplate.specials }}">{{ boss.chestplate.name }} ({{ boss.boss }})</option>
         {% endif %}
         {% endfor %}
       </select>
@@ -115,7 +115,7 @@ cellDescriptions.push(cellDescription);
       <select class="form-control form-control-sm" id="gauntletsSelection">
         {% for boss in armorData %}
         {% if ('gloves' in boss) %}
-        <option value="{{ boss.gloves.id }}" data-cellslot="{{ boss.gloves.cellslot }}" data-bonuses="{{ boss.gloves.bonuses }}" data-specials="{{ boss.gloves.specials }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
+        <option value="{{ boss.gloves.id }}" data-name="{{ boss.gloves.name }}" data-cellslot="{{ boss.gloves.cellslot }}" data-bonuses="{{ boss.gloves.bonuses }}" data-specials="{{ boss.gloves.specials }}">{{ boss.gloves.name }} ({{ boss.boss }})</option>
         {% endif %}
         {% endfor %}
       </select>
@@ -123,7 +123,7 @@ cellDescriptions.push(cellDescription);
       <select class="form-control form-control-sm" id="greavesSelection">
         {% for boss in armorData %}
         {% if ('greaves' in boss) %}
-        <option value="{{ boss.greaves.id }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}" data-specials="{{ boss.greaves.specials }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
+        <option value="{{ boss.greaves.id }}" data-name="{{ boss.greaves.name }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}" data-specials="{{ boss.greaves.specials }}">{{ boss.greaves.name }} ({{ boss.boss }})</option>
         {% endif %}
         {% endfor %}
       </select>
@@ -279,6 +279,26 @@ cellDescriptions.push(cellDescription);
               <p>
                 <h6>Lantern</h6>
                 <div id="lanternStats">
+                </div>
+              </p>
+              <p>
+                <h6>Helmet</h6>
+                <div id="helmetStats">
+                </div>
+              </p>
+              <p>
+                <h6>Chestplate</h6>
+                <div id="chestplateStats">
+                </div>
+              </p>
+              <p>
+                <h6>Gloves</h6>
+                <div id="gauntletsStats">
+                </div>
+              </p>
+              <p>
+                <h6>Greaves</h6>
+                <div id="greavesStats">
                 </div>
               </p>
             </div>

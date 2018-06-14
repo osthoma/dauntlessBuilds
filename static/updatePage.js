@@ -129,7 +129,7 @@ function updateGreavesCells() {
 function updateWeaponStats(type) {
   $(`${type} option:selected`).each(function showWeaponStats() {
     const weaponName = $(this).data('name');
-    $('#weaponStats').append(`<p>${weaponName}</p>`);
+    $('#weaponStats').append(`<p>${weaponName}</p><ul id="weaponBonuses"></ul><ul id="weaponCells"></ul><ul id="weaponSpecials"></ul>`);
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
@@ -137,10 +137,17 @@ function updateWeaponStats(type) {
         const bonuses = JSON.parse(bonusString);
 
         Object.keys(bonuses).forEach((key) => {
-          $('#weaponStats').append(`<p>${key} +${bonuses[key]}</p>`);
+          $('#weaponBonuses').append(`<li>${key} +${bonuses[key]}</li>`);
         });
       }
     }
+    if ($(this).data('cellslot01') !== 'None') {
+      $('#weaponCells').append(`<li>${$(this).data('cellslot01')}</li>`);
+    }
+    if ($(this).data('cellslot02') !== 'None') {
+      $('#weaponCells').append(`<li>${$(this).data('cellslot02')}</li>`);
+    }
+
     if ($(this).data('specials')) {
       let specialsString = $(this).data('specials');
       if (specialsString === undefined || specialsString === 'None') {
@@ -149,7 +156,185 @@ function updateWeaponStats(type) {
       specialsString = specialsString.replace(/'/g, '"');
       const specials = JSON.parse(specialsString);
       Object.keys(specials).forEach((key) => {
-        $('#weaponStats').append(`<p>${specials[key]}</p>`);
+        $('#weaponSpecials').append(`<p>${specials[key]}</p>`);
+      });
+    }
+    return true;
+  });
+}
+
+function updateLanternStats() {
+  $('#lanternSelection option:selected').each(function showLanternStats() {
+    const lanternName = $(this).data('name');
+    $('#lanternStats').append(`<p>${lanternName}</p><ul id="lanternBonuses"></ul><ul id="lanternCells"></ul><ul id="lanternSpecials"></ul>`);
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        Object.keys(bonuses).forEach((key) => {
+          $('#lanternBonuses').append(`<li>${key} +${bonuses[key]}</li>`);
+        });
+      }
+    }
+    if ($(this).data('cellslot') !== 'None') {
+      $('#lanternCells').append(`<li>${$(this).data('cellslot')}</li>`);
+    }
+
+    if ($(this).data('instant')) {
+      let specialsString = $(this).data('instant');
+      if (specialsString === undefined) {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = specialsString;
+      $('#lanternSpecials').append(`<li>Instant: ${specials}</li>`);
+    }
+
+    if ($(this).data('hold')) {
+      let specialsString = $(this).data('hold');
+      if (specialsString === undefined) {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = specialsString;
+      $('#lanternSpecials').append(`<li>Hold: ${specials}</li>`);
+    }
+    return true;
+  });
+}
+
+function updateHelmetStats() {
+  $('#helmetSelection option:selected').each(function showWeaponStats() {
+    const helmetName = $(this).data('name');
+    $('#helmetStats').append(`<p>${helmetName}</p><ul id="helmetBonuses"></ul><ul id="helmetCells"></ul>`);
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        Object.keys(bonuses).forEach((key) => {
+          $('#helmetBonuses').append(`<li>${key} +${bonuses[key]}</li>`);
+        });
+      }
+    }
+    if ($(this).data('cellslot') !== 'None') {
+      $('#helmetCells').append(`<li>${$(this).data('cellslot')}</li>`);
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString === undefined || specialsString === 'None') {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = JSON.parse(specialsString);
+      Object.keys(specials).forEach((key) => {
+        $('#helmetSpecials').append(`<p>${specials[key]}</p>`);
+      });
+    }
+    return true;
+  });
+}
+
+function updateChestplateStats() {
+  $('#chestplateSelection option:selected').each(function showWeaponStats() {
+    const chestplateName = $(this).data('name');
+    $('#chestplateStats').append(`<p>${chestplateName}</p><ul id="chestplateBonuses"></ul><ul id="chestplateCells"></ul>`);
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        Object.keys(bonuses).forEach((key) => {
+          $('#chestplateBonuses').append(`<li>${key} +${bonuses[key]}</li>`);
+        });
+      }
+    }
+    if ($(this).data('cellslot') !== 'None') {
+      $('#chestplateCells').append(`<li>${$(this).data('cellslot')}</li>`);
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString === undefined || specialsString === 'None') {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = JSON.parse(specialsString);
+      Object.keys(specials).forEach((key) => {
+        $('#chestplateSpecials').append(`<p>${specials[key]}</p>`);
+      });
+    }
+    return true;
+  });
+}
+
+function updateGauntletsStats() {
+  $('#gauntletsSelection option:selected').each(function showWeaponStats() {
+    const gauntletsName = $(this).data('name');
+    $('#gauntletsStats').append(`<p>${gauntletsName}</p><ul id="gauntletsBonuses"></ul><ul id="gauntletsCells"></ul>`);
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        Object.keys(bonuses).forEach((key) => {
+          $('#gauntletsBonuses').append(`<li>${key} +${bonuses[key]}</li>`);
+        });
+      }
+    }
+    if ($(this).data('cellslot') !== 'None') {
+      $('#gauntletsCells').append(`<li>${$(this).data('cellslot')}</li>`);
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString === undefined || specialsString === 'None') {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = JSON.parse(specialsString);
+      Object.keys(specials).forEach((key) => {
+        $('#gauntletsSpecials').append(`<p>${specials[key]}</p>`);
+      });
+    }
+    return true;
+  });
+}
+
+function updateGreavesStats() {
+  $('#greavesSelection option:selected').each(function showWeaponStats() {
+    const greavesName = $(this).data('name');
+    $('#greavesStats').append(`<p>${greavesName}</p><ul id="greavesBonuses"></ul><ul id="greavesCells"></ul>`);
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        Object.keys(bonuses).forEach((key) => {
+          $('#greavesBonuses').append(`<li>${key} +${bonuses[key]}</li>`);
+        });
+      }
+    }
+    if ($(this).data('cellslot') !== 'None') {
+      $('#greavesCells').append(`<li>${$(this).data('cellslot')}</li>`);
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString === undefined || specialsString === 'None') {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = JSON.parse(specialsString);
+      Object.keys(specials).forEach((key) => {
+        $('#greavesSpecials').append(`<p>${specials[key]}</p>`);
       });
     }
     return true;
@@ -659,6 +844,21 @@ function updateTotalBonuses() {
   if ($('#typeSelection option:selected').val() === '5') {
     updateWeaponStats('#WarPikes');
   }
+
+  $('#lanternStats').empty();
+  updateLanternStats();
+
+  $('#helmetStats').empty();
+  updateHelmetStats();
+
+  $('#chestplateStats').empty();
+  updateChestplateStats();
+
+  $('#gauntletsStats').empty();
+  updateGauntletsStats();
+
+  $('#greavesStats').empty();
+  updateGreavesStats();
 
   $(() => {
     $('[data-toggle="tooltip"]').tooltip();
