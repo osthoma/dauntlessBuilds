@@ -48,7 +48,7 @@ cellDescriptions.push(cellDescription);
         {% for weapon in weaponData %}
         {% for item in weapon['items'] %}
         {% if item.type == "Hammers" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
+        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
         {% endif %}
         {% endfor %}
         {% endfor %}
@@ -57,7 +57,7 @@ cellDescriptions.push(cellDescription);
         {% for weapon in weaponData %}
         {% for item in weapon['items'] %}
         {% if item.type == "Axes" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
+        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
         {% endif %}
         {% endfor %}
         {% endfor %}
@@ -66,7 +66,7 @@ cellDescriptions.push(cellDescription);
         {% for weapon in weaponData %}
         {% for item in weapon['items'] %}
         {% if item.type == "Swords" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
+        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
         {% endif %}
         {% endfor %}
         {% endfor %}
@@ -75,7 +75,7 @@ cellDescriptions.push(cellDescription);
         {% for weapon in weaponData %}
         {% for item in weapon['items'] %}
         {% if item.type == "Chain Blades" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
+        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
         {% endif %}
         {% endfor %}
         {% endfor %}
@@ -84,7 +84,7 @@ cellDescriptions.push(cellDescription);
         {% for weapon in weaponData %}
         {% for item in weapon['items'] %}
         {% if item.type == "War Pikes" %}
-        <option value="{{ item.id }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
+        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}"  data-specials="{{ item.specials }}">{{ item.name }} ({{ weapon.name }})</option>
         {% endif %}
         {% endfor %}
         {% endfor %}
@@ -92,7 +92,7 @@ cellDescriptions.push(cellDescription);
       <div>Lantern</div>
       <select class="form-control form-control-sm" id="lanternSelection">
         {% for lantern in lanternData %}
-        <option value="{{ lantern.id }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}" data-instant="{{ lantern.instant }}" data-hold="{{ lantern.hold }}">{{ lantern.name }}</option>
+        <option value="{{ lantern.id }}" data-name="{{ lantern.name }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}" data-instant="{{ lantern.instant }}" data-hold="{{ lantern.hold }}">{{ lantern.name }}</option>
         {% endfor %}
       </select>
       <div>Helmet</div>
@@ -255,23 +255,34 @@ cellDescriptions.push(cellDescription);
           </li>
         </ul>
         <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade active show" id="totalBonuses">
-            <div class="card-body">
-              <h6 class="card-title">Infusions</h6>
+          <p>
+            <div class="tab-pane fade active show" id="totalBonuses">
+              <h6>Infusions</h6>
               <div id="stats"></div>
-            </div>
-            <div class="card-body">
-              <h6 class="card-title">Lantern Effects</h6>
+            </p>
+            <p>
+              <h6>Lantern Effects</h6>
               <ul id="lanternEffects">
               </ul>
-              <h6 class="card-title">Unique Effects</h6>
+            </p>
+            <p>
+              <h6>Unique Effects</h6>
               <ul id="uniqueEffects">
               </ul>
             </div>
-          </div>
-          <div class="tab-pane fade" id="itemStats">
-            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-          </div>
+            <div class="tab-pane fade" id="itemStats">
+              <p>
+                <h6>Weapon</h6>
+                <div id="weaponStats">
+                </div>
+              </p>
+              <p>
+                <h6>Lantern</h6>
+                <div id="lanternStats">
+                </div>
+              </p>
+            </div>
+          </p>
         </div>
       </div>
     </div>

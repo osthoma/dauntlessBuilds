@@ -160,7 +160,37 @@ function updateGreavesCells() {
   });
 }
 
-function updateStats() {
+function updateWeaponStats(type) {
+  $(`${type} option:selected`).each(function showWeaponStats() {
+    const weaponName = $(this).data('name');
+    $('#weaponStats').append(`<p>${weaponName}</p>`);
+    if ($(this).data('bonuses')) {
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
+
+        Object.keys(bonuses).forEach((key) => {
+          $('#weaponStats').append(`<p>${key} +${bonuses[key]}</p>`);
+        });
+      }
+    }
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString === undefined || specialsString === 'None') {
+        return false;
+      }
+      specialsString = specialsString.replace(/'/g, '"');
+      const specials = JSON.parse(specialsString);
+      Object.keys(specials).forEach((key) => {
+        $('#weaponStats').append(`<p>${specials[key]}</p>`);
+      });
+    }
+    return true;
+  });
+}
+
+function updateTotalBonuses() {
   const stats = [];
   const uniqueEffects = [];
 
@@ -637,6 +667,24 @@ function updateStats() {
     $('#uniqueEffects').append('<p class="card-subtitle text-muted">No unique effects from items.</p>');
   }
 
+  $('#weaponStats').empty();
+
+  if ($('#typeSelection option:selected').val() === '1') {
+    updateWeaponStats('#Hammers');
+  }
+  if ($('#typeSelection option:selected').val() === '2') {
+    updateWeaponStats('#Axes');
+  }
+  if ($('#typeSelection option:selected').val() === '3') {
+    updateWeaponStats('#Swords');
+  }
+  if ($('#typeSelection option:selected').val() === '4') {
+    updateWeaponStats('#ChainBlades');
+  }
+  if ($('#typeSelection option:selected').val() === '5') {
+    updateWeaponStats('#WarPikes');
+  }
+
   $(() => {
     $('[data-toggle="tooltip"]').tooltip();
   });
@@ -773,105 +821,105 @@ $('#typeSelection').change(() => {
     showSelectedWeapons('#WarPikes');
   }
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#Hammers').change(() => {
   updateWeaponCells('#Hammers');
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#Axes').change(() => {
   updateWeaponCells('#Axes');
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#Swords').change(() => {
   updateWeaponCells('#Swords');
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#ChainBlades').change(() => {
   updateWeaponCells('#ChainBlades');
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#WarPikes').change(() => {
   updateWeaponCells('#WarPikes');
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 
 $('#lanternSelection').change(() => {
   updateLanternCells();
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 
 $('#helmetSelection').change(() => {
   updateHelmetCells();
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#chestplateSelection').change(() => {
   updateChestplateCells();
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#gauntletsSelection').change(() => {
   updateGauntletsCells();
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#greavesSelection').change(() => {
   updateGreavesCells();
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 
 $('#weaponCellSelection01').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#weaponCellSelection02').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#lanternCellSelection').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#helmetCellSelection').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#chestplateCellSelection').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#gauntletsCellSelection').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $('#greavesCellSelection').change(() => {
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
 
 $(document).ready(() => {
@@ -1012,5 +1060,5 @@ $(document).ready(() => {
     showSelectedWeapons('#Hammers');
   }
   updateUrl();
-  updateStats();
+  updateTotalBonuses();
 });
