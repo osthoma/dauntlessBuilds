@@ -1,5 +1,4 @@
 /* global Hashids ClipboardJS cellDescriptions */
-
 const hashids = new Hashids('dauntlessBuilds');
 
 const clipboard = new ClipboardJS('.btn-clipboard');
@@ -14,6 +13,16 @@ function hideAllWeapons() {
 
 function hideAllCells() {
   $('[data-category]').css('display', 'none');
+}
+
+function displayFirstVisibleOption(cellSlot) {
+  $(`${cellSlot} option`).each(function displayFirstVisible() {
+    if ($(this).css('display') !== 'none') {
+      $(this).prop('selected', true);
+      return false;
+    }
+    return true;
+  });
 }
 
 function updateWeaponCells(type) {
@@ -38,21 +47,8 @@ function updateWeaponCells(type) {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#weaponCellSelection01 option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
-
-  $('#weaponCellSelection02 option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
+  displayFirstVisibleOption('#weaponCellSelection01');
+  displayFirstVisibleOption('#weaponCellSelection02');
 }
 
 function updateLanternCells() {
@@ -67,13 +63,7 @@ function updateLanternCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#lanternCellSelection option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
+  displayFirstVisibleOption('#lanternCellSelection');
 }
 
 function updateHelmetCells() {
@@ -88,13 +78,7 @@ function updateHelmetCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#helmetCellSelection option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
+  displayFirstVisibleOption('#helmetCellSelection');
 }
 
 function updateChestplateCells() {
@@ -109,13 +93,7 @@ function updateChestplateCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#chestplateCellSelection option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
+  displayFirstVisibleOption('#chestplateCellSelection');
 }
 
 function updateGauntletsCells() {
@@ -130,13 +108,7 @@ function updateGauntletsCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#gauntletsCellSelection option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
+  displayFirstVisibleOption('#gauntletsCellSelection');
 }
 
 function updateGreavesCells() {
@@ -151,13 +123,7 @@ function updateGreavesCells() {
     $('[data-category="Empty"]').css('display', 'block');
   }
 
-  $('#greavesCellSelection option').each(function displayFirstVisible() {
-    if ($(this).css('display') !== 'none') {
-      $(this).prop('selected', true);
-      return false;
-    }
-    return true;
-  });
+  displayFirstVisibleOption('#greavesCellSelection');
 }
 
 function updateWeaponStats(type) {
@@ -621,31 +587,40 @@ function updateTotalBonuses() {
   });
 
   $('#stats').empty();
+
+  const sortedStats = [];
+
   if (Object.keys(stats).length > 0) {
-    const numberOfBonuses = Object.keys(stats).length;
     const bonusValues = Object.values(stats);
     const maxBonus = Math.max(...bonusValues);
+    console.log(maxBonus);
 
-    for (let i = 0; i < numberOfBonuses; i += 1) {
+    for (let i = maxBonus; i > 0; i -= 1) {
+      Object.keys(stats).forEach((key) => {
+        if (parseInt(stats[key], 10) === i) {
+          sortedStats[`${key}`] = stats[key];
+        }
+      });
+      console.log(sortedStats);
     }
 
-    for (const [key, value] of Object.entries(stats)) {
+    Object.keys(sortedStats).forEach((key) => {
       let tooltip = '';
-      for (const cellDescription in cellDescriptions) {
-        const object = cellDescriptions[cellDescription];
+      Object.keys(cellDescriptions).forEach((secondaryKey) => {
+        const object = cellDescriptions[secondaryKey];
         if (object.name === key) {
           for (let i = 0; i < 6; i += 1) {
-            const key = Object.keys(object)[i + 1];
-            if (i < value) {
-              tooltip += `<p><b>${object[key]}</b></p>`;
+            const cellName = Object.keys(object)[i + 1];
+            if (i < sortedStats[key]) {
+              tooltip += `<p><b>${object[cellName]}</b></p>`;
             } else {
-              tooltip += `<p class='text-secondary'>${object[key]}</p>`;
+              tooltip += `<p class='text-secondary'>${object[cellName]}</p>`;
             }
           }
         }
-      }
-      $('#stats').append(`<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="${tooltip}">${key} +${value}</button>`);
-    }
+      });
+      $('#stats').append(`<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="${tooltip}">${key} +${sortedStats[key]}</button>`);
+    });
   } else {
     $('#stats').append('<ul><p class="card-subtitle text-muted">No bonuses from items or infusions.</p></ul>');
   }
