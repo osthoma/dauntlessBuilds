@@ -33,8 +33,9 @@ cellDescriptions.push(cellDescription);
 
   <h1>Welcome, Slayer!</h1>
   <p class="lead">Create and share your custom Dauntless builds!</p>
+
   <div class="row" style="margin-bottom: 2rem;">
-    <div class="col-3">
+    <div class="col-6 col-md-3">
       <div>Equipment</div>
       <div>Weapon</div>
       <select class="form-control form-control-sm" id="typeSelection">
@@ -128,7 +129,7 @@ cellDescriptions.push(cellDescription);
         {% endfor %}
       </select>
     </div>
-    <div class = "col-3">
+    <div class="col-6 col-md-3">
       <div>Cells</div>
       <div>Weapon</div>
       <select class="form-control form-control-sm" id="weaponCellSelection01">
@@ -244,7 +245,7 @@ cellDescriptions.push(cellDescription);
         {% endfor %}
       </select>
     </div>
-    <div class="col-6">
+    <div class="col-12 col-md-6">
       <div class="container">
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -273,32 +274,44 @@ cellDescriptions.push(cellDescription);
             <div class="tab-pane fade" id="itemStats">
               <p>
                 <h6>Weapon</h6>
-                <div id="weaponStats">
+                <div class="card">
+                  <div class="card-body" id="weaponStats">
+                  </div>
                 </div>
               </p>
               <p>
                 <h6>Lantern</h6>
-                <div id="lanternStats">
+                <div class="card">
+                  <div class="card-body" id="lanternStats">
+                  </div>
                 </div>
               </p>
               <p>
                 <h6>Helmet</h6>
-                <div id="helmetStats">
+                <div class="card">
+                  <div class="card-body" id="helmetStats">
+                  </div>
                 </div>
               </p>
               <p>
                 <h6>Chestplate</h6>
-                <div id="chestplateStats">
+                <div class="card">
+                  <div class="card-body" id="chestplateStats">
+                  </div>
                 </div>
               </p>
               <p>
                 <h6>Gloves</h6>
-                <div id="gauntletsStats">
+                <div class="card">
+                  <div class="card-body" id="gauntletsStats">
+                  </div>
                 </div>
               </p>
               <p>
                 <h6>Greaves</h6>
-                <div id="greavesStats">
+                <div class="card">
+                  <div class="card-body" id="greavesStats">
+                  </div>
                 </div>
               </p>
             </div>
@@ -306,8 +319,8 @@ cellDescriptions.push(cellDescription);
         </div>
       </div>
     </div>
-
   </div>
+
   <div class="input-group">
     <div class="input-group-prepend">
       <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
