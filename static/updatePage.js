@@ -593,15 +593,15 @@ function updateTotalBonuses() {
   if (Object.keys(stats).length > 0) {
     const bonusValues = Object.values(stats);
     const maxBonus = Math.max(...bonusValues);
-    console.log(maxBonus);
+
+    const alphKeys = Object.keys(stats).sort();
 
     for (let i = maxBonus; i > 0; i -= 1) {
-      Object.keys(stats).forEach((key) => {
+      alphKeys.forEach((key) => {
         if (parseInt(stats[key], 10) === i) {
           sortedStats[`${key}`] = stats[key];
         }
       });
-      console.log(sortedStats);
     }
 
     Object.keys(sortedStats).forEach((key) => {
