@@ -291,6 +291,7 @@ function updateTotalBonuses() {
       return true;
     });
   }
+
   if ($('#typeSelection option:selected').val() === '2') {
     $('#Axes option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
@@ -323,6 +324,7 @@ function updateTotalBonuses() {
       return true;
     });
   }
+
   if ($('#typeSelection option:selected').val() === '3') {
     $('#Swords option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
@@ -386,6 +388,7 @@ function updateTotalBonuses() {
       return true;
     });
   }
+
   if ($('#typeSelection option:selected').val() === '5') {
     $('#WarPikes option:selected').each(function addBonusesAndSpecials() {
       if ($(this).data('bonuses')) {
@@ -417,6 +420,7 @@ function updateTotalBonuses() {
       return true;
     });
   }
+
   $('#lanternSelection option:selected').each(function addBonusesAndSpecials() {
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
@@ -721,7 +725,7 @@ function updateTotalBonuses() {
       $('#stats').append(`<button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="${tooltip}">${key} +${sortedStats[key]}</button>`);
     });
   } else {
-    $('#stats').append('<ul><p class="card-subtitle text-muted">No bonuses from items or infusions.</p></ul>');
+    $('#stats').append('<ul><p class="card-subtitle text-muted"><svg-icon>No bonuses from items or infusions.</p></ul>');
   }
 
   $('#lanternEffects').empty();
