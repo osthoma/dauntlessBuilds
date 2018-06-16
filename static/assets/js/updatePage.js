@@ -128,8 +128,6 @@ function updateGreavesCells() {
 
 function updateWeaponStats(type) {
   $(`${type} option:selected`).each(function showWeaponStats() {
-    const weaponName = $(this).data('name');
-    $('#weaponStats').append(`<p class="item-name">${weaponName}</p><div class="item-bonuses" id="weaponBonuses"></div><div class="item-cellslots" id="weaponCells"></div><div class="item-specials" id="weaponSpecials"></div>`);
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
@@ -142,16 +140,6 @@ function updateWeaponStats(type) {
       } else {
         $('#weaponBonuses').append('<p class="text-muted">No bonuses</p>');
       }
-    }
-
-    if ($(this).data('cellslot01') !== 'None') {
-      $('#weaponCells').append(`<button type="button" class="btn btn-secondary btn-sm btn-block">${$(this).data('cellslot01')}</button>`);
-    }
-    if ($(this).data('cellslot02') !== 'None') {
-      $('#weaponCells').append(`<button type="button" class="btn btn-secondary btn-sm btn-block">${$(this).data('cellslot02')}</button>`);
-    }
-    if ($(this).data('cellslot01') === 'None' && $(this).data('cellslot02') === 'None') {
-      $('#weaponCells').append('<p class="text-muted">No cellslots</p>');
     }
 
     if ($(this).data('specials')) {
@@ -171,8 +159,6 @@ function updateWeaponStats(type) {
 
 function updateLanternStats() {
   $('#lanternSelection option:selected').each(function showLanternStats() {
-    const lanternName = $(this).data('name');
-    $('#lanternStats').append(`<p class="item-name">${lanternName}</p><div class="item-bonuses" id="lanternBonuses"></div><div class="item-cellslots" id="lanternCells"></div><div class="item-specials" id="lanternSpecials"></div>`);
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
@@ -185,12 +171,6 @@ function updateLanternStats() {
       }
     } else {
       $('#lanternBonuses').append('<p class="text-muted">No bonuses</p>');
-    }
-
-    if ($(this).data('cellslot') !== 'None') {
-      $('#lanternCells').append(`<button type="button" class="btn btn-secondary btn-sm btn-block">${$(this).data('cellslot')}</button>`);
-    } else {
-      $('#lanternCells').append('<p class="text-muted">No cellslots</p>');
     }
 
     if ($(this).data('instant')) {
@@ -218,8 +198,6 @@ function updateLanternStats() {
 
 function updateArmorStats(type) {
   $(`#${type}Selection option:selected`).each(function showItemStats() {
-    const itemName = $(this).data('name');
-    $(`#${type}Stats`).append(`<p class="item-name">${itemName}</p><div class="item-bonuses" id="${type}Bonuses"></div><div class="item-cellslots" id="${type}Cells"></div><div class="item-specials" id="${type}Specials"></div>`);
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
@@ -232,12 +210,6 @@ function updateArmorStats(type) {
       } else {
         $(`#${type}Bonuses`).append('<p class="text-muted">No bonuses</p>');
       }
-    }
-
-    if ($(this).data('cellslot') !== 'None') {
-      $(`#${type}Cells`).append(`<button type="button" class="btn btn-secondary btn-sm btn-block">${$(this).data('cellslot')}</button>`);
-    } else {
-      $(`#${type}Cells`).append('<p class="text-muted">No cellslots</p>');
     }
 
     if ($(this).data('specials')) {
@@ -745,7 +717,8 @@ function updateTotalBonuses() {
     $('#uniqueEffects').append('<p class="card-subtitle text-muted">No unique effects from items.</p>');
   }
 
-  $('#weaponStats').empty();
+  $('#weaponBonuses').empty();
+  $('#weaponSpecials').empty();
 
   if ($('#typeSelection option:selected').val() === '1') {
     updateWeaponStats('#Hammers');
@@ -763,19 +736,24 @@ function updateTotalBonuses() {
     updateWeaponStats('#WarPikes');
   }
 
-  $('#lanternStats').empty();
+  $('#lanternBonuses').empty();
+  $('#lanternSpecials').empty();
   updateLanternStats();
 
-  $('#helmetStats').empty();
+  $('#helmetBonuses').empty();
+  $('#helmetSpecials').empty();
   updateArmorStats('helmet');
 
-  $('#chestplateStats').empty();
+  $('#chestplateBonuses').empty();
+  $('#chestplateSpecials').empty();
   updateArmorStats('chestplate');
 
-  $('#gauntletsStats').empty();
+  $('#gauntletsBonuses').empty();
+  $('#gauntletsSpecials').empty();
   updateArmorStats('gauntlets');
 
-  $('#greavesStats').empty();
+  $('#greavesBonuses').empty();
+  $('#greavesSpecials').empty();
   updateArmorStats('greaves');
 
   $(() => {

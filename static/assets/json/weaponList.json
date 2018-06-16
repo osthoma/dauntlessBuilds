@@ -1273,13 +1273,13 @@
   {
     "id": "40601",
     "type": "Axes",
-    "name": "",
+    "name": "Deadeye Axe",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
     {
       "Savagery": 2,
-      "Acidic": 1
+      "Acidic": 2
     },
     "specials":
     {
@@ -1289,13 +1289,13 @@
   {
     "id": "40602",
     "type": "Chain Blades",
-    "name": "",
+    "name": "Deadblades",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
     {
       "Barbed": 2,
-      "Acidic": 1
+      "Acidic": 2
     },
     "specials":
     {
@@ -1311,7 +1311,7 @@
     "bonuses":
     {
       "Savagery": 2,
-      "Acidic": 1
+      "Acidic": 2
     },
     "specials":
     {
@@ -1327,7 +1327,7 @@
     "bonuses":
     {
       "Barbed": 2,
-      "Acidic": 1
+      "Acidic": 2
     },
     "specials":
     {
@@ -1337,13 +1337,13 @@
   {
     "id": "40605",
     "type": "War Pikes",
-    "name": "",
+    "name": "Deadeye Pike",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
     {
       "Barbed": 2,
-      "Acidic": 1
+      "Acidic": 2
     },
     "specials":
     {

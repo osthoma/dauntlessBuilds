@@ -1,13 +1,29 @@
 body {
   padding-top: 80px;
 }
+
 .tooltip-inner {
   max-width: 400px !important;
 }
+
 .btn-outline-primary {
   background-color: #ffffff !important;
 }
+
+.form-control + .form-control {
+  margin-top: 0.5rem;
+}
+
+.items .card {
+  margin-bottom: 1rem !important;
+}
+
+.items .card-body {
+  padding: 0.5rem;
+}
+
 .item-pane {}
+
 .item-icon {
   display: block;
   float: left;
@@ -15,29 +31,42 @@ body {
   height: 64px;
   background-color: grey;
 }
+
+.item-name {
+  height: 64px;
+}
+
+.item-name .form-control {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .item-stats {
   display: block;
   padding-left: 15px;
   overflow: hidden;
 }
-.item-name {
-  font-weight: bold;
-}
+
 .item-bonuses {
   width: 50%;
   float: left;
   overflow: hidden;
 }
+
 .item-cellslots {
   width: 50%;
   overflow: hidden;
 }
+
 .item-specials {
   clear: both;
 }
+
 .item-specials p {
   margin: 0;
 }
+
 .bmc-button img {
   width: 27px !important;
   margin-bottom: 1px !important;
@@ -45,6 +74,7 @@ body {
   border: none !important;
   vertical-align: middle !important;
 }
+
 .bmc-button {
   line-height: 36px !important;
   height: 37px !important;
@@ -69,6 +99,7 @@ body {
   -ms-transition: 0.3s all linear !important;
   transition: 0.3s all linear !important;
 }
+
 .bmc-button:active,
 .bmc-button:focus,
 .bmc-button:hover {
