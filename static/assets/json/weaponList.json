@@ -1012,8 +1012,8 @@
     "id": "40201",
     "type": "Hammers",
     "name": "Firemace",
-    "cellslot01": "",
-    "cellslot02": "",
+    "cellslot01": "Power",
+    "cellslot02": "Defence",
     "bonuses":
     {
       "Rage": 2,
@@ -1357,7 +1357,7 @@
   {
     "id": "40701",
     "type": "Axes",
-    "name": "",
+    "name": "Bloodfire Axe",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1372,7 +1372,7 @@
   {
     "id": "40702",
     "type": "Chain Blades",
-    "name": "",
+    "name": "Bloodfire Blades",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1415,7 +1415,7 @@
   {
     "id": "40705",
     "type": "War Pikes",
-    "name": "",
+    "name": "Bloodfire Pike",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "None",
