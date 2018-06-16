@@ -502,7 +502,7 @@ function updateTotalBonuses() {
   });
 
   $('#greavesSelection option:selected').each(function addBonusesAndSpecials() {
-    if ($(this).data('specials')) {
+    if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
