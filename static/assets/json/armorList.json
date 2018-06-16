@@ -15,7 +15,7 @@
     "cellslot": "None",
     "bonuses": "None"
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "103",
     "name": "Recruit's Gloves",
@@ -36,6 +36,7 @@
   {
     "id": "10101",
     "name": "Gnasher Touque",
+    "img": "gnasher.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -46,16 +47,18 @@
   {
     "id": "10102",
     "name": "Gnasher Cloak",
+    "img": "gnasher.png",
     "cellslot": "Defence",
     "bonuses":
     {
       "Tough": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "10103",
     "name": "Gnasher Gloves",
+    "img": "gnasher.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -66,6 +69,7 @@
   {
     "id": "10104",
     "name": "Gnasher Boots",
+    "img": "gnasher.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -95,7 +99,7 @@
       "Conditioning": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "10203",
     "name": "Shrike Gauntlets",
@@ -138,7 +142,7 @@
       "Sharpened": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "10303",
     "name": "Quillspike Grips",
@@ -181,7 +185,7 @@
       "Tough": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "10403",
     "name": "Skarn Bracers",
@@ -224,7 +228,7 @@
       "Energized": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "20103",
     "name": "Charrogg Gauntlets",
@@ -267,10 +271,10 @@
       "Evasion": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "20203",
-    "name": "Embergloves",
+    "name": "Embergauntlets",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -310,7 +314,7 @@
       "Agility": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "20303",
     "name": "Skraev Gloves",
@@ -353,7 +357,7 @@
       "Sharpened": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "20403",
     "name": "Draskscale Gauntlets",
@@ -396,7 +400,7 @@
       "Aetheric Attunement": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "30103",
     "name": "Zaga Bracers",
@@ -439,7 +443,7 @@
       "Endurance": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "30203",
     "name": "Pangar Grips",
@@ -482,7 +486,7 @@
       "Fortress": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "30303",
     "name": "Hellbracers",
@@ -525,7 +529,7 @@
       "Aetheric Frenzy": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "30403",
     "name": "Stormbracers",
@@ -568,7 +572,7 @@
       "Bladestorm": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "30503",
     "name": "Kharabak Bracers",
@@ -595,6 +599,7 @@
   {
     "id": "40101",
     "name": "Ragetail Touque",
+    "img": "gnasher.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -606,6 +611,7 @@
   {
     "id": "40102",
     "name": "Ragetail Cloak",
+    "img": "gnasher.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -613,10 +619,11 @@
       "Bloodless": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40103",
     "name": "Ragetail Grips",
+    "img": "gnasher.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -628,6 +635,7 @@
   {
     "id": "40104",
     "name": "Ragetail Treads",
+    "img": "gnasher.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -660,7 +668,7 @@
       "Energized": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40203",
     "name": "Firebrand Gauntlets",
@@ -707,7 +715,7 @@
       "Aetheric Attunement": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40303",
     "name": "Shockjaw Bracers",
@@ -754,7 +762,7 @@
       "Deconstruction": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40403",
     "name": "Razorwing Bracers",
@@ -801,7 +809,7 @@
       "Fortress": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40503",
     "name": "Frostgrips",
@@ -848,7 +856,7 @@
       "Savagery": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40603",
     "name": "Deadeye Grips",
@@ -895,7 +903,7 @@
       "Fireproof": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40703",
     "name": "Bloodfire Gloves",
@@ -942,7 +950,7 @@
       "Agility": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40803",
     "name": "Reza Grips",
@@ -989,7 +997,7 @@
       "Rage": 1
     }
   },
-  "gloves":
+  "gauntlets":
   {
     "id": "40903",
     "name": "Shrowd Bracers",

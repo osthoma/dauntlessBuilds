@@ -58,7 +58,7 @@
 
       <div class="card border-secondary">
         <div class="card-body item-pane">
-          <div class="item-icon"><img src="/static/assets/images/icons/icon_ragetail_helmet.png" alt="weapon" height="64" width="64"></div>
+          <div class="item-icon" id="weaponIcon"></div>
           <div class="item-stats" id="weaponStats">
             <div class="item-name">
               <select class="form-control" id="Hammers">
@@ -85,7 +85,7 @@
                 {% for weapon in weaponData %}
                   {% for item in weapon['items'] %}
                     {% if item.type == "Swords" %}
-                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}">{{ item.name }}
+                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
                         ({{ weapon.name }})</option>
                     {% endif %}
                   {% endfor %}
@@ -158,12 +158,12 @@
       </div>
       <div class="card border-secondary">
         <div class="card-body item-pane">
-          <div class="item-icon"><img src="/static/assets/images/icons/icon_ragetail_helmet.png" alt="lantern" height="64" width="64"></div>
+          <div class="item-icon" id="lanternIcon"></div>
           <div class="item-stats" id="lanternStats">
             <div class="item-name">
               <select class="form-control" id="lanternSelection">
                 {% for lantern in lanternData %}
-                  <option value="{{ lantern.id }}" data-name="{{ lantern.name }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}" data-instant="{{ lantern.instant }}" data-hold="{{ lantern.hold }}">{{ lantern.name }}</option>
+                  <option value="{{ lantern.id }}" data-name="{{ lantern.name }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}" data-instant="{{ lantern.instant }}" data-hold="{{ lantern.hold }}" data-img="{{ lantern.img }}">{{ lantern.name }}</option>
                 {% endfor %}
               </select>
             </div>
@@ -194,14 +194,13 @@
       </div>
       <div class="card border-secondary">
         <div class="card-body item-pane">
-          <div class="item-icon"><img src="/static/assets/images/icons/icon_ragetail_helmet.png" alt="helmet" height="64" width="64"></div>
-
+          <div class="item-icon" id="helmetIcon"></div>
           <div class="item-stats" id="helmetStats">
             <div class="item-name">
               <select class="form-control" id="helmetSelection">
                 {% for boss in armorData %}
                   {% if ('helmet' in boss) %}
-                    <option value="{{ boss.helmet.id }}" data-name="{{ boss.helmet.name }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}" data-specials="{{ boss.helmet.specials }}">{{ boss.helmet.name }}
+                    <option value="{{ boss.helmet.id }}" data-name="{{ boss.helmet.name }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}" data-specials="{{ boss.helmet.specials }}" data-img="{{ boss.helmet.img }}">{{ boss.helmet.name }}
                       ({{ boss.boss }})</option>
                   {% endif %}
                 {% endfor %}
@@ -234,13 +233,19 @@
       </div>
       <div class="card border-secondary">
         <div class="card-body item-pane">
-          <div class="item-icon"><img src="/static/assets/images/icons/icon_ragetail_chestplate.png" alt="chestplate" height="64" width="64"></div>
+          <div class="item-icon" id="chestplateIcon"></div>
           <div class="item-stats" id="chestplateStats">
             <div class="item-name">
               <select class="form-control" id="chestplateSelection">
                 {% for boss in armorData %}
                   {% if ('chestplate' in boss) %}
-                    <option value="{{ boss.chestplate.id }}" data-name="{{ boss.chestplate.name }}" data-cellslot="{{ boss.chestplate.cellslot }}" data-bonuses="{{ boss.chestplate.bonuses }}" data-specials="{{ boss.chestplate.specials }}">{{ boss.chestplate.name }}
+                    <option
+                      value="{{ boss.chestplate.id }}"
+                      data-name="{{ boss.chestplate.name }}"
+                      data-cellslot="{{ boss.chestplate.cellslot }}"
+                      data-bonuses="{{ boss.chestplate.bonuses }}"
+                      data-specials="{{ boss.chestplate.specials }}"
+                      data-img="{{ boss.chestplate.img }}">{{ boss.chestplate.name }}
                       ({{ boss.boss }})</option>
                   {% endif %}
                 {% endfor %}
@@ -274,13 +279,13 @@
       </div>
       <div class="card border-secondary">
         <div class="card-body item-pane">
-          <div class="item-icon"><img src="/static/assets/images/icons/icon_ragetail_gauntlets.png" alt="gauntlets" height="64" width="64"></div>
+          <div class="item-icon" id="gauntletsIcon"></div>
           <div class="item-stats" id="gauntletsStats">
             <div class="item-name">
               <select class="form-control" id="gauntletsSelection">
                 {% for boss in armorData %}
-                  {% if ('gloves' in boss) %}
-                    <option value="{{ boss.gloves.id }}" data-name="{{ boss.gloves.name }}" data-cellslot="{{ boss.gloves.cellslot }}" data-bonuses="{{ boss.gloves.bonuses }}" data-specials="{{ boss.gloves.specials }}">{{ boss.gloves.name }}
+                  {% if ('gauntlets' in boss) %}
+                    <option value="{{ boss.gauntlets.id }}" data-name="{{ boss.gauntlets.name }}" data-cellslot="{{ boss.gauntlets.cellslot }}" data-bonuses="{{ boss.gauntlets.bonuses }}" data-specials="{{ boss.gauntlets.specials }}" data-img="{{ boss.gauntlets.img }}">{{ boss.gauntlets.name }}
                       ({{ boss.boss }})</option>
                   {% endif %}
                 {% endfor %}
@@ -313,13 +318,13 @@
       </div>
       <div class="card border-secondary">
         <div class="card-body item-pane">
-          <div class="item-icon"><img src="/static/assets/images/icons/icon_ragetail_greaves.png" alt="greaves" height="64" width="64"></div>
+          <div class="item-icon" id="greavesIcon"></div>
           <div class="item-stats" id="greavesStats">
             <div class="item-name">
               <select class="form-control" id="greavesSelection">
                 {% for boss in armorData %}
                   {% if ('greaves' in boss) %}
-                    <option value="{{ boss.greaves.id }}" data-name="{{ boss.greaves.name }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}" data-specials="{{ boss.greaves.specials }}">{{ boss.greaves.name }}
+                    <option value="{{ boss.greaves.id }}" data-name="{{ boss.greaves.name }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}" data-specials="{{ boss.greaves.specials }}" data-img="{{ boss.greaves.img }}">{{ boss.greaves.name }}
                       ({{ boss.boss }})</option>
                   {% endif %}
                 {% endfor %}

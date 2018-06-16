@@ -49,6 +49,7 @@ body {
 }
 
 .item-bonuses {
+  text-align: center;
   width: 50%;
   float: left;
   overflow: hidden;

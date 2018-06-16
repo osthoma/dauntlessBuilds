@@ -963,7 +963,8 @@
       "Ragehunter": 2,
       "Rage": 2
     },
-    "specials": "None"
+    "specials": "None",
+    "img": "sword_ragetail.png"
   },
   {
     "id": "40105",

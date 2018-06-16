@@ -128,82 +128,94 @@ function updateGreavesCells() {
 
 function updateWeaponStats(type) {
   $(`${type} option:selected`).each(function showWeaponStats() {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        Object.keys(bonuses).forEach((key) => {
-          $('#weaponBonuses').append(`<button type="button" class="btn btn-primary btn-sm btn-block">${key} +${bonuses[key]}</button>`);
-        });
-      } else {
-        $('#weaponBonuses').append('<p class="text-muted">No bonuses</p>');
+    $('#weaponIcon').empty();
+    if ($(this).data('img')) {
+      const imageString = $(this).data('img');
+      if (imageString !== undefined && imageString !== 'None') {
+        $('#weaponIcon').append(`<img src="/static/assets/images/icons/icon_weapon_${imageString}" alt="weapon" height="64" width="64">`);
       }
     }
 
-    if ($(this).data('specials')) {
-      let specialsString = $(this).data('specials');
-      if (specialsString === undefined || specialsString === 'None') {
-        return false;
-      }
+    let bonusString = $(this).data('bonuses');
+    if (bonusString !== undefined && bonusString !== 'None') {
+      bonusString = bonusString.replace(/'/g, '"');
+      const bonuses = JSON.parse(bonusString);
+
+      Object.keys(bonuses).forEach((key) => {
+        $('#weaponBonuses').append(`<button type="button" class="btn btn-primary btn-sm btn-block">${key} +${bonuses[key]}</button>`);
+      });
+    } else {
+      $('#weaponBonuses').append('<p class="text-muted">No bonuses</p>');
+    }
+
+    let specialsString = $(this).data('specials');
+    if (specialsString !== undefined && specialsString !== 'None') {
       specialsString = specialsString.replace(/'/g, '"');
       const specials = JSON.parse(specialsString);
       Object.keys(specials).forEach((key) => {
         $('#weaponSpecials').append(`<p>${specials[key]}</p>`);
       });
     }
+
     return true;
   });
 }
 
 function updateLanternStats() {
   $('#lanternSelection option:selected').each(function showLanternStats() {
-    if ($(this).data('bonuses')) {
-      let bonusString = $(this).data('bonuses');
-      if (bonusString !== undefined && bonusString !== 'None') {
-        bonusString = bonusString.replace(/'/g, '"');
-        const bonuses = JSON.parse(bonusString);
-
-        Object.keys(bonuses).forEach((key) => {
-          $('#lanternBonuses').append(`<button type="button" class="btn btn-primary btn-sm btn-block">${key} +${bonuses[key]}</button>`);
-        });
+    $('#lanternIcon').empty();
+    if ($(this).data('img')) {
+      const imageString = $(this).data('img');
+      if (imageString !== undefined && imageString !== 'None') {
+        $('#lanternIcon').append(`<img src="/static/assets/images/icons/icon_lantern_${imageString}" alt="lantern" height="64" width="64">`);
       }
+    }
+
+    let bonusString = $(this).data('bonuses');
+    if (bonusString !== undefined && bonusString !== 'None') {
+      bonusString = bonusString.replace(/'/g, '"');
+      const bonuses = JSON.parse(bonusString);
+
+      Object.keys(bonuses).forEach((key) => {
+        $('#lanternBonuses').append(`<button type="button" class="btn btn-primary btn-sm btn-block">${key} +${bonuses[key]}</button>`);
+      });
     } else {
       $('#lanternBonuses').append('<p class="text-muted">No bonuses</p>');
     }
 
-    if ($(this).data('instant')) {
-      let specialsString = $(this).data('instant');
-      if (specialsString === undefined) {
-        return false;
-      }
-      specialsString = specialsString.replace(/'/g, '"');
-      const specials = specialsString;
+    let specialsInstant = $(this).data('instant');
+    if (specialsInstant !== undefined) {
+      specialsInstant = specialsInstant.replace(/'/g, '"');
+      const specials = specialsInstant;
       $('#lanternSpecials').append(`<p>Instant: ${specials}</p>`);
     }
 
-    if ($(this).data('hold')) {
-      let specialsString = $(this).data('hold');
-      if (specialsString === undefined) {
-        return false;
-      }
-      specialsString = specialsString.replace(/'/g, '"');
-      const specials = specialsString;
+    let specialsHold = $(this).data('hold');
+    if (specialsHold !== undefined) {
+      specialsHold = specialsHold.replace(/'/g, '"');
+      const specials = specialsHold;
       $('#lanternSpecials').append(`<p>Hold: ${specials}</p>`);
     }
+
     return true;
   });
 }
 
 function updateArmorStats(type) {
   $(`#${type}Selection option:selected`).each(function showItemStats() {
+    $(`#${type}Icon`).empty();
+    if ($(this).data('img')) {
+      const imageString = $(this).data('img');
+      if (imageString !== undefined && imageString !== 'None') {
+        $(`#${type}Icon`).append(`<img src="/static/assets/images/icons/icon_${type}_${imageString}" alt="${type}" height="64" width="64">`);
+      }
+    }
+
     if ($(this).data('bonuses')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
         const bonuses = JSON.parse(bonusString);
-
         Object.keys(bonuses).forEach((key) => {
           $(`#${type}Bonuses`).append(`<button type="button" class="btn btn-primary btn-sm btn-block">${key} +${bonuses[key]}</button>`);
         });
@@ -214,15 +226,15 @@ function updateArmorStats(type) {
 
     if ($(this).data('specials')) {
       let specialsString = $(this).data('specials');
-      if (specialsString === undefined || specialsString === 'None') {
-        return false;
+      if (specialsString !== undefined && specialsString !== 'None') {
+        specialsString = specialsString.replace(/'/g, '"');
+        const specials = JSON.parse(specialsString);
+        Object.keys(specials).forEach((key) => {
+          $(`#${type}Specials`).append(`<p>${specials[key]}</p>`);
+        });
       }
-      specialsString = specialsString.replace(/'/g, '"');
-      const specials = JSON.parse(specialsString);
-      Object.keys(specials).forEach((key) => {
-        $(`#${type}Specials`).append(`<p>${specials[key]}</p>`);
-      });
     }
+
     return true;
   });
 }
@@ -233,26 +245,22 @@ function updateTotalBonuses() {
 
   if ($('#typeSelection option:selected').val() === '1') {
     $('#Hammers option:selected').each(function addBonusesAndSpecials() {
-      if ($(this).data('bonuses')) {
-        let bonusString = $(this).data('bonuses');
-        if (bonusString !== undefined && bonusString !== 'None') {
-          bonusString = bonusString.replace(/'/g, '"');
-          const bonuses = JSON.parse(bonusString);
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
 
-          Object.keys(bonuses).forEach((key) => {
-            if (key in stats) {
-              stats[key] += bonuses[key];
-            } else {
-              stats[key] = bonuses[key];
-            }
-          });
-        }
+        Object.keys(bonuses).forEach((key) => {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
+          }
+        });
       }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
+
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
 
@@ -266,25 +274,21 @@ function updateTotalBonuses() {
 
   if ($('#typeSelection option:selected').val() === '2') {
     $('#Axes option:selected').each(function addBonusesAndSpecials() {
-      if ($(this).data('bonuses')) {
-        let bonusString = $(this).data('bonuses');
-        if (bonusString !== undefined && bonusString !== 'None') {
-          bonusString = bonusString.replace(/'/g, '"');
-          const bonuses = JSON.parse(bonusString);
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
 
-          Object.keys(bonuses).forEach((key) => {
-            if (key in stats) {
-              stats[key] += bonuses[key];
-            } else {
-              stats[key] = bonuses[key];
-            }
-          });
-        }
-        if ($(this).data('specials')) {
-          let specialsString = $(this).data('specials');
-          if (specialsString === undefined || specialsString === 'None') {
-            return false;
+        Object.keys(bonuses).forEach((key) => {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
           }
+        });
+
+        let specialsString = $(this).data('specials');
+        if (specialsString !== undefined && specialsString !== 'None') {
           specialsString = specialsString.replace(/'/g, '"');
           const specials = JSON.parse(specialsString);
 
@@ -299,96 +303,89 @@ function updateTotalBonuses() {
 
   if ($('#typeSelection option:selected').val() === '3') {
     $('#Swords option:selected').each(function addBonusesAndSpecials() {
-      if ($(this).data('bonuses')) {
-        let bonusString = $(this).data('bonuses');
-        if (bonusString !== undefined && bonusString !== 'None') {
-          bonusString = bonusString.replace(/'/g, '"');
-          const bonuses = JSON.parse(bonusString);
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
 
-          Object.keys(bonuses).forEach((key) => {
-            if (key in stats) {
-              stats[key] += bonuses[key];
-            } else {
-              stats[key] = bonuses[key];
-            }
-          });
-        }
-        if ($(this).data('specials')) {
-          let specialsString = $(this).data('specials');
-          if (specialsString === undefined || specialsString === 'None') {
-            return false;
+        Object.keys(bonuses).forEach((key) => {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
           }
+        });
+
+        let specialsString = $(this).data('specials');
+        if (specialsString !== undefined && specialsString !== 'None') {
           specialsString = specialsString.replace(/'/g, '"');
           const specials = JSON.parse(specialsString);
+
           Object.keys(specials).forEach((key) => {
             uniqueEffects.push(specials[key]);
           });
         }
       }
+
       return true;
     });
   }
 
   if ($('#typeSelection option:selected').val() === '4') {
     $('#ChainBlades option:selected').each(function addBonusesAndSpecials() {
-      if ($(this).data('bonuses')) {
-        let bonusString = $(this).data('bonuses');
-        if (bonusString !== undefined && bonusString !== 'None') {
-          bonusString = bonusString.replace(/'/g, '"');
-          const bonuses = JSON.parse(bonusString);
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
 
-          Object.keys(bonuses).forEach((key) => {
-            if (key in stats) {
-              stats[key] += bonuses[key];
-            } else {
-              stats[key] = bonuses[key];
-            }
-          });
-        }
-        if ($(this).data('specials')) {
-          let specialsString = $(this).data('specials');
-          if (specialsString === undefined || specialsString === 'None') {
-            return false;
+        Object.keys(bonuses).forEach((key) => {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
           }
-          specialsString = specialsString.replace(/'/g, '"');
-          const specials = JSON.parse(specialsString);
-          Object.keys(specials).forEach((key) => {
-            uniqueEffects.push(specials[key]);
-          });
-        }
+        });
       }
+
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
+        specialsString = specialsString.replace(/'/g, '"');
+        const specials = JSON.parse(specialsString);
+        Object.keys(specials).forEach((key) => {
+          uniqueEffects.push(specials[key]);
+        });
+      }
+
       return true;
     });
   }
 
   if ($('#typeSelection option:selected').val() === '5') {
     $('#WarPikes option:selected').each(function addBonusesAndSpecials() {
-      if ($(this).data('bonuses')) {
-        let bonusString = $(this).data('bonuses');
-        if (bonusString !== undefined && bonusString !== 'None') {
-          bonusString = bonusString.replace(/'/g, '"');
-          const bonuses = JSON.parse(bonusString);
+      let bonusString = $(this).data('bonuses');
+      if (bonusString !== undefined && bonusString !== 'None') {
+        bonusString = bonusString.replace(/'/g, '"');
+        const bonuses = JSON.parse(bonusString);
 
-          Object.keys(bonuses).forEach((key) => {
-            if (key in stats) {
-              stats[key] += bonuses[key];
-            } else {
-              stats[key] = bonuses[key];
-            }
-          });
-        }
-        if ($(this).data('specials')) {
-          let specialsString = $(this).data('specials');
-          if (specialsString === undefined || specialsString === 'None') {
-            return false;
+        Object.keys(bonuses).forEach((key) => {
+          if (key in stats) {
+            stats[key] += bonuses[key];
+          } else {
+            stats[key] = bonuses[key];
           }
-          specialsString = specialsString.replace(/'/g, '"');
-          const specials = JSON.parse(specialsString);
-          Object.keys(specials).forEach((key) => {
-            uniqueEffects.push(specials[key]);
-          });
-        }
+        });
       }
+
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
+        specialsString = specialsString.replace(/'/g, '"');
+        const specials = JSON.parse(specialsString);
+
+        Object.keys(specials).forEach((key) => {
+          uniqueEffects.push(specials[key]);
+        });
+      }
+
       return true;
     });
   }
@@ -427,11 +424,11 @@ function updateTotalBonuses() {
           }
         });
       }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
         Object.keys(specials).forEach((key) => {
@@ -439,6 +436,7 @@ function updateTotalBonuses() {
         });
       }
     }
+
     return true;
   });
 
@@ -457,11 +455,11 @@ function updateTotalBonuses() {
           }
         });
       }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
         Object.keys(specials).forEach((key) => {
@@ -487,23 +485,24 @@ function updateTotalBonuses() {
           }
         });
       }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
+    }
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
+
         Object.keys(specials).forEach((key) => {
           uniqueEffects.push(specials[key]);
         });
       }
     }
+
     return true;
   });
 
   $('#greavesSelection option:selected').each(function addBonusesAndSpecials() {
-    if ($(this).data('bonuses')) {
+    if ($(this).data('specials')) {
       let bonusString = $(this).data('bonuses');
       if (bonusString !== undefined && bonusString !== 'None') {
         bonusString = bonusString.replace(/'/g, '"');
@@ -517,18 +516,20 @@ function updateTotalBonuses() {
           }
         });
       }
-      if ($(this).data('specials')) {
-        let specialsString = $(this).data('specials');
-        if (specialsString === undefined || specialsString === 'None') {
-          return false;
-        }
+    }
+
+    if ($(this).data('specials')) {
+      let specialsString = $(this).data('specials');
+      if (specialsString !== undefined && specialsString !== 'None') {
         specialsString = specialsString.replace(/'/g, '"');
         const specials = JSON.parse(specialsString);
+
         Object.keys(specials).forEach((key) => {
           uniqueEffects.push(specials[key]);
         });
       }
     }
+
     return true;
   });
 
