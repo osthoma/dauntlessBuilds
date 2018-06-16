@@ -24,6 +24,7 @@
     "id": "103",
     "type": "Hammers",
     "name": "Recruit`s Hammer",
+    "img": "hammer_recruit.png",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "None",

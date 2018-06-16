@@ -5,6 +5,7 @@
   {
     "id": "101",
     "name": "Recruit's Mask",
+    "img": "recruit.png",
     "cellslot": "None",
     "bonuses": "None"
   },
@@ -12,6 +13,7 @@
   {
     "id": "102",
     "name": "Recruit's Breastplate",
+    "img": "recruit.png",
     "cellslot": "None",
     "bonuses": "None"
   },
@@ -19,6 +21,7 @@
   {
     "id": "103",
     "name": "Recruit's Gloves",
+    "img": "recruit.png",
     "cellslot": "None",
     "bonuses": "None"
   },
@@ -26,6 +29,7 @@
   {
     "id": "104",
     "name": "Recruit's Greaves",
+    "img": "recruit.png",
     "cellslot": "None",
     "bonuses": "None"
   }
@@ -384,6 +388,7 @@
   {
     "id": "30101",
     "name": "Zaga Mask",
+    "img": "nayzaga.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -394,6 +399,7 @@
   {
     "id": "30102",
     "name": "Zaga Jacket",
+    "img": "nayzaga.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -404,6 +410,7 @@
   {
     "id": "30103",
     "name": "Zaga Bracers",
+    "img": "nayzaga.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -414,6 +421,7 @@
   {
     "id": "30104",
     "name": "Zaga Greaves",
+    "img": "nayzaga.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -697,6 +705,7 @@
   {
     "id": "40301",
     "name": "Shockjaw Mask",
+    "img": "shockjaw.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -708,6 +717,7 @@
   {
     "id": "40302",
     "name": "Shockjaw Vest",
+    "img": "shockjaw.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -719,6 +729,7 @@
   {
     "id": "40303",
     "name": "Shockjaw Bracers",
+    "img": "shockjaw.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -730,6 +741,7 @@
   {
     "id": "40304",
     "name": "Shockjaw Greaves",
+    "img": "shockjaw.png",
     "cellslot": "Defence",
     "bonuses":
     {
