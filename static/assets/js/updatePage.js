@@ -3,7 +3,7 @@ const hashids = new Hashids('dauntlessBuilds');
 
 const clipboard = new ClipboardJS('.btn-clipboard'); // eslint-disable-line
 
-function hideAllWeapons() {
+function hideAllWeaponsInDropdown() {
   $('#Hammers').css('display', 'none');
   $('#Axes').css('display', 'none');
   $('#Swords').css('display', 'none');
@@ -11,11 +11,15 @@ function hideAllWeapons() {
   $('#WarPikes').css('display', 'none');
 }
 
-function hideAllCells() {
+function hideAllCellsInAllDropdowns() {
   $('[data-category]').css('display', 'none');
 }
 
-function displayFirstVisibleOption(cellSlot) {
+function hideAllCellsInDropdown(id) {
+  $(`${id} option`).css('display', 'none');
+}
+
+function selectFirstVisibleOptionInDropdown(cellSlot) {
   $(`${cellSlot} option`).each(function displayFirstVisible() {
     if ($(this).css('display') !== 'none') {
       $(this).prop('selected', true);
@@ -26,104 +30,45 @@ function displayFirstVisibleOption(cellSlot) {
 }
 
 function updateWeaponCells(type) {
-  $('#weaponCellSelection01 option').css('display', 'none');
+  hideAllCellsInDropdown('#weaponCellSelection01');
   $('#weaponCellSelection01 option').each(function displayMatchingCells() {
     if ($(`${type} option:selected`).data('cellslot01') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
   });
 
-  $('#weaponCellSelection02 option').css('display', 'none');
+  hideAllCellsInDropdown('#weaponCellSelection02');
   $('#weaponCellSelection02 option').each(function displayMatchingCells() {
     if ($(`${type} option:selected`).data('cellslot02') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
   });
 
-  if ($(`${type} option:selected`).data('cellslot01') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-  if ($(`${type} option:selected`).data('cellslot02') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-
-  displayFirstVisibleOption('#weaponCellSelection01');
-  displayFirstVisibleOption('#weaponCellSelection02');
+  selectFirstVisibleOptionInDropdown('#weaponCellSelection01');
+  selectFirstVisibleOptionInDropdown('#weaponCellSelection02');
 }
 
 function updateLanternCells() {
-  $('#lanternCellSelection option').css('display', 'none');
+  hideAllCellsInDropdown('#lanternCellSelection');
   $('#lanternCellSelection option').each(function displayMatchingCells() {
     if ($('#lanternSelection option:selected').data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
   });
 
-  if ($('#lanternSelection option:selected').data('cellslot') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-
-  displayFirstVisibleOption('#lanternCellSelection');
+  selectFirstVisibleOptionInDropdown('#lanternCellSelection');
 }
 
-function updateHelmetCells() {
-  $('#helmetCellSelection option').css('display', 'none');
-  $('#helmetCellSelection option').each(function displayMatchingCells() {
-    if ($('#helmetSelection option:selected').data('cellslot') === $(this).data('category')) {
+function updateCellsInDropdown(armortype) {
+  hideAllCellsInDropdown(`#${armortype}CellSelection`);
+
+  $(`#${armortype}CellSelection option`).each(function displayMatchingCells() {
+    if ($(`#${armortype}Selection option:selected`).data('cellslot') === $(this).data('category')) {
       $(this).css('display', 'block');
     }
   });
 
-  if ($('#helmetSelection option:selected').data('cellslot') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-
-  displayFirstVisibleOption('#helmetCellSelection');
-}
-
-function updateChestplateCells() {
-  $('#chestplateCellSelection option').css('display', 'none');
-  $('#chestplateCellSelection option').each(function displayMatchingCells() {
-    if ($('#chestplateSelection option:selected').data('cellslot') === $(this).data('category')) {
-      $(this).css('display', 'block');
-    }
-  });
-
-  if ($('#chestplateSelection option:selected').data('cellslot') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-
-  displayFirstVisibleOption('#chestplateCellSelection');
-}
-
-function updateGauntletsCells() {
-  $('#gauntletsCellSelection option').css('display', 'none');
-  $('#gauntletsCellSelection option').each(function displayMatchingCells() {
-    if ($('#gauntletsSelection option:selected').data('cellslot') === $(this).data('category')) {
-      $(this).css('display', 'block');
-    }
-  });
-
-  if ($('#gauntletsSelection option:selected').data('cellslot') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-
-  displayFirstVisibleOption('#gauntletsCellSelection');
-}
-
-function updateGreavesCells() {
-  $('#greavesCellSelection option').css('display', 'none');
-  $('#greavesCellSelection option').each(function displayMatchingCells() {
-    if ($('#greavesSelection option:selected').data('cellslot') === $(this).data('category')) {
-      $(this).css('display', 'block');
-    }
-  });
-
-  if ($('#greavesSelection option:selected').data('cellslot') === 'None') {
-    $('[data-category="Empty"]').css('display', 'block');
-  }
-
-  displayFirstVisibleOption('#greavesCellSelection');
+  selectFirstVisibleOptionInDropdown(`#${armortype}CellSelection`);
 }
 
 function updateWeaponStats(type) {
@@ -764,7 +709,7 @@ function updateTotalBonuses() {
 
 
 function showSelectedWeapons(type) {
-  hideAllWeapons();
+  hideAllWeaponsInDropdown();
   $(type).css('display', 'block');
 }
 
@@ -896,6 +841,7 @@ $('#typeSelection').change(() => {
   updateTotalBonuses();
 });
 
+
 $('#Hammers').change(() => {
   updateWeaponCells('#Hammers');
   updateUrl();
@@ -935,25 +881,25 @@ $('#lanternSelection').change(() => {
 
 
 $('#helmetSelection').change(() => {
-  updateHelmetCells();
+  updateCellsInDropdown('helmet');
   updateUrl();
   updateTotalBonuses();
 });
 
 $('#chestplateSelection').change(() => {
-  updateChestplateCells();
+  updateCellsInDropdown('chestplate');
   updateUrl();
   updateTotalBonuses();
 });
 
 $('#gauntletsSelection').change(() => {
-  updateGauntletsCells();
+  updateCellsInDropdown('gauntlets');
   updateUrl();
   updateTotalBonuses();
 });
 
 $('#greavesSelection').change(() => {
-  updateGreavesCells();
+  updateCellsInDropdown('greaves');
   updateUrl();
   updateTotalBonuses();
 });
@@ -997,7 +943,7 @@ $('#greavesCellSelection').change(() => {
 $(document).ready(() => {
   $('#wrongCodeWarning').css('display', 'none');
 
-  hideAllCells();
+  hideAllCellsInAllDropdowns();
 
   /* global decodeUrl:true/false buildString:hash */
 
@@ -1061,10 +1007,10 @@ $(document).ready(() => {
 
       updateLanternCells();
 
-      updateHelmetCells();
-      updateChestplateCells();
-      updateGauntletsCells();
-      updateGreavesCells();
+      updateCellsInDropdown('helmet');
+      updateCellsInDropdown('chestplate');
+      updateCellsInDropdown('gauntlets');
+      updateCellsInDropdown('greaves');
 
 
       $('#weaponCellSelection01 option').each(function selectCellById() {
@@ -1131,6 +1077,7 @@ $(document).ready(() => {
   } else {
     showSelectedWeapons('#Hammers');
   }
+
   updateUrl();
   updateTotalBonuses();
 });
