@@ -216,6 +216,7 @@
   {
     "id": "20101",
     "name": "Charrhelm",
+    "img": "charrogg.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -226,6 +227,7 @@
   {
     "id": "20102",
     "name": "Charrplate",
+    "img": "charrogg.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -236,6 +238,7 @@
   {
     "id": "20103",
     "name": "Charrogg Gauntlets",
+    "img": "charrogg.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -246,6 +249,7 @@
   {
     "id": "20104",
     "name": "Charrogg Greaves",
+    "img": "charrogg.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -439,6 +443,7 @@
   {
     "id": "30201",
     "name": "Pangar Helm",
+    "img": "pangar.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -449,6 +454,7 @@
   {
     "id": "30202",
     "name": "Pangar Scaleplate",
+    "img": "pangar.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -459,6 +465,7 @@
   {
     "id": "30203",
     "name": "Pangar Grips",
+    "img": "pangar.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -469,6 +476,7 @@
   {
     "id": "30204",
     "name": "Pangar Boots",
+    "img": "pangar.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -666,6 +674,7 @@
   {
     "id": "40201",
     "name": "Firebrand Charrhelm",
+    "img": "firebrand.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -677,6 +686,7 @@
   {
     "id": "40202",
     "name": "Firebrand Charrplate",
+    "img": "firebrand.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -688,6 +698,7 @@
   {
     "id": "40203",
     "name": "Firebrand Gauntlets",
+    "img": "firebrand.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -699,6 +710,7 @@
   {
     "id": "40204",
     "name": "Firebrand Greaves",
+    "img": "firebrand.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -815,6 +827,7 @@
   {
     "id": "40501",
     "name": "Frosthelm",
+    "img": "frostback.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -826,6 +839,7 @@
   {
     "id": "40502",
     "name": "Frostplate",
+    "img": "frostback.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -837,6 +851,7 @@
   {
     "id": "40503",
     "name": "Frostgrips",
+    "img": "frostback.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -848,6 +863,7 @@
   {
     "id": "40504",
     "name": "Frostboots",
+    "img": "frostback.png",
     "cellslot": "Defence",
     "bonuses":
     {
