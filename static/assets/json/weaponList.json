@@ -1282,10 +1282,7 @@
       "Savagery": 2,
       "Acidic": 2
     },
-    "specials":
-    {
-      "special01": "Converts 30% of Part damage to Wound damage"
-    }
+    "specials": "None"
   },
   {
     "id": "40602",
@@ -1298,10 +1295,7 @@
       "Barbed": 2,
       "Acidic": 2
     },
-    "specials":
-    {
-      "special01": "Converts 30% of Part damage to Wound damage"
-    }
+    "specials": "None"
   },
   {
     "id": "40603",
@@ -1314,10 +1308,7 @@
       "Savagery": 2,
       "Acidic": 2
     },
-    "specials":
-    {
-      "special01": "Converts 30% of Part damage to Wound damage"
-    }
+    "specials": "None"
   },
   {
     "id": "40604",
@@ -1330,10 +1321,7 @@
       "Barbed": 2,
       "Acidic": 2
     },
-    "specials":
-    {
-      "special01": "Converts 30% of Part damage to Wound damage"
-    }
+    "specials": "None"
   },
   {
     "id": "40605",
@@ -1346,10 +1334,7 @@
       "Barbed": 2,
       "Acidic": 2
     },
-    "specials":
-    {
-      "special01": "Converts 30% of Part damage to Wound damage"
-    }
+    "specials": "None"
   }]
 },
 {
@@ -1422,7 +1407,7 @@
     "bonuses": "None",
     "specials":
     {
-      "special01": "+30% Attack Speed for 4-10 seonds after hitting with a Special Attack missile",
+      "special01": "+30% Attack Speed for 4-10 seonds after hitting with a Special Attack missile. Duration depends on missile strength.",
       "special02": "The seventh hit in a row deals +200 Wound damage"
     }
   }]
