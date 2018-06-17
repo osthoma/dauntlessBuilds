@@ -29,364 +29,357 @@
     {% endfor %}
   </script>
   <div class="container">
+    <div class="alert alert-danger" role="alert" id="wrongCodeWarning">
+      <strong>Cursed Behemoths!</strong>
+      This link did not contain a valid build.
+    </div>
 
-    <div class="alert alert-dismissible alert-secondary">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <strong>Hi!</strong>
-      Thank you for helping me test dauntlessBuilds.</br>This tool is still a work in progress, so if you find any bugs or have any suggestions don`t hesitate to contact me on Discord (fresh2k#9240).
-  </div>
+    <h1>Welcome, Slayer!</h1>
+    <p class="lead">Create and share your custom Dauntless builds!</p>
 
-  <div class="alert alert-danger" role="alert" id="wrongCodeWarning">
-    <strong>Cursed Behemoths!</strong>
-    This link did not contain a valid build.
-  </div>
+    <div class="row" style="margin-bottom: 2rem;">
+      <div class="items col-12 col-md-6">
+        <h3>Items</h3>
 
-  <h1>Welcome, Slayer!</h1>
-  <p class="lead">Create and share your custom Dauntless builds!</p>
+        <select class="form-control form-control-sm" id="typeSelection">
+          <option value="1">Hammers</option>
+          <option value="2">Axes</option>
+          <option value="3">Swords</option>
+          <option value="4">Chain Blades</option>
+          <option value="5">War Pikes</option>
+        </select>
 
-  <div class="row" style="margin-bottom: 2rem;">
-    <div class="items col-12 col-md-6">
-      <h6>Items</h6>
-
-      <select class="form-control form-control-sm" id="typeSelection">
-        <option value="1">Hammers</option>
-        <option value="2">Axes</option>
-        <option value="3">Swords</option>
-        <option value="4">Chain Blades</option>
-        <option value="5">War Pikes</option>
-      </select>
-
-      <div class="card border-secondary">
-        <div class="card-body item-pane">
-          <div class="item-icon" id="weaponIcon"></div>
-          <div class="item-stats" id="weaponStats">
-            <div class="item-name">
-              <select class="form-control" id="Hammers">
-                {% for weapon in weaponData %}
-                  {% for item in weapon['items'] %}
-                    {% if item.type == "Hammers" %}
-                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                        ({{ weapon.name }})</option>
-                    {% endif %}
+        <div class="card border-secondary">
+          <div class="card-body item-pane">
+            <div class="item-icon" id="weaponIcon"></div>
+            <div class="item-stats" id="weaponStats">
+              <div class="item-name">
+                <select class="form-control" id="Hammers">
+                  {% for weapon in weaponData %}
+                    {% for item in weapon['items'] %}
+                      {% if item.type == "Hammers" %}
+                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
+                          ({{ weapon.name }})</option>
+                      {% endif %}
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
-              </select>
-              <select class="form-control" id="Axes">
-                {% for weapon in weaponData %}
-                  {% for item in weapon['items'] %}
-                    {% if item.type == "Axes" %}
-                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                        ({{ weapon.name }})</option>
-                    {% endif %}
+                </select>
+                <select class="form-control" id="Axes">
+                  {% for weapon in weaponData %}
+                    {% for item in weapon['items'] %}
+                      {% if item.type == "Axes" %}
+                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
+                          ({{ weapon.name }})</option>
+                      {% endif %}
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
-              </select>
-              <select class="form-control" id="Swords">
-                {% for weapon in weaponData %}
-                  {% for item in weapon['items'] %}
-                    {% if item.type == "Swords" %}
-                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                        ({{ weapon.name }})</option>
-                    {% endif %}
+                </select>
+                <select class="form-control" id="Swords">
+                  {% for weapon in weaponData %}
+                    {% for item in weapon['items'] %}
+                      {% if item.type == "Swords" %}
+                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
+                          ({{ weapon.name }})</option>
+                      {% endif %}
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
-              </select>
-              <select class="form-control" id="ChainBlades">
-                {% for weapon in weaponData %}
-                  {% for item in weapon['items'] %}
-                    {% if item.type == "Chain Blades" %}
-                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                        ({{ weapon.name }})</option>
-                    {% endif %}
+                </select>
+                <select class="form-control" id="ChainBlades">
+                  {% for weapon in weaponData %}
+                    {% for item in weapon['items'] %}
+                      {% if item.type == "Chain Blades" %}
+                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
+                          ({{ weapon.name }})</option>
+                      {% endif %}
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
-              </select>
-              <select class="form-control" id="WarPikes">
-                {% for weapon in weaponData %}
-                  {% for item in weapon['items'] %}
-                    {% if item.type == "War Pikes" %}
-                      <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                        ({{ weapon.name }})</option>
-                    {% endif %}
+                </select>
+                <select class="form-control" id="WarPikes">
+                  {% for weapon in weaponData %}
+                    {% for item in weapon['items'] %}
+                      {% if item.type == "War Pikes" %}
+                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
+                          ({{ weapon.name }})</option>
+                      {% endif %}
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
-              </select>
+                </select>
+              </div>
+              <div class="item-bonuses" id="weaponBonuses"></div>
+              <div class="item-cellslots" id="weaponCells">
+                <select class="form-control form-control-sm" id="weaponCellSelection01">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
+                  {% endfor %}
+                </select>
+
+                <select class="form-control form-control-sm" id="weaponCellSelection02">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-specials" id="weaponSpecials"></div>
             </div>
-            <div class="item-bonuses" id="weaponBonuses"></div>
-            <div class="item-cellslots" id="weaponCells">
-              <select class="form-control form-control-sm" id="weaponCellSelection01">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
+          </div>
+        </div>
+        <div class="card border-secondary">
+          <div class="card-body item-pane">
+            <div class="item-icon" id="lanternIcon"></div>
+            <div class="item-stats" id="lanternStats">
+              <div class="item-name">
+                <select class="form-control" id="lanternSelection">
+                  {% for lantern in lanternData %}
+                    <option value="{{ lantern.id }}" data-name="{{ lantern.name }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}" data-instant="{{ lantern.instant }}" data-hold="{{ lantern.hold }}" data-img="{{ lantern.img }}">{{ lantern.name }}</option>
                   {% endfor %}
-                {% endfor %}
-              </select>
-
-              <select class="form-control form-control-sm" id="weaponCellSelection02">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
+                </select>
+              </div>
+              <div class="item-bonuses" id="lanternBonuses"></div>
+              <div class="item-cellslots" id="lanternCells">
+                <select class="form-control form-control-sm" id="lanternCellSelection">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
                   {% endfor %}
-                {% endfor %}
-              </select>
+                </select>
+              </div>
+              <div class="item-specials" id="lanternSpecials"></div>
             </div>
-            <div class="item-specials" id="weaponSpecials"></div>
+          </div>
+        </div>
+        <div class="card border-secondary">
+          <div class="card-body item-pane">
+            <div class="item-icon" id="helmetIcon"></div>
+            <div class="item-stats" id="helmetStats">
+              <div class="item-name">
+                <select class="form-control" id="helmetSelection">
+                  {% for boss in armorData %}
+                    {% if ('helmet' in boss) %}
+                      <option value="{{ boss.helmet.id }}" data-name="{{ boss.helmet.name }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}" data-specials="{{ boss.helmet.specials }}" data-img="{{ boss.helmet.img }}">{{ boss.helmet.name }}
+                        ({{ boss.boss }})</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-bonuses" id="helmetBonuses"></div>
+              <div class="item-cellslots" id="helmetCells">
+                <select class="form-control form-control-sm" id="helmetCellSelection">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-specials" id="helmetSpecials"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-secondary">
+          <div class="card-body item-pane">
+            <div class="item-icon" id="chestplateIcon"></div>
+            <div class="item-stats" id="chestplateStats">
+              <div class="item-name">
+                <select class="form-control" id="chestplateSelection">
+                  {% for boss in armorData %}
+                    {% if ('chestplate' in boss) %}
+                      <option
+                        value="{{ boss.chestplate.id }}"
+                        data-name="{{ boss.chestplate.name }}"
+                        data-cellslot="{{ boss.chestplate.cellslot }}"
+                        data-bonuses="{{ boss.chestplate.bonuses }}"
+                        data-specials="{{ boss.chestplate.specials }}"
+                        data-img="{{ boss.chestplate.img }}">{{ boss.chestplate.name }}
+                        ({{ boss.boss }})</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+
+              <div class="item-bonuses" id="chestplateBonuses"></div>
+              <div class="item-cellslots" id="chestplateCells">
+                <select class="form-control form-control-sm" id="chestplateCellSelection">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-specials" id="chestplateSpecials"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-secondary">
+          <div class="card-body item-pane">
+            <div class="item-icon" id="gauntletsIcon"></div>
+            <div class="item-stats" id="gauntletsStats">
+              <div class="item-name">
+                <select class="form-control" id="gauntletsSelection">
+                  {% for boss in armorData %}
+                    {% if ('gauntlets' in boss) %}
+                      <option value="{{ boss.gauntlets.id }}" data-name="{{ boss.gauntlets.name }}" data-cellslot="{{ boss.gauntlets.cellslot }}" data-bonuses="{{ boss.gauntlets.bonuses }}" data-specials="{{ boss.gauntlets.specials }}" data-img="{{ boss.gauntlets.img }}">{{ boss.gauntlets.name }}
+                        ({{ boss.boss }})</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-bonuses" id="gauntletsBonuses"></div>
+              <div class="item-cellslots" id="gauntletsCells">
+                <select class="form-control form-control-sm" id="gauntletsCellSelection">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-specials" id="gauntletsSpecials"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-secondary">
+          <div class="card-body item-pane">
+            <div class="item-icon" id="greavesIcon"></div>
+            <div class="item-stats" id="greavesStats">
+              <div class="item-name">
+                <select class="form-control" id="greavesSelection">
+                  {% for boss in armorData %}
+                    {% if ('greaves' in boss) %}
+                      <option value="{{ boss.greaves.id }}" data-name="{{ boss.greaves.name }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}" data-specials="{{ boss.greaves.specials }}" data-img="{{ boss.greaves.img }}">{{ boss.greaves.name }}
+                        ({{ boss.boss }})</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-bonuses" id="greavesBonuses"></div>
+              <div class="item-cellslots" id="greavesCells">
+                <select class="form-control form-control-sm" id="greavesCellSelection">
+                  <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
+                  <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
+                  <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
+                  <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
+                  <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
+                  <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
+                  {% for category in cellData %}
+                    {% for cell in category.cells %}
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
+                        +3</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
+                        +2</option>
+                      <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
+                        +1</option>
+                    {% endfor %}
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="item-specials" id="greavesSpecials"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card border-secondary">
-        <div class="card-body item-pane">
-          <div class="item-icon" id="lanternIcon"></div>
-          <div class="item-stats" id="lanternStats">
-            <div class="item-name">
-              <select class="form-control" id="lanternSelection">
-                {% for lantern in lanternData %}
-                  <option value="{{ lantern.id }}" data-name="{{ lantern.name }}" data-cellslot="{{ lantern.cellslot }}" data-bonuses="{{ lantern.bonuses }}" data-instant="{{ lantern.instant }}" data-hold="{{ lantern.hold }}" data-img="{{ lantern.img }}">{{ lantern.name }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-bonuses" id="lanternBonuses"></div>
-            <div class="item-cellslots" id="lanternCells">
-              <select class="form-control form-control-sm" id="lanternCellSelection">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
-                  {% endfor %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-specials" id="lanternSpecials"></div>
-          </div>
-        </div>
-      </div>
-      <div class="card border-secondary">
-        <div class="card-body item-pane">
-          <div class="item-icon" id="helmetIcon"></div>
-          <div class="item-stats" id="helmetStats">
-            <div class="item-name">
-              <select class="form-control" id="helmetSelection">
-                {% for boss in armorData %}
-                  {% if ('helmet' in boss) %}
-                    <option value="{{ boss.helmet.id }}" data-name="{{ boss.helmet.name }}" data-cellslot="{{ boss.helmet.cellslot }}" data-bonuses="{{ boss.helmet.bonuses }}" data-specials="{{ boss.helmet.specials }}" data-img="{{ boss.helmet.img }}">{{ boss.helmet.name }}
-                      ({{ boss.boss }})</option>
-                  {% endif %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-bonuses" id="helmetBonuses"></div>
-            <div class="item-cellslots" id="helmetCells">
-              <select class="form-control form-control-sm" id="helmetCellSelection">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
-                  {% endfor %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-specials" id="helmetSpecials"></div>
-          </div>
-        </div>
-      </div>
-      <div class="card border-secondary">
-        <div class="card-body item-pane">
-          <div class="item-icon" id="chestplateIcon"></div>
-          <div class="item-stats" id="chestplateStats">
-            <div class="item-name">
-              <select class="form-control" id="chestplateSelection">
-                {% for boss in armorData %}
-                  {% if ('chestplate' in boss) %}
-                    <option
-                      value="{{ boss.chestplate.id }}"
-                      data-name="{{ boss.chestplate.name }}"
-                      data-cellslot="{{ boss.chestplate.cellslot }}"
-                      data-bonuses="{{ boss.chestplate.bonuses }}"
-                      data-specials="{{ boss.chestplate.specials }}"
-                      data-img="{{ boss.chestplate.img }}">{{ boss.chestplate.name }}
-                      ({{ boss.boss }})</option>
-                  {% endif %}
-                {% endfor %}
-              </select>
-            </div>
 
-            <div class="item-bonuses" id="chestplateBonuses"></div>
-            <div class="item-cellslots" id="chestplateCells">
-              <select class="form-control form-control-sm" id="chestplateCellSelection">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
-                  {% endfor %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-specials" id="chestplateSpecials"></div>
-          </div>
-        </div>
-      </div>
-      <div class="card border-secondary">
-        <div class="card-body item-pane">
-          <div class="item-icon" id="gauntletsIcon"></div>
-          <div class="item-stats" id="gauntletsStats">
-            <div class="item-name">
-              <select class="form-control" id="gauntletsSelection">
-                {% for boss in armorData %}
-                  {% if ('gauntlets' in boss) %}
-                    <option value="{{ boss.gauntlets.id }}" data-name="{{ boss.gauntlets.name }}" data-cellslot="{{ boss.gauntlets.cellslot }}" data-bonuses="{{ boss.gauntlets.bonuses }}" data-specials="{{ boss.gauntlets.specials }}" data-img="{{ boss.gauntlets.img }}">{{ boss.gauntlets.name }}
-                      ({{ boss.boss }})</option>
-                  {% endif %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-bonuses" id="gauntletsBonuses"></div>
-            <div class="item-cellslots" id="gauntletsCells">
-              <select class="form-control form-control-sm" id="gauntletsCellSelection">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
-                  {% endfor %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-specials" id="gauntletsSpecials"></div>
-          </div>
-        </div>
-      </div>
-      <div class="card border-secondary">
-        <div class="card-body item-pane">
-          <div class="item-icon" id="greavesIcon"></div>
-          <div class="item-stats" id="greavesStats">
-            <div class="item-name">
-              <select class="form-control" id="greavesSelection">
-                {% for boss in armorData %}
-                  {% if ('greaves' in boss) %}
-                    <option value="{{ boss.greaves.id }}" data-name="{{ boss.greaves.name }}" data-cellslot="{{ boss.greaves.cellslot }}" data-bonuses="{{ boss.greaves.bonuses }}" data-specials="{{ boss.greaves.specials }}" data-img="{{ boss.greaves.img }}">{{ boss.greaves.name }}
-                      ({{ boss.boss }})</option>
-                  {% endif %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-bonuses" id="greavesBonuses"></div>
-            <div class="item-cellslots" id="greavesCells">
-              <select class="form-control form-control-sm" id="greavesCellSelection">
-                <option value="0" data-category="Empty" data-amount="0">No Cell Slot</option>
-                <option value="1" data-category="Defence" data-amount="0">Defence: Empty</option>
-                <option value="2" data-category="Mobility" data-amount="0">Mobility: Empty</option>
-                <option value="3" data-category="Power" data-amount="0">Power: Empty</option>
-                <option value="4" data-category="Technique" data-amount="0">Technique: Empty</option>
-                <option value="5" data-category="Utility" data-amount="0">Utility: Empty</option>
-                {% for category in cellData %}
-                  {% for cell in category.cells %}
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="3" data-bonuses="{'{{ cell.name }}': 3}">{{ cell.name }}
-                      +3</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="2" data-bonuses="{'{{ cell.name }}': 2}">{{ cell.name }}
-                      +2</option>
-                    <option value="{{ cell.id }}" data-category="{{ category.type }}" data-amount="1" data-bonuses="{'{{ cell.name }}': 1}">{{ cell.name }}
-                      +1</option>
-                  {% endfor %}
-                {% endfor %}
-              </select>
-            </div>
-            <div class="item-specials" id="greavesSpecials"></div>
+      <div class="totalBonuses col-12 col-md-6">
+        <h3>Total Bonuses</h3>
+        <div class="card border-secondary">
+          <div class="card-body">
+            <p>
+              <h6>Infusions</h6>
+              <div id="stats"></div>
+            </p>
+            <p>
+              <h6>Lantern Effects</h6>
+              <ul id="lanternEffects"></ul>
+            </p>
+            <p>
+              <h6>Unique Effects</h6>
+              <ul id="uniqueEffects"></ul>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="totalBonuses col-12 col-md-6">
-      <h6>Total Bonuses</h6>
-      <div class="card border-secondary">
-        <div class="card-body">
-          <p>
-            <h6>Infusions</h6>
-            <div id="stats"></div>
-          </p>
-          <p>
-            <h6>Lantern Effects</h6>
-            <ul id="lanternEffects"></ul>
-          </p>
-          <p>
-            <h6>Unique Effects</h6>
-            <ul id="uniqueEffects"></ul>
-          </p>
-        </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
+      </div>
+      <input type="text" class="form-control" id="permaLink" value="http://dauntlessbuilds.com/b/" aria-describedby="inputGroup-sizing-sm">
+      <div class="input-group-append">
+        <button class="btn btn-outline-primary btn-clipboard" data-clipboard-target="#permaLink" type="button">Copy Link</button>
       </div>
     </div>
   </div>
-
-  <div class="input-group">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Link to your build:</span>
-    </div>
-    <input type="text" class="form-control" id="permaLink" value="http://dauntlessbuilds.com/b/" aria-describedby="inputGroup-sizing-sm">
-    <div class="input-group-append">
-      <button class="btn btn-outline-primary btn-clipboard" data-clipboard-target="#permaLink" type="button">Copy Link</button>
-    </div>
-  </div>
-</div>
 
 {% endblock %}
