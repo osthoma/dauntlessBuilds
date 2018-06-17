@@ -87,6 +87,7 @@
   {
     "id": "10201",
     "name": "Shrike Helm",
+    "img": "shrike.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -97,6 +98,7 @@
   {
     "id": "10202",
     "name": "Shrike Plate",
+    "img": "shrike.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -107,6 +109,7 @@
   {
     "id": "10203",
     "name": "Shrike Gauntlets",
+    "img": "shrike.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -117,6 +120,7 @@
   {
     "id": "10204",
     "name": "Shrike Greaves",
+    "img": "shrike.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -130,6 +134,7 @@
   {
     "id": "10301",
     "name": "Quillmask",
+    "img": "quillshot.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -140,6 +145,7 @@
   {
     "id": "10302",
     "name": "Quillspike Jacket",
+    "img": "quillshot.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -150,6 +156,7 @@
   {
     "id": "10303",
     "name": "Quillspike Grips",
+    "img": "quillshot.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -160,6 +167,7 @@
   {
     "id": "10304",
     "name": "Quillboots",
+    "img": "quillshot.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -173,6 +181,7 @@
   {
     "id": "10401",
     "name": "Skarn Helm",
+    "img": "skarn.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -183,6 +192,7 @@
   {
     "id": "10402",
     "name": "Skarn Plate",
+    "img": "skarn.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -193,6 +203,7 @@
   {
     "id": "10403",
     "name": "Skarn Bracers",
+    "img": "skarn.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -203,6 +214,7 @@
   {
     "id": "10404",
     "name": "Skarn Boots",
+    "img": "skarn.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -310,6 +322,7 @@
   {
     "id": "20301",
     "name": "Skraev Helm",
+    "img": "skraev.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -320,6 +333,7 @@
   {
     "id": "20302",
     "name": "Skraev Plate",
+    "img": "skraev.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -330,6 +344,7 @@
   {
     "id": "20303",
     "name": "Skraev Gloves",
+    "img": "skraev.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -340,6 +355,7 @@
   {
     "id": "20304",
     "name": "Skraev Greaves",
+    "img": "skraev.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -353,6 +369,7 @@
   {
     "id": "20401",
     "name": "Draskscale Faceguard",
+    "img": "drask.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -363,6 +380,7 @@
   {
     "id": "20402",
     "name": "Draskscale Plate",
+    "img": "drask.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -373,6 +391,7 @@
   {
     "id": "20403",
     "name": "Draskscale Gauntlets",
+    "img": "drask.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -383,6 +402,7 @@
   {
     "id": "20404",
     "name": "Draskscale Greaves",
+    "img": "drask.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -490,6 +510,7 @@
   {
     "id": "30301",
     "name": "Hellcasque",
+    "img": "hellion.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -500,6 +521,7 @@
   {
     "id": "30302",
     "name": "Hellplate",
+    "img": "hellion.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -510,6 +532,7 @@
   {
     "id": "30303",
     "name": "Hellbracers",
+    "img": "hellion.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -520,6 +543,7 @@
   {
     "id": "30304",
     "name": "Hellgreaves",
+    "img": "hellion.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -533,6 +557,7 @@
   {
     "id": "30401",
     "name": "Stormhelm",
+    "img": "stormclaw.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -543,6 +568,7 @@
   {
     "id": "30402",
     "name": "Stormplate",
+    "img": "stormclaw.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -553,6 +579,7 @@
   {
     "id": "30403",
     "name": "Stormbracers",
+    "img": "stormclaw.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -563,6 +590,7 @@
   {
     "id": "30404",
     "name": "Stormboots",
+    "img": "stormclaw.png",
     "cellslot": "Mobility",
     "bonuses":
     {
@@ -623,7 +651,7 @@
   {
     "id": "40101",
     "name": "Ragetail Touque",
-    "img": "gnasher.png",
+    "img": "ragetail.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -635,7 +663,7 @@
   {
     "id": "40102",
     "name": "Ragetail Cloak",
-    "img": "gnasher.png",
+    "img": "ragetail.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -647,7 +675,7 @@
   {
     "id": "40103",
     "name": "Ragetail Grips",
-    "img": "gnasher.png",
+    "img": "ragetail.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -659,7 +687,7 @@
   {
     "id": "40104",
     "name": "Ragetail Treads",
-    "img": "gnasher.png",
+    "img": "ragetail.png",
     "cellslot": "Power",
     "bonuses":
     {
@@ -878,6 +906,7 @@
   {
     "id": "40601",
     "name": "Deadeye Mask",
+    "img": "deadeye.png",
     "cellslot": "Defence",
     "bonuses":
     {
@@ -889,6 +918,7 @@
   {
     "id": "40602",
     "name": "Deadeye Jacket",
+    "img": "deadeye.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -900,6 +930,7 @@
   {
     "id": "40603",
     "name": "Deadeye Grips",
+    "img": "deadeye.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -911,6 +942,7 @@
   {
     "id": "40604",
     "name": "Deadeye Boots",
+    "img": "deadeye.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -976,6 +1008,7 @@
   {
     "id": "40801",
     "name": "Reza Helm",
+    "img": "rezakiri.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -987,6 +1020,7 @@
   {
     "id": "40802",
     "name": "Reza Scales",
+    "img": "rezakiri.png",
     "cellslot": "Utility",
     "bonuses":
     {
@@ -998,6 +1032,7 @@
   {
     "id": "40803",
     "name": "Reza Grips",
+    "img": "rezakiri.png",
     "cellslot": "Technique",
     "bonuses":
     {
@@ -1009,6 +1044,7 @@
   {
     "id": "40804",
     "name": "Reza Greaves",
+    "img": "rezakiri.png",
     "cellslot": "Mobility",
     "bonuses":
     {

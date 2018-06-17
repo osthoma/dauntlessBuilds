@@ -132,7 +132,7 @@ function updateWeaponStats(type) {
     if ($(this).data('img')) {
       const imageString = $(this).data('img');
       if (imageString !== undefined && imageString !== 'None') {
-        $('#weaponIcon').append(`<img src="/static/assets/images/icons/icon_weapon_${imageString}" alt="weapon" height="64" width="64">`);
+        $('#weaponIcon').append(`<img src="/static/assets/images/icons/${imageString}" alt="weapon" height="64" width="64">`);
       }
     }
 
@@ -167,7 +167,7 @@ function updateLanternStats() {
     if ($(this).data('img')) {
       const imageString = $(this).data('img');
       if (imageString !== undefined && imageString !== 'None') {
-        $('#lanternIcon').append(`<img src="/static/assets/images/icons/icon_lantern_${imageString}" alt="lantern" height="64" width="64">`);
+        $('#lanternIcon').append(`<img src="/static/assets/images/icons/lantern_${imageString}" alt="lantern" height="64" width="64">`);
       }
     }
 
@@ -207,7 +207,7 @@ function updateArmorStats(type) {
     if ($(this).data('img')) {
       const imageString = $(this).data('img');
       if (imageString !== undefined && imageString !== 'None') {
-        $(`#${type}Icon`).append(`<img src="/static/assets/images/icons/icon_${type}_${imageString}" alt="${type}" height="64" width="64">`);
+        $(`#${type}Icon`).append(`<img src="/static/assets/images/icons/${type}_${imageString}" alt="${type}" height="64" width="64">`);
       }
     }
 
