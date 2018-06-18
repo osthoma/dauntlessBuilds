@@ -58,7 +58,10 @@
     "name": "Gnashaxe",
     "cellslot01": "Power",
     "cellslot02": "Utility",
-    "bonuses": "None",
+    "bonuses":
+    {
+      "Ragehunter": 2
+    },
     "specials": "None"
   },
   {
@@ -67,7 +70,10 @@
     "name": "Gnashblades",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
-    "bonuses": "None",
+    "bonuses":
+    {
+      "Ragehunter": 2
+    },
     "specials": "None"
   },
   {
@@ -76,7 +82,10 @@
     "name": "Gnashmasher",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
-    "bonuses": "None",
+    "bonuses":
+    {
+      "Ragehunter": 2
+    },
     "specials": "None"
   },
   {
@@ -85,7 +94,10 @@
     "name": "Gnashsaber",
     "cellslot01": "Utility",
     "cellslot02": "Defence",
-    "bonuses": "None",
+    "bonuses":
+    {
+      "Ragehunter": 2
+    },
     "specials": "None"
   },
   {
@@ -176,12 +188,9 @@
     "cellslot02": "Defence",
     "bonuses":
     {
-      "Bladestorm": 2
+      "Sharpened": 2
     },
-    "specials":
-    {
-      "special": "+10% Part Damage"
-    }
+    "specials": "None"
   },
   {
     "id": "10302",
@@ -193,10 +202,7 @@
     {
       "Bladestorm": 2
     },
-    "specials":
-    {
-      "special": "+10 Part Damage on Hit"
-    }
+    "specials": "None"
   },
   {
     "id": "10303",
@@ -208,10 +214,7 @@
     {
       "Sharpened": 2
     },
-    "specials":
-    {
-      "special": "+10% Part Damage"
-    }
+    "specials": "None"
   },
   {
     "id": "10304",
@@ -235,10 +238,7 @@
     {
       "Bladestorm": 2
     },
-    "specials":
-    {
-      "special": "+10 Part Damage on Hit"
-    }
+    "specials": "None"
   }]
 },
 {
@@ -254,10 +254,7 @@
     {
       "Knockout King": 2
     },
-    "specials":
-    {
-      "special": "+10% Stagger Damage"
-    }
+    "specials": "None"
   },
   {
     "id": "10402",
@@ -269,10 +266,7 @@
     {
       "Weighted Strikes": 2
     },
-    "specials":
-    {
-      "special": "+10 Stagger Damage on Hit"
-    }
+    "specials": "None"
   },
   {
     "id": "10403",
@@ -284,10 +278,7 @@
     {
       "Knockout King": 2
     },
-    "specials":
-    {
-      "special": "+10% Stagger Damage"
-    }
+    "specials": "None"
   },
   {
     "id": "10404",
@@ -311,10 +302,7 @@
     {
       "Weighted Strikes": 3
     },
-    "specials":
-    {
-      "special": "+10 Stagger Damage on Hit"
-    }
+    "specials": "None"
   }]
 },
 {
@@ -330,10 +318,7 @@
     {
       "Rage": 2
     },
-    "specials":
-    {
-      "special": "When under 30% health, deal 108% damage"
-    }
+    "specials": "None"
   },
   {
     "id": "20102",
@@ -345,10 +330,7 @@
     {
       "Rage": 2
     },
-    "specials":
-    {
-      "special": "When under 30% health, deal 108% damage"
-    }
+    "specials": "None"
   },
   {
     "id": "20103",
@@ -360,10 +342,7 @@
     {
       "Rage": 2
     },
-    "specials":
-    {
-      "special": "When under 30% health, deal 108% damage"
-    }
+    "specials": "None"
   },
   {
     "id": "20104",
@@ -375,10 +354,7 @@
     {
       "Rage": 2
     },
-    "specials":
-    {
-      "special": "When under 30% health, deal 108% damage"
-    }
+    "specials": "None"
   },
   {
     "id": "20105",
@@ -390,10 +366,7 @@
     {
       "Rage": 2
     },
-    "specials":
-    {
-      "special": "When under 30% health, deal 108% damage"
-    }
+    "specials": "None"
   }]
 },
 {
@@ -537,7 +510,7 @@
     "bonuses": "None",
     "specials":
     {
-      "special01": "120% damage increase versus Behemoth heads."
+      "special01": "120% damage vs Behemoth Heads."
     }
   },
   {
@@ -561,7 +534,7 @@
     "bonuses": "None",
     "specials":
     {
-      "special01": "120% damage increase versus Behemoth heads."
+      "special01": "120% damage vs Behemoth Heads."
     }
   },
   {
@@ -573,7 +546,7 @@
     "bonuses": "None",
     "specials":
     {
-      "special": "120% damage increase versus Behemoth heads."
+      "special": "120% damage vs Behemoth Heads."
     }
 
   },
@@ -819,7 +792,7 @@
     "bonuses": "None",
     "specials":
     {
-      "special": "Reloads 4 Hammer Ammo after Blastdodging through an attack"
+      "special": "Reloads 4 Hammer Ammo after Blastdodging through an attack."
     }
   },
   {
@@ -1092,7 +1065,10 @@
     {
       "Conditioning": 2
     },
-    "specials": "None"
+    "specials":
+    {
+      "special01": "Heal for 300 whenever a Behemoth is Staggered"
+    }
   },
   {
     "id": "40304",
@@ -1122,7 +1098,7 @@
     },
     "specials":
     {
-      "special01": "+5% Lifesteal when damaging wounded parts"
+      "special01": "+5% Lifesteal vs Wounded parts"
     }
   }]
 },
@@ -1379,7 +1355,7 @@
     "bonuses": "None",
     "specials":
     {
-      "special01": "+25% attack speed after landing a Hammer Blast",
+      "special01": "+25% Attack Speed for 8 seconds after landing a Hammer Blast",
       "special02": "The fifth hit in a row deals +100% Stagger damage"
     }
   },
