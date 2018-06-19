@@ -1389,6 +1389,85 @@
   }]
 },
 {
+  "name": "Moonreaver Shrike",
+  "items": [
+  {
+    "id": "41001",
+    "type": "Axes",
+    "name": "Mooncleaver",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    },
+    "specials":
+    {
+      "special": "+60 Part Damage on Next Hit After a Dodge"
+    }
+  },
+  {
+    "id": "41002",
+    "type": "Chain Blades",
+    "name": "Moonblades",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    },
+    "specials":
+    {
+      "special": "+60 Part Damage on Next Hit After a Dodge"
+    }
+  },
+  {
+    "id": "41003",
+    "type": "Hammers",
+    "name": "Mooncrusher",
+    "cellslot01": "Power",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    },
+    "specials":
+    {
+      "special": "+60 Part Damage on Next Hit After a Dodge"
+    }
+  },
+  {
+    "id": "41004",
+    "type": "Swords",
+    "name": "Moonsaber",
+    "cellslot01": "Mobility",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    },
+    "specials":
+    {
+      "special": "+60 Part Damage on Next Hit After a Dodge"
+    }
+  },
+  {
+    "id": "41005",
+    "type": "War Pikes",
+    "name": "Moonpike",
+    "cellslot01": "Technique",
+    "cellslot02": "Mobility",
+    "bonuses":
+    {
+      "Evasive Fury": 1
+    },
+    "specials":
+    {
+      "special": "+60 Part Damage on Next Hit After a Dodge"
+    }
+  }]
+},
+{
   "name": "Rezakiri",
   "items": [
   {
