@@ -31,6 +31,11 @@ def index():
     return render_template('home.html', weaponData=weaponData, armorData=armorData, cellData=cellData, lanternData=lanternData)
 
 
+@app.route('/weaponsandarmor')
+def weaponsandarmor():
+    return render_template('weaponsandarmor.html', weaponData=weaponData, armorData=armorData, lanternData=lanternData)
+
+
 @app.route('/b/<buildString>')
 def show_build(buildString):
     return render_template('home.html', buildString=buildString, weaponData=weaponData, armorData=armorData, cellData=cellData, lanternData=lanternData)

@@ -1003,6 +1003,57 @@
   }
 },
 {
+  "boss": "Moonreaver Shrike",
+  "helmet":
+  {
+    "id": "41001",
+    "name": "Reaver Crest",
+    "img": "moonreaver.png",
+    "cellslot": "Technique",
+    "bonuses":
+    {
+      "Evasion": 2,
+      "Weighted Strikes": 1
+    }
+  },
+  "chestplate":
+  {
+    "id": "41002",
+    "name": "Reaver Plate",
+    "img": "moonreaver.png",
+    "cellslot": "Mobility",
+    "bonuses":
+    {
+      "Conditioning": 2,
+      "Weighted Strikes": 1
+    }
+  },
+  "gauntlets":
+  {
+    "id": "41003",
+    "name": "Reaver Gauntlets",
+    "img": "moonreaver.png",
+    "cellslot": "Mobility",
+    "bonuses":
+    {
+      "Conditioning": 2,
+      "Evasion": 1
+    }
+  },
+  "greaves":
+  {
+    "id": "41004",
+    "name": "Reaver Boots",
+    "img": "moonreaver.png",
+    "cellslot": "Mobility",
+    "bonuses":
+    {
+      "Evasion": 2,
+      "Weighted Strikes": 1
+    }
+  }
+},
+{
   "boss": "Rezakiri",
   "helmet":
   {

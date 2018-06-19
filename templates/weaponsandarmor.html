@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <div class="container">
+    {% for weapon in weaponData %}
+      <h6>{{ weapon.name }}</h6>
+      <div class="card-deck">
+        {% for item in weapon['items'] %}
+          <div class="card border-secondary">
+            <div class="card-body item-pane">
+              <div class="item-icon"></div>
+              <div class="item-stats">
+                <div class="item-name">
+                  {{ item.name }}
+                </div>
+                <div class="item-bonuses"></div>
+                <div class="item-cellslots"></div>
+                <div class="item-specials"></div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
