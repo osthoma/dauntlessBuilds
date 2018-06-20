@@ -1161,6 +1161,7 @@
   {
     "id": "90101",
     "name": "Prismatic Grace",
+    "img": "grace.png",
     "cellslot": "Technique",
     "bonuses": "None",
     "specials":
@@ -1175,6 +1176,7 @@
   {
     "id": "90201",
     "name": "Tragic Echo",
+    "img": "echo.png",
     "cellslot": "Power",
     "bonuses": "None",
     "specials":
