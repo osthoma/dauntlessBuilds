@@ -15,6 +15,7 @@
     "id": "102",
     "type": "Chain Blades",
     "name": "Recruit`s Chain Blades",
+    "img": "chainblades_recruit.png",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "None",
@@ -57,6 +58,7 @@
     "id": "10101",
     "type": "Axes",
     "name": "Gnashaxe",
+    "img": "axe_gnasher.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses":
@@ -69,6 +71,7 @@
     "id": "10102",
     "type": "Chain Blades",
     "name": "Gnashblades",
+    "img": "chainblades_gnasher.png",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
     "bonuses":
@@ -81,6 +84,7 @@
     "id": "10103",
     "type": "Hammers",
     "name": "Gnashmasher",
+    "img": "hammer_gnasher.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses":
@@ -106,6 +110,7 @@
     "id": "10105",
     "type": "War Pikes",
     "name": "Gnashpike",
+    "img": "warpike_gnasher.png",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
     "bonuses":
@@ -122,6 +127,7 @@
     "id": "10201",
     "type": "Axes",
     "name": "Shrike Axe",
+    "img": "axe_moonreaver.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -134,6 +140,7 @@
     "id": "10202",
     "type": "Chain Blades",
     "name": "Shrikeblades",
+    "img": "chainblades_shrike.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -146,6 +153,7 @@
     "id": "10203",
     "type": "Hammers",
     "name": "Shrikesmasher",
+    "img": "hammer_shrike.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -187,6 +195,7 @@
     "id": "10301",
     "type": "Axes",
     "name": "Quillcutter",
+    "img": "axe_quillshot.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -199,6 +208,7 @@
     "id": "10302",
     "type": "Chain Blades",
     "name": "Quillblades",
+    "img": "chainblades_quillshot.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -252,6 +262,7 @@
     "id": "10401",
     "type": "Axes",
     "name": "Skarnchopper",
+    "img": "axe_skarn.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -264,6 +275,7 @@
     "id": "10402",
     "type": "Chain Blades",
     "name": "Skarnblades",
+    "img": "chainblades_skarn.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -317,6 +329,7 @@
     "id": "20101",
     "type": "Axes",
     "name": "Charrcutter",
+    "img": "axe_charrogg.png",
     "cellslot01": "Power",
     "cellslot02": "Power",
     "bonuses":
@@ -329,6 +342,7 @@
     "id": "20102",
     "type": "Chain Blades",
     "name": "Charrblades",
+    "img": "chainblades_charrogg.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -365,6 +379,7 @@
   {
     "id": "20105",
     "type": "War Pikes",
+    "img": "warpike_charrogg.png",
     "name": "Charrpike",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
@@ -382,6 +397,7 @@
     "id": "20201",
     "type": "Axes",
     "name": "Emberscythe",
+    "img": "axe_embermane.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -394,6 +410,7 @@
     "id": "20202",
     "type": "Chain Blades",
     "name": "Emberblades",
+    "img": "chainblades_embermane.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -447,6 +464,7 @@
     "id": "20301",
     "type": "Axes",
     "name": "Skraev Axe",
+    "img": "axe_skraev.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -459,6 +477,7 @@
     "id": "20302",
     "type": "Chain Blades",
     "name": "Skraev Blades",
+    "img": "chainblades_skraev.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -513,6 +532,7 @@
     "id": "20401",
     "type": "Axes",
     "name": "Drask Axe",
+    "img": "axe_drask.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses": "None",
@@ -525,6 +545,7 @@
     "id": "20402",
     "type": "Chain Blades",
     "name": "Draskblades",
+    "img": "chainblades_drask.png",
     "cellslot01": "Technique",
     "cellslot02": "Power",
     "bonuses":
@@ -537,6 +558,7 @@
     "id": "20403",
     "type": "Hammers",
     "name": "Drasksmasher",
+    "img": "hammer_drask.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses": "None",
@@ -579,6 +601,7 @@
     "id": "30101",
     "type": "Axes",
     "name": "Zagachopper",
+    "img": "axe_nayzaga.png",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -591,6 +614,7 @@
     "id": "30102",
     "type": "Chain Blades",
     "name": "Zagablades",
+    "img": "chainblades_nayzaga.png",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -657,6 +681,7 @@
     "id": "30202",
     "type": "Chain Blades",
     "name": "Pangblades",
+    "img": "chainblades_pangar.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -669,6 +694,7 @@
     "id": "30203",
     "type": "Hammers",
     "name": "Pangar`s Roar",
+    "img": "hammer_pangar.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -864,6 +890,7 @@
     "id": "30503",
     "type": "Hammers",
     "name": "Kharabasher",
+    "img": "hammer_kharabak.png",
     "cellslot01": "Power",
     "cellslot02": "Technique",
     "bonuses": "None",
@@ -905,6 +932,7 @@
     "id": "40101",
     "type": "Axes",
     "name": "Ragecleaver",
+    "img": "axe_ragetail.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses":
@@ -918,6 +946,7 @@
     "id": "40102",
     "type": "Chain Blades",
     "name": "Rageblades",
+    "img": "chainblades_ragetail.png",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
     "bonuses":
@@ -931,6 +960,7 @@
     "id": "40103",
     "type": "Hammers",
     "name": "Ragehammer",
+    "img": "hammer_ragetail.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses":
@@ -958,6 +988,7 @@
     "id": "40105",
     "type": "War Pikes",
     "name": "Ragepike",
+    "img": "warpike_ragetail.png",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
     "bonuses":
@@ -975,6 +1006,7 @@
     "id": "40201",
     "type": "Axes",
     "name": "Firecutter",
+    "img": "axe_firebrand.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -988,6 +1020,7 @@
     "id": "40201",
     "type": "Chain Blades",
     "name": "Fireblades",
+    "img": "chainblades_firebrand.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -1045,6 +1078,7 @@
     "id": "40301",
     "type": "Axes",
     "name": "Shockjaw Scythe",
+    "img": "axe_shockjaw.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses":
@@ -1060,6 +1094,7 @@
     "id": "40302",
     "type": "Chain Blades",
     "name": "Shockjaw Blades",
+    "img": "chainblades_shockjaw.png",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
     "bonuses":
@@ -1154,6 +1189,7 @@
     "id": "40403",
     "type": "Hammers",
     "name": "Razorwing Hammer",
+    "img": "hammer_razorwing.png",
     "cellslot01": "Technique",
     "cellslot02": "Power",
     "bonuses":
@@ -1213,6 +1249,7 @@
     "id": "40502",
     "type": "Chain Blades",
     "name": "Frostblades",
+    "img": "chainblades_frostback.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -1226,6 +1263,7 @@
     "id": "40503",
     "type": "Hammers",
     "name": "Frostmaul",
+    "img": "hammer_frostback.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -1270,6 +1308,7 @@
     "id": "40601",
     "type": "Axes",
     "name": "Deadeye Axe",
+    "img": "axe_deadeye.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -1283,6 +1322,7 @@
     "id": "40602",
     "type": "Chain Blades",
     "name": "Deadblades",
+    "img": "chainblades_deadeye.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -1323,6 +1363,7 @@
     "id": "40605",
     "type": "War Pikes",
     "name": "Deadeye Pike",
+    "img": "warpike_deadeye.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -1340,6 +1381,7 @@
     "id": "40701",
     "type": "Axes",
     "name": "Bloodfire Axe",
+    "img": "axe_bloodfire.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1355,6 +1397,7 @@
     "id": "40702",
     "type": "Chain Blades",
     "name": "Bloodfire Blades",
+    "img": "chainblades_bloodfire.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1399,6 +1442,7 @@
     "id": "40705",
     "type": "War Pikes",
     "name": "Bloodfire Pike",
+    "img": "warpike_bloodfire.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -1416,6 +1460,7 @@
     "id": "41001",
     "type": "Axes",
     "name": "Mooncleaver",
+    "img": "axe_moonreaver.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1431,6 +1476,7 @@
     "id": "41002",
     "type": "Chain Blades",
     "name": "Moonblades",
+    "img": "chainblades_moonreaver.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1446,6 +1492,7 @@
     "id": "41003",
     "type": "Hammers",
     "name": "Mooncrusher",
+    "img": "hammer_moonreaver.png",
     "cellslot01": "Power",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1647,6 +1694,7 @@
     "id": "90101",
     "type": "War Pikes",
     "name": "The Godhand",
+    "img": "warpike_godhand.png",
     "cellslot01": "Power",
     "cellslot02": "Technique",
     "bonuses": "None",
