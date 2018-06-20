@@ -34,6 +34,7 @@
     "id": "104",
     "type": "Swords",
     "name": "Recruit`s Sword",
+    "img": "sword_recruit.png",
     "cellslot01": "None",
     "cellslot02": "None",
     "bonuses": "None",
@@ -92,6 +93,7 @@
     "id": "10104",
     "type": "Swords",
     "name": "Gnashsaber",
+    "img": "sword_gnasher.png",
     "cellslot01": "Utility",
     "cellslot02": "Defence",
     "bonuses":
@@ -156,6 +158,7 @@
     "id": "10204",
     "type": "Swords",
     "name": "Shrikesaber",
+    "img": "sword_shrike.png",
     "cellslot01": "Mobility",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -220,6 +223,7 @@
     "id": "10304",
     "type": "Swords",
     "name": "Quillripper",
+    "img": "sword_quillshot.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -284,6 +288,7 @@
     "id": "10404",
     "type": "Swords",
     "name": "Skarnsaber",
+    "img": "sword_skarn.png",
     "cellslot01": "Defence",
     "cellslot02": "Defence",
     "bonuses":
@@ -348,6 +353,7 @@
     "id": "20104",
     "type": "Swords",
     "name": "Charrsword",
+    "img": "sword_charrogg.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -412,6 +418,7 @@
     "id": "20204",
     "type": "Swords",
     "name": "Ember Cutlass",
+    "img": "sword_embermane.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -476,6 +483,7 @@
     "id": "20304",
     "type": "Swords",
     "name": "Skraevsaber",
+    "img": "sword_skraev.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -541,6 +549,7 @@
     "id": "20404",
     "type": "Swords",
     "name": "Draskrazor",
+    "img": "sword_drask.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses": "None",
@@ -606,6 +615,7 @@
     "id": "30104",
     "type": "Swords",
     "name": "Zaga Sword",
+    "img": "sword_nayzaga.png",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -671,6 +681,7 @@
     "id": "30204",
     "type": "Swords",
     "name": "Pangsaber",
+    "img": "sword_pangar.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -735,6 +746,7 @@
     "id": "30304",
     "type": "Swords",
     "name": "Hellsaber",
+    "img": "sword_hellion.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -799,6 +811,7 @@
     "id": "30404",
     "type": "Swords",
     "name": "Storm Katana",
+    "img": "sword_stormclaw.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses": "None",
@@ -863,6 +876,7 @@
     "id": "30504",
     "type": "Swords",
     "name": "Kharabak Cleaver",
+    "img": "sword_kharabak.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -930,6 +944,7 @@
     "id": "40104",
     "type": "Swords",
     "name": "Ragesaber",
+    "img": "sword_ragetail.png",
     "cellslot01": "Utility",
     "cellslot02": "Defence",
     "bonuses":
@@ -999,6 +1014,7 @@
     "id": "40201",
     "type": "Swords",
     "name": "Firesaber",
+    "img": "sword_firebrand.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -1074,6 +1090,7 @@
     "id": "40304",
     "type": "Swords",
     "name": "Shockjaw Sword",
+    "img": "sword_shockjaw.png",
     "cellslot01": "Utility",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1152,6 +1169,7 @@
     "id": "40404",
     "type": "Swords",
     "name": "Razorwing Sword",
+    "img": "sword_razorwing.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1221,6 +1239,7 @@
     "id": "40504",
     "type": "Swords",
     "name": "Frostsaber",
+    "img": "sword_frostback.png",
     "cellslot01": "Power",
     "cellslot02": "Defence",
     "bonuses":
@@ -1290,6 +1309,7 @@
     "id": "40604",
     "type": "Swords",
     "name": "Deadeye Ripper",
+    "img": "sword_deadeye.png",
     "cellslot01": "Technique",
     "cellslot02": "Defence",
     "bonuses":
@@ -1363,6 +1383,7 @@
     "id": "40704",
     "type": "Swords",
     "name": "Bloodfire Saber",
+    "img": "sword_bloodfire.png",
     "cellslot01": "Technique",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1440,6 +1461,7 @@
     "id": "41004",
     "type": "Swords",
     "name": "Moonsaber",
+    "img": "sword_moonreaver.png",
     "cellslot01": "Mobility",
     "cellslot02": "Mobility",
     "bonuses":
@@ -1513,6 +1535,7 @@
     "id": "40804",
     "type": "Swords",
     "name": "Rezakatana",
+    "img": "sword_rezakiri.png",
     "cellslot01": "Technique",
     "cellslot02": "Utility",
     "bonuses": "None",
@@ -1589,6 +1612,7 @@
     "id": "40904",
     "type": "Swords",
     "name": "Shrowd Slicer",
+    "img": "sword_shrowd.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses":
@@ -1635,6 +1659,7 @@
     "id": "90201",
     "type": "Swords",
     "name": "The Hunger",
+    "img": "sword_hunger.png",
     "cellslot01": "Power",
     "cellslot02": "Utility",
     "bonuses": "None",
