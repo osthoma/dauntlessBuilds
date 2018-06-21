@@ -49,6 +49,21 @@
           <option value="5">War Pikes</option>
         </select>
 
+        {# a reusable function for weapon html 'option' generation #}
+        {% macro weaponOption(item, weapon) -%}
+
+          {# generates cell slot text for the weapon if cellslot data is not 'none' #}
+          {% set weaponSlotsText %}
+            {% if item.cellslot01|trim|lower != 'none' %}
+              [Slot(s): {{ item.cellslot01[:4] }}{% if item.cellslot02|trim|lower != 'none' %}, {{ item.cellslot02[:4] }}{% endif %}]
+            {% endif %}
+          {% endset %}
+
+          <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
+            ({{ weapon.name }}) {{ weaponSlotsText }}</option>
+
+        {%- endmacro %}
+
         <div class="card border-secondary">
           <div class="card-body item-pane">
             <div class="item-icon" id="weaponIcon"></div>
@@ -58,8 +73,7 @@
                   {% for weapon in weaponData %}
                     {% for item in weapon['items'] %}
                       {% if item.type == "Hammers" %}
-                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                          ({{ weapon.name }})</option>
+                        {{ weaponOption(item, weapon) }}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
@@ -68,8 +82,7 @@
                   {% for weapon in weaponData %}
                     {% for item in weapon['items'] %}
                       {% if item.type == "Axes" %}
-                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                          ({{ weapon.name }})</option>
+                        {{ weaponOption(item, weapon) }}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
@@ -78,8 +91,7 @@
                   {% for weapon in weaponData %}
                     {% for item in weapon['items'] %}
                       {% if item.type == "Swords" %}
-                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                          ({{ weapon.name }})</option>
+                        {{ weaponOption(item, weapon) }}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
@@ -88,8 +100,7 @@
                   {% for weapon in weaponData %}
                     {% for item in weapon['items'] %}
                       {% if item.type == "Chain Blades" %}
-                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                          ({{ weapon.name }})</option>
+                        {{ weaponOption(item, weapon) }}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
@@ -98,8 +109,7 @@
                   {% for weapon in weaponData %}
                     {% for item in weapon['items'] %}
                       {% if item.type == "War Pikes" %}
-                        <option value="{{ item.id }}" data-name="{{ item.name }}" data-cellslot01="{{ item.cellslot01 }}" data-cellslot02="{{ item.cellslot02 }}" data-bonuses="{{ item.bonuses }}" data-specials="{{ item.specials }}" data-img="{{ item.img }}">{{ item.name }}
-                          ({{ weapon.name }})</option>
+                        {{ weaponOption(item, weapon) }}
                       {% endif %}
                     {% endfor %}
                   {% endfor %}
