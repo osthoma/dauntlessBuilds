@@ -1146,7 +1146,7 @@
     "cellslot02": "Technique",
     "bonuses":
     {
-      "Energized": 1
+      "Energized": 2
     },
     "specials":
     {
@@ -1390,7 +1390,7 @@
     },
     "specials":
     {
-      "special01": "The fourth hit in quick succession deals 150 bonus damage"
+      "special01": "The fourth hit in quick succession deals 250 bonus damage"
     }
   },
   {
@@ -1419,7 +1419,7 @@
     "specials":
     {
       "special01": "+25% Attack Speed for 8 seconds after landing a Hammer Blast",
-      "special02": "The fifth hit in a row deals +100% Stagger damage"
+      "special02": "The fifth hit in a row deals +150% Stagger damage"
     }
   },
   {
